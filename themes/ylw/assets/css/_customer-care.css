@@ -1,0 +1,84 @@
+/*
+===================
+ ylw-customer-care-sec-wrp
+===================
+*/
+.ylw-customer-care-sec-wrp {
+    padding-top: 40px;
+    padding-bottom: 105px;
+}
+.ylw-customer-head{
+	margin-bottom:60px;
+	text-align: center;
+}
+.ylw-customer-head h3{
+	color: #3E3935;
+	margin: 0;
+	line-height: 31px;
+}
+
+.policy-inner {
+    padding-left: 122px;
+    padding-right: 122px;
+}
+#items-content #sidebar{
+	width: 21%;
+	float: left;
+}
+#items-content #sidebar .tcheadings{
+	padding: 5px 0 20px;
+}
+.ylw-customer-menu h5{
+	color:#000;
+	text-transform: uppercase;
+	font-size: 15px;
+	line-height: 17px;
+	margin: 0;
+	margin-bottom:20px;
+	font-weight: 700;
+}
+.ylw-customer-menu ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.ylw-customer-menu ul li{
+	padding:7px 0;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 400;
+}
+.ylw-customer-menu ul li:before{
+	content: none;
+}
+.ylw-customer-menu ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	color:#000;
+}
+.ylw-customer-menu ul li a:hover{
+	color:#ffc627;
+}
+.ylw-customer-menu ul li.active a,
+.ylw-customer-menu ul li.current a{
+	font-weight: 700;
+}
+.itemsipcontent{
+	float: right;
+	width:79%;
+}
+.item-dsce {
+    padding-left: 20px;
+}
+.item-cont p{
+	margin-bottom:30px;
+}
+.item-cont h5{
+	color:#000;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 700;
+	margin-bottom:5px;
+	font-family: 'Montserrat', sans-serif;
+}
