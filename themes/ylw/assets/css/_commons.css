@@ -98,7 +98,7 @@ Containers
 	width: 100%;
 }
 .container-md{
-
+	max-width: 1180px;
 }
 
 .container-sm{
