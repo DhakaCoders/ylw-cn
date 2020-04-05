@@ -1,0 +1,35 @@
+.page-banner-controller{
+	position: relative;
+}
+.page-banner-controller{
+	height: 490px;
+}
+.page-banner-bg{
+	background-repeat: no-repeat!important;
+	background-size: cover!important;
+	background-position: center center!important;
+	width: 100%;
+	height: 100%;
+}
+
+.page-banner-des{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+
+.page-banner-title{
+	font-size: 54px;
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	display: block;
+	margin: 0;
+}

@@ -1,0 +1,48 @@
+
+.hm-children-clothes-sec-grds ul{
+	margin: 0 -13px;
+}
+.hm-children-clothes-sec-grds ul li{
+	float: left;
+	width: 33.3333%;
+	padding: 0 13px 26px;
+}
+.hm-children-clothes-fea-box{
+	position: relative;
+	height: 340px;
+	overflow: hidden;
+
+}
+.hm-children-clothes-fea-box-des{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+}
+.hm-children-clothes-fea-box-img{
+
+
+}
+
+.bg-inline{
+	width: 100%;
+	height: 100%;
+	background-position: center center!important;
+	background-size: cover!important;
+	background-repeat: no-repeat!important;
+}
+
+.hccfbd-title{
+	display: block;
+	color: #fff;
+	font-size: 35px;
+	line-height: 41px;
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	margin: 0;
+}
