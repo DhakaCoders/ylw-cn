@@ -139,7 +139,17 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 /*End of Milon*/
-
+var allPanels = $('.faq-accordion-des').hide();
+$('.faq-accordion-tab-row').removeClass('remove-border');
+  $('.faq-accordion-title').click(function() {
+        allPanels.slideUp();
+        $('.faq-accordion-title').removeClass('faq-accordion-active');
+        $('.faq-accordion-tab-row').removeClass('remove-border');
+        $(this).next().slideDown();
+        $(this).addClass('faq-accordion-active');
+        $(this).parent().next().addClass('remove-border');
+        return false;
+});
 
 
 

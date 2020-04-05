@@ -12,12 +12,13 @@
 
 
 /*End of Shoriful*/
-
+@import url('_press.css');
 
 
 
 /*End of Milon*/
-
+@import url('_customer-care.css');
+@import url('_customer-care-faq.css');
 @import url('_contact.css');
 @import url('_footer.css');
 
