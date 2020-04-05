@@ -82,8 +82,8 @@
 }
 .ylw-press-pagi-inr ul li{
 	display: inline-block;
-	/*padding-left: 6px;
-	padding-right: 6px;*/
+	padding-left: 8px;
+	padding-right: 8px;
 }
 .ylw-press-pagi-inr ul li a.page-numbers,
 .ylw-press-pagi-inr ul li span{

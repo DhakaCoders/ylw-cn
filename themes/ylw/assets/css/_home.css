@@ -162,8 +162,18 @@ a.transparent-btn{
 .hm-new-arrivals-item{
 	padding: 0 9px;
 }
-.hm-new-arrivals-fea-img{
+.fl-product-item{
 	position: relative;
+}
+.fl-product-item-fea-img{
+	position: relative;
+}
+.fl-product-item-fea-img a{
+	display: block;
+	overflow: hidden;
+}
+.fl-product-item-fea-img img{
+	width: 100%;
 }
 
 .product-overlay-icons{
@@ -173,7 +183,7 @@ a.transparent-btn{
 	width: 40px;
 	opacity: 0;
 }
-.hm-new-arrivals-item-inr:hover .product-overlay-icons{
+.fl-product-item:hover .product-overlay-icons{
 	bottom: 10px;
 	opacity: 1;
 }
@@ -189,19 +199,19 @@ a.transparent-btn{
 	margin-top: 7px;
 	border-radius: 100% 100%;
 }
-.hm-new-arrivals-item-des{
+.fl-product-item-des{
 	padding: 20px 15px 20px 0;
 }
 .product-overlay-icon-search i{
 	font-weight: 600;
 }
-.hnaid-variable-title{
+.fl-product-variable-title{
 	display: block;
 	margin: 0 0 5px 0;
 	text-transform: uppercase;
 	font-weight: 500;
 }
-.hnaid-title{
+.fl-product-title{
 	display: block;
 	font-size: 12px;
 	line-height: 16px;
@@ -211,10 +221,10 @@ a.transparent-btn{
 	font-weight: 700;
     font-family: 'Montserrat', sans-serif;
 }
-.hnaid-title a{
+.fl-product-title a{
 	color: inherit;
 }
-.grd-box-pirece{
+.fl-product-box-prices{
 	display: flex;
 	align-items: center;
 	font-size: 12px;
@@ -223,10 +233,10 @@ a.transparent-btn{
 	color: #3E3935;
 }
 
-.gbp-old-price{
+.fl-product-old-price{
 	margin-right: 5px;
 }
-.gbp-old-price del{
+.fl-product-old-price del{
 	text-decoration: line-through;
 	font-weight: 500;
 	padding-right: 5px;
@@ -256,4 +266,248 @@ a.transparent-btn{
 .gift-ideas-sec{
 	background: url(../images/gift-ideas-sec-bg.jpg);
 	padding: 45px 0 0;
+	margin-bottom: 120px;
+}
+
+.gift-ideas-sec-cntlr{
+	position: relative;
+}
+.gift-ideas-sec-lft{
+	float: left;
+	width: 50%;
+	padding: 95px 30px 113px 30px;
+}
+.gift-ideas-sec-lft-top-con{
+	max-width: 168px;
+	width: 100%;
+}
+.gift-ideas-sec-lft-top-con div{
+	padding-bottom: 20px;
+}
+.gift-ideas-title{
+	display: block;
+	font-size: 27px;
+	line-height: 33px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+   margin-bottom: 25px;
+   text-transform: uppercase;
+}
+.gift-ideas-title span{
+	display: block;
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	text-transform: initial;
+	font-weight: 400;
+	text-align: center;
+	padding-top: 25px;
+}
+.gift-ideas-sec-lft-top-con-cntlr{
+	display: flex;
+}
+.gift-ideas-sec-lft-top-con-rgt{
+	padding-left: 35px;
+	margin-top: -5px;
+	padding-right: 40px;
+}
+.gift-ideas-sec-lft-top-con-rgt p{
+	font-size: 16px;
+	line-height: 26px;
+	font-style: italic;
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+}
+.ift-ideas-sec-lft-btns ul li{
+	display: inline-block;
+	vertical-align: baseline;
+	padding: 0 15px 17px 0;
+}
+.ift-ideas-sec-lft-btns ul li a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 154px;
+	height: 50px;
+	font-size: 11px;
+	line-height: 100%;
+	font-weight: 700;
+	text-transform: uppercase;
+	border: 1px solid #CCCCCC;
+	color: #3E3935;
+}
+.ift-ideas-sec-lft-btns ul li a:hover,
+.gray-transparent-btn a:hover{
+	background: #FFC627;
+	border-color: #FFC627;
+}
+
+.gift-ideas-sec-rgt{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 7px;
+	padding-bottom: 5px;
+	width: 45%;
+	max-width: 555px;
+	-webkit-box-shadow: 1px 1px 11px 0px rgba(209,205,209,1);
+	-moz-box-shadow: 1px 1px 11px 0px rgba(209,205,209,1);
+	box-shadow: 1px 1px 11px 0px rgba(209,205,209,1);
+	background: #fff;
+	height: 565px;
+}
+
+.gift-ideas-sec-fea-img-bx-item{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.giftIdeasSecFeaImgSlider{
+	margin: 0!important;
+}
+.gift-ideas-sec-fea-img-bx{
+	width: 100%;
+	
+}
+.gift-ideas-sec-fea-img-bx-item{
+	width: 100%;
+	height: 551px;
+}
+.gift-ideas-sec-fea-img-bx-item strong{
+	position: absolute;
+	right: 25px;
+	bottom: 35px;
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	font-size: 29px;
+	line-height: 34px;
+	color: #3E3935;
+	text-align: right;
+	font-style: italic;
+}
+
+.giftIdeasSecFeaImgSlider ul.slick-dots{
+	padding: 10px 30px;
+	background: #fff;
+	border-radius: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	width: auto;
+	z-index: 12;
+	display: flex;
+	bottom: -14px;
+}
+
+.hm-happy-easter-sec-hdr{
+	padding: 70px 0 118px;
+}
+.hm-happy-easter-sec-hdr-cntlr{
+	max-width: 460px;
+	width: 100%;
+	margin: 0 auto;
+	color: #fff;
+	text-align: center;
+}
+.hhesh-title{
+	display: block;
+	color: #fff;
+	font-style: italic;
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	margin: 0 0 18px 0;
+}
+.hm-happy-easter-sec-hdr-cntlr p{
+	font-size: 16px;
+	line-height: 26px;
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+}
+.hm-happy-easter-products-cntlr{
+	background: #fff;
+	padding: 40px 35px 80px;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: -70px;
+}
+.hm-happy-easter-products-cntlr ul{
+	margin: 0 -15px;
+}
+.hm-happy-easter-products-cntlr ul li{
+	float: left;
+	width: 25%;
+	padding: 0 15px 30px;
+}
+.hm-happy-easter-products-cntlr ul li:nth-child(4n+1){
+	clear: left;
+}
+
+.hm-press-sec-cntlr{
+	background: #E3A155;
+	padding: 45px 0 10px;
+}
+.press-sec-fea-img{
+	float: left;
+	width: 50%;
+	text-align: right;
+}
+.press-sec-des{
+	float: left;
+	width: 50%;
+	color: #fff;
+	padding: 15px 0 0 40px;
+}
+.press-sec-des-inr{
+	max-width: 450px;
+	width: 100%;
+}
+
+.press-sec-des-title{
+	color: #fff;
+	display: block;
+	font-size: 35px;
+	line-height: 40px;
+	font-weight: 700;
+	font-style: italic;
+	font-family: 'Playfair Display', serif;
+	margin: 0 0 15px 0;
+}
+.press-sec-des-sub-title{
+	font-size: 14px;
+	line-height: 18px;
+	color: #fff;
+	display: block;
+	text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin: 0 0 32px 0;
+}
+.press-sec-des p{
+	font-size: 20px;
+	line-height: 26px;
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	margin-bottom: 60px;
+}
+
+a.white-transparent-btn{
+	border: 1px solid #fff;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #ffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.hm-our-journal-sec-cntlr{
+	background: #F5F4F2;
+	padding: ;
 }

@@ -1,0 +1,112 @@
+
+
+
+.ylw-blog-grid-sec{
+	padding-top: 35px;
+	padding-bottom: 120px;
+}
+.ylw-blog-grid-sec-inr ul{
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.ylw-blog-grid-sec-inr ul li{
+	float: left;
+	width: 33.3333%;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 80px;
+}
+.ylw-blog-grid-sec-inr ul li:nth-child(3n+1){
+	clear: left;
+}
+.ylw-blog-grid-sec-inr ul li:last-child,
+.ylw-blog-grid-sec-inr ul li:nth-child(10),
+.ylw-blog-grid-sec-inr ul li:nth-child(11){
+	padding-bottom: 40px;
+}
+
+.ylw-blog-grid-item-img{
+	position: relative;
+	overflow: hidden;
+}
+.ylw-blog-grid-item:hover .ylw-blog-grid-item-img img{
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+}
+.ylw-blog-grid-item:hover .ylw-blog-grid-item-des-inr:before{
+	background: #FFC627;
+}
+
+.ylw-blog-grid-item-des{
+	padding-left: 15px;
+}
+.ylw-blog-grid-item-des-inr{
+	padding: 30px 5px 3px 15px;
+	position: relative;
+}
+.ylw-blog-grid-item-des-inr:before{
+	content: "";
+	height: 197px;
+	width: 1px;
+	position: absolute;
+	background: #808080;
+	top: -30px;
+	left: 0;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+.ylw-blog-grid-item-des-inr span{
+	display: block;
+	font-size: 11px;
+	line-height: 14px;
+	margin-bottom: 15px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.ylw-blog-grid-item-des-title{
+	display: block;
+	font-size: 16px;
+	line-height: 1;
+	margin-bottom: 15px;
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.ylw-blog-grid-item-des-inr p{
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+}
+
+
+
+.ylw-blog-grid-load{
+	text-align: center;
+}
+.ylw-blog-grid-load a{
+	display: inline-block;
+	height: 70px;
+	width: 70px;
+	border: 2px solid #FFC627;
+	border-radius: 100%;
+	position: relative;
+}
+.ylw-blog-grid-load a img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.ylw-blog-grid-load a:hover img{
+	top: 60%;
+}
+
+.ylw-blog-grid-load span{
+	display: block;
+	font-size: 11px;
+	color: #3E3935;
+	line-height: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 5px;
+}
