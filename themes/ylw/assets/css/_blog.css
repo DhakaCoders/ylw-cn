@@ -2,6 +2,7 @@
 
 
 .ylw-blog-grid-sec{
+	padding-top: 35px;
 	padding-bottom: 120px;
 }
 .ylw-blog-grid-sec-inr ul{
@@ -34,7 +35,7 @@
 	-ms-transform: scale(1.1);
 }
 .ylw-blog-grid-item:hover .ylw-blog-grid-item-des-inr:before{
-	background: #000;
+	background: #FFC627;
 }
 
 .ylw-blog-grid-item-des{
