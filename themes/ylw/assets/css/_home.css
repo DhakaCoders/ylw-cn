@@ -1,4 +1,18 @@
 
+.hm-children-clothes-sec-hdr{
+	padding: 40px 0;
+	text-align: center;
+}
+.hmccs-hdr-title,
+.hnash-title,
+.hausc-title{
+	display: block;
+	font-weight: 700;
+	font-style: italic;
+	margin: 0;
+	font-size: 29px;
+	color: #3E3935;
+}
 .hm-children-clothes-sec-grds ul{
 	margin: 0 -13px;
 }
@@ -23,6 +37,7 @@
 	align-items: center;
 	justify-content: center;
 	z-index: 2;
+	text-align: center;
 }
 .hm-children-clothes-fea-box-img{
 
@@ -45,4 +60,195 @@
 	font-family: 'Playfair Display', serif;
 	font-style: italic;
 	margin: 0;
+}
+
+.children-option{
+	display: none;
+}
+
+.hm-about-us-section{
+	background: #FFC627;
+	color: #3E3935;
+	padding: 115px 0 110px;
+}
+.hm-about-us-sec-cntlr{
+	max-width: 714px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+.hm-about-us-sec-col-1{
+	margin-right: 40px;
+	max-width: 176px;
+	width: 100%;
+	padding-top: 15px;
+}
+.hausc-title{
+	margin-bottom: 15px;	
+}
+
+.hausc-title-2{
+	display: block;
+	margin: 0;
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.hm-about-us-sec-col-2 p{
+	font-size: 23px;
+	line-height: 29px;
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	margin-bottom: 25px;
+}
+a.transparent-btn{
+	border: 1px solid #3E3935;
+	width: 177px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 11px;
+	line-height: 100%;
+	text-transform: uppercase;
+	color: #3E3935;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.hm-new-arrivals-sec{
+	padding: 80px 0 0 0;
+}
+.hm-new-arrivals-sec-hdr{
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.fl-prv-nxt{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.fl-prev,
+.fl-next{
+	width: 41px;
+	height: 20px;
+	margin: 0 20px;
+	cursor: pointer;
+}
+.fl-prev{
+	background: url(../images/prev-gray.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+}
+.fl-next{
+	background: url(../images/next-gray.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+}
+.hm-new-arrivals-sec-hdr .hnash-title{
+	margin-bottom: 17px;
+}
+
+.hmNewAarrivalsSlider{
+	overflow: hidden;
+	margin: 0 -9px;
+}
+.hm-new-arrivals-item{
+	padding: 0 9px;
+}
+.hm-new-arrivals-fea-img{
+	position: relative;
+}
+
+.product-overlay-icons{
+	position: absolute;
+	right: 7px;
+	bottom: 0;
+	width: 40px;
+	opacity: 0;
+}
+.hm-new-arrivals-item-inr:hover .product-overlay-icons{
+	bottom: 10px;
+	opacity: 1;
+}
+.product-overlay-icons a{
+	width: 40px;
+	height: 40px;
+	background: #FFC627;
+	color: #3E3935;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	margin-top: 7px;
+	border-radius: 100% 100%;
+}
+.hm-new-arrivals-item-des{
+	padding: 20px 15px 20px 0;
+}
+.product-overlay-icon-search i{
+	font-weight: 600;
+}
+.hnaid-variable-title{
+	display: block;
+	margin: 0 0 5px 0;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.hnaid-title{
+	display: block;
+	font-size: 12px;
+	line-height: 16px;
+	margin: 0 0 15px 0;
+	font-weight: 700;
+	color: #3E3935;
+	font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+.hnaid-title a{
+	color: inherit;
+}
+.grd-box-pirece{
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 700;
+	color: #3E3935;
+}
+
+.gbp-old-price{
+	margin-right: 5px;
+}
+.gbp-old-price del{
+	text-decoration: line-through;
+	font-weight: 500;
+	padding-right: 5px;
+	display: inline-block;
+	vertical-align: baseline;
+}
+.hm-new-arrivals-sec .gray-transparent-btn{
+	padding-top: 10px;
+}
+.gray-transparent-btn a{
+    border: 1px solid #CCCCCC;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #3E3935;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-left: auto;
+    margin-right: auto;
 }
