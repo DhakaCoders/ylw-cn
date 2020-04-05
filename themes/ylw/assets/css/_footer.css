@@ -157,6 +157,9 @@
 .ftr-top-gallery-item{
   position: relative;
 }
+.ftr-tp-gallery-img img{
+  width: 100%;
+}
 .ftr-tp-gallery-dsc-hover{
   position: absolute;
   left: 0;

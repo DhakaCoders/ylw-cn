@@ -151,6 +151,78 @@ $('.faq-accordion-tab-row').removeClass('remove-border');
         return false;
 });
 
+/*
+----------------------
+ Tabs Js
+----------------------
+*/
+
+$('.ylw-tabs:first').show();
+$('.tabs-menu li:first').addClass('active');
+
+$('.ylw-lb-tabs-menu li').on('click',function(){
+  index = $(this).index();
+  $('.ylw-lb-tabs-menu li').removeClass('active');
+  $(this).addClass('active');
+  $('.ylw-tabs').hide();
+  $('.ylw-tabs').eq(index).show();
+});
+
+
+$('.ylw-about-counter').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 8000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+
+
+
+/*
+-----------------------
+Start Contact Google Map ->> 
+-----------------------
+*/
+if( $('#googlemap').length ){
+    var latitude = $('#googlemap').data('latitude');
+    var longitude = $('#googlemap').data('longitude');
+
+    var myCenter= new google.maps.LatLng(latitude,  longitude);
+    var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+    function initialize(){
+        var mapProp = {
+          center:myCenter,
+
+          mapTypeControl:false,
+          scrollwheel: false,
+
+          zoomControl: false,
+          disableDefaultUI: true,
+          zoom:17,
+          streetViewControl: false,
+          rotateControl: false,
+          mapTypeId:google.maps.MapTypeId.ROADMAP,
+          styles : CustomMapStyles
+      };
+      var map= new google.maps.Map(document.getElementById('googlemap'),mapProp);
+
+      var marker= new google.maps.Marker({
+        position:myCenter,
+        icon:'assets/images/map-marker.png'
+        });
+      marker.setMap(map);
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+}
+
+
+
 
 
 

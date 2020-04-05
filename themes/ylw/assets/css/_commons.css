@@ -99,6 +99,7 @@ Containers
 }
 .container-md{
 	max-width: 1180px;
+	width: 100%;
 }
 
 .container-sm{

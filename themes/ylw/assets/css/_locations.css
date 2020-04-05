@@ -1,0 +1,203 @@
+/*
+--------------------
+ylw-location-sec-wrp
+--------------------
+*/
+.ylw-location-sec-wrp{
+	padding-top: 45px;
+}
+.ylw-location-head{
+	max-width: 615px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0 20px 55px;
+}
+.ylw-location-head-title{
+	font-size: 29px;
+	line-height: 31px;
+	color: #3E3935;
+	font-weight: 400;
+	margin-bottom: 35px;
+	font-family: 'Playfair Display', serif;
+}
+.ylw-location-head p{
+	font-size: 16px;
+	line-height: 26px;
+	color: #000;
+	font-weight: 400;
+	font-family: 'Playfair Display', serif;
+}
+/*
+----------------------
+ylw-location-grid-wrp
+----------------------
+*/
+.ylw-location-grid-wrp ul li{
+	padding: 0;
+	padding-bottom: 135px;
+}
+.ylw-location-grid-wrp ul li:before{
+	content: none;
+}
+.ylw-location-grid-lft{
+	width: 60%;
+	float: left;
+}
+.ylw-location-grid-rgt{
+	width: 40%;
+	float: right;
+}
+.ylw-location-grid-wrp ul li:nth-child(2n+2) .ylw-location-grid-inr .ylw-location-grid-lft{
+	float: right;
+}
+.ylw-location-grid-wrp ul li:nth-child(2n+2) .ylw-location-grid-inr .ylw-location-grid-map{
+	margin-left: 0;
+	margin-right: -60px;
+}
+.ylw-location-grid-img{
+	background-size: cover !important;
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+	height: 500px !important;
+	position: relative;
+}
+.ylw-location-grid-img a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #3E3935;
+	background:#FFC627;
+	border:2px solid#FFC627;
+	padding: 20px 40px;
+	position: absolute;
+	right: 90px;
+	bottom: 30px;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.ylw-location-grid-img a:hover{
+	color: #FFC627;
+	border-color:#FFC627;
+	background:transparent; 
+}
+.ylw-location-grid-dsc{
+	padding: 15px 70px 40px 70px;
+}
+.ylw-location-grid-title{
+	font-size: 29px;
+	line-height: 31px;
+	color: #3E3935;
+	font-weight: 400;
+	margin-bottom: 20px;
+	display: block;
+	font-family: 'Playfair Display', serif;
+}
+.ylw-location-grid-dsc a{
+	display: block;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 14px;
+	color: #3E3935;
+	padding-bottom: 15px;
+	padding-left: 22px;
+	position: relative;
+}
+.ylw-location-grid-dsc a i{
+	position: absolute;
+	left: 0;
+	top: 2px;
+}
+.ylw-location-grid-dsc a:last-child{
+	font-weight: 700;
+}
+.ylw-location-grid-dsc a:last-child i {
+    transform: rotate(-270deg);
+    -ms-transform: rotate(-270deg);
+    -webkit-transform: rotate(-270deg);
+}
+.ylw-location-grid-dsc a:hover{
+	color: #ffc627;
+}
+#googlemap{
+	height: 340px;
+}
+.ylw-location-grid-map{
+	padding: 15px 15px;
+	background:#fff;
+	margin-left: -60px;
+	position: relative;
+	z-index: 1;
+}
+
+/*
+-----------------------
+ylw-shop-list-address-sec-wrp
+-----------------------
+*/
+.ylw-shop-list-address-sec-wrp{
+	padding-top: 40px;
+	padding-bottom: 95px;
+}
+.ylw-shop-list-address-wrp,
+.ylw-shop-list-address-block{
+	max-width: 1115px;
+	width: 100%;
+	margin: 0 auto;
+}
+.ylw-shop-list-address-head{
+	text-align: center;
+	font-size: 16px;
+	line-height: 18px;
+	font-family: 'Playfair Display', serif;
+	padding-bottom: 60px;
+}
+.ylw-shop-list-address-title{
+	font-size: 29px;
+	line-height: 31px;
+	color: #3E3935;
+	font-weight: 400;
+	font-family: 'Playfair Display', serif;
+	display: block;
+	margin-bottom: 20px;
+}
+.ylw-shop-list-address-wrp ul li{
+	width: 25%;
+	float: left;
+	padding: 0;
+	padding-right: 65px;
+	padding-bottom: 90px;
+}
+.ylw-shop-list-address-wrp ul li:before{
+	content: none;
+}
+.ylw-shop-list-address-dsc span{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 17px;
+	line-height: 19px;
+	color: #3E3935;
+	font-weight: 400;
+	padding-bottom: 17px;
+	font-family: 'Playfair Display', serif;
+}
+.ylw-shop-list-address-dsc a{
+	display: block;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: 400;
+	color: #3E3935;
+	padding-bottom: 15px;
+}
+.ylw-shop-list-address-dsc a:last-child{
+	font-weight: 700;
+}
+.ylw-shop-list-address-dsc a:hover{
+	color: #ffc627;
+}
