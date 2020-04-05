@@ -1,0 +1,92 @@
+/*
+---------------------
+ylw-customer-faq-sec-wrp
+---------------------
+*/
+.ylw-customer-faq-sec-wrp{
+	padding-top: 45px;
+	padding-bottom: 195px;
+}
+.faq-product-dts-img{
+	width: 58%;
+	float: left;
+}
+.faq-product-dts-img img{
+	width: 100%;
+}
+.faq-product-dsc {
+    width: 42%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+.faq-product-dsc span{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 13px;
+	line-height: 15px;
+	color: #000;
+	font-weight: 700;
+	padding: 12px 0 5px;
+}
+.faq-product-dsc > p{
+	font-size: 13px !important;
+	line-height: 20px !important;
+	margin-bottom: 17px !important;
+}
+
+
+.faq-accordion-title{
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 400;
+    padding-top: 45px;
+    padding-bottom: 30px;
+    margin: 0;
+    border-bottom: 1px solid #ccd1d4;
+    position: relative;
+    cursor: pointer;
+}
+.faq-accordion-title.faq-accordion-active {
+    border-bottom: none!important;
+    border-radius: 5px 5px 0 0;
+}
+.faq-accordion-title:after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	background: url(../images/plus-icon.png);
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.faq-accordion-title.faq-accordion-active:after{
+	background: url(../images/minus-icon.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.faq-accordion-title,
+.faq-accordion-des{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.faq-accordion-des,
+.faq-accordion-title.faq-accordion-active{
+	background: #f5f4f2;
+}
+.faq-accordion-des {
+    padding-bottom: 42px;
+    padding-top: 20px;
+    background: #f5f4f2;
+    border-radius: 0px 0 5px 5px;
+}
+.faq-accordion-des div p{
+	font-size: 14px;
+	line-height: 26px;
+	margin-bottom: 30px;
+}

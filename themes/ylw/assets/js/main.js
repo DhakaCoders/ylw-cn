@@ -139,12 +139,73 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 /*End of Milon*/
-
+var allPanels = $('.faq-accordion-des').hide();
+$('.faq-accordion-tab-row').removeClass('remove-border');
+  $('.faq-accordion-title').click(function() {
+        allPanels.slideUp();
+        $('.faq-accordion-title').removeClass('faq-accordion-active');
+        $('.faq-accordion-tab-row').removeClass('remove-border');
+        $(this).next().slideDown();
+        $(this).addClass('faq-accordion-active');
+        $(this).parent().next().addClass('remove-border');
+        return false;
+});
 
 
 
 
 /*End of Rannojit*/
+if( $('.hmNewAarrivalsSlider').length ){
+    $('.hmNewAarrivalsSlider').slick({
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      prevArrow: $('.hm-new-arrivals-sec .fl-prev'),
+      nextArrow: $('.hm-new-arrivals-sec .fl-next'),
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+}
+
+
+if( $('.giftIdeasSecFeaImgSlider').length ){
+    $('.giftIdeasSecFeaImgSlider').slick({
+      dots: true,
+      infinite: false,
+      arrows: false,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    });
+}
 
 
 })(jQuery);

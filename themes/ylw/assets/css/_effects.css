@@ -1,12 +1,13 @@
 /**
 All Transitions
 */
-a,input,img,textarea,button,svg{
+a,input,img,textarea,button,svg,
+.product-overlay-icons{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
-.scale{
+.scale,.fl-product-item-fea-img:hover a img{
 	transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
@@ -24,7 +25,6 @@ a:hover{
 }
 nav.main-nav ul li:hover > a,
 nav.main-nav ul li.current-menu-item a{
-	background:#004e37;
-	color:#fff;
+
 }
 
