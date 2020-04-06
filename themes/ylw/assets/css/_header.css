@@ -40,12 +40,13 @@ nav.main-nav > ul{
 
 }
 nav.main-nav > ul > li{
-
+	padding: 0 22px;
 }
 nav.main-nav > ul > li > a{
 	color: inherit;
 	text-transform: uppercase;
 	font-size: 12px;
+	font-weight: 500;
 }
 .has-banner nav.main-nav > ul > li > a{
 	color: #fff;
@@ -91,4 +92,30 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 	background: #FFC627;
 }
 
-.hdr-account
+.hdr-search-btn{
+	color: #fff;
+}
+.hdr-rgt{
+	margin-left: auto;
+}
+.hdr-rgt-items{
+	display: flex;
+	align-items: center;
+}
+.hdr-account{
+	color: #fff;
+	margin-right: 25px;
+}
+.hdr-search-btn{
+	margin-right: 30px;
+}
+.hdr-mini-cart-btn{
+	margin-right: 16px;
+}
+.hdr-mini-cart-btn a{
+	color: #fff;
+}
+.hdr-mid{
+	margin-left: auto;
+	margin-right: auto;
+}

@@ -278,6 +278,16 @@ if( $('.giftIdeasSecFeaImgSlider').length ){
       slidesToScroll: 1,
     });
 }
+if( $('.mainBnrSlider').length ){
+    $('.mainBnrSlider').slick({
+      dots: true,
+      infinite: false,
+      arrows: false,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    });
+}
 
 
 })(jQuery);
