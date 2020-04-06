@@ -286,5 +286,24 @@ if( $('.mainBnrSlider').length ){
     });
 }
 
+$('.hdr-search-btn').on('click', function(){
+  $('#header-popups').addClass('opacity-1');
+  $('body').css('overflow','hidden');
+});
+
+$('.popup-cross').on('click', function(){
+  $('#header-popups').removeClass('opacity-1');
+  $('body').css('overflow','initial');
+});
+
+
+$('#status1').fadeOut(); // will first fade out the loading animation 
+$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+$('body').delay(350).css({'overflow':'visible'});
+
+$('.hdr-account span').on('click', function(){
+  $('.hdr-account ul').slideToggle(300);
+});
+
 
 })(jQuery);
