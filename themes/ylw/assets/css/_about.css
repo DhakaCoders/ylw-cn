@@ -39,8 +39,9 @@ ylw-about-dsc-sec-wrp
 	color: #3E3935;
 	font-weight: 400;
 	font-family: 'Playfair Display', serif;
-	margin-bottom: 45px;
+	margin-bottom: 55px;
 	text-align: center;
+	display: block;
 }
 .ylw-about-counter-inr{
 	max-width: 780px;
@@ -156,6 +157,6 @@ ylw-about-dsc-sec-wrp
 	line-height: 31px;
 	color: #3E3935;
 	font-weight: 400;
-	margin-bottom: 38px;
+	margin-bottom: 35px;
 	font-family: 'Playfair Display', serif;
 }

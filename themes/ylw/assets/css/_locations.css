@@ -4,14 +4,14 @@ ylw-location-sec-wrp
 --------------------
 */
 .ylw-location-sec-wrp{
-	padding-top: 45px;
+	padding-top: 40px;
 }
 .ylw-location-head{
 	max-width: 615px;
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;
-	padding: 0 20px 55px;
+	padding: 0 20px 75px;
 }
 .ylw-location-head-title{
 	font-size: 29px;
@@ -20,6 +20,7 @@ ylw-location-sec-wrp
 	font-weight: 400;
 	margin-bottom: 35px;
 	font-family: 'Playfair Display', serif;
+	display: block;
 }
 .ylw-location-head p{
 	font-size: 16px;
@@ -87,7 +88,7 @@ ylw-location-grid-wrp
 	background:transparent; 
 }
 .ylw-location-grid-dsc{
-	padding: 15px 70px 40px 70px;
+	padding: 18px 70px 40px 70px;
 }
 .ylw-location-grid-title{
 	font-size: 29px;
@@ -136,6 +137,9 @@ ylw-location-grid-wrp
 	margin-left: -60px;
 	position: relative;
 	z-index: 1;
+	-webkit-box-shadow: 0 5px 12px 0 rgba(180,179,179,1);
+    -moz-box-shadow: 0 5px 12px 0 rgba(180,179,179,1);
+    box-shadow: 0 5px 12px 0 rgba(180,179,179,1);
 }
 
 /*

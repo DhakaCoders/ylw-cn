@@ -30,6 +30,7 @@
 }
 .ftr-logo{
   text-align: center;
+  padding-top: 5px;
 }
 .ftr-logo a{
   display: inline-block;
@@ -49,7 +50,7 @@
   line-height: 14px;
   text-transform: uppercase;
   color: #3E3935;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
 }
@@ -60,7 +61,7 @@
 }
 .ftr-col ul li{ 
   padding: 0;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
   font-weight: 400;
   font-size: 11px;
   line-height: 13px;
@@ -79,7 +80,7 @@
 
 }
 .ftr-socail-icon{
-  padding-top: 22px;
+  padding-top: 25px;
 }
 .ftr-socail-icon h6{
   margin: 0;
@@ -115,7 +116,7 @@
   line-height: 14px;
   color: #3E3935;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 .ftr-col-5 a{
   display: inline-block;
@@ -127,7 +128,7 @@
   font-weight: 700;
   text-transform: uppercase;
   border:1px solid #cccccc;
-  padding: 20px 15px;
+  padding: 18px 15px;
 }
 .ftr-col-5 a:hover{
   border-color: #ffc627;
@@ -192,7 +193,7 @@
 }
 .ftr-tp-gallery-dsc-hover i{
   display: block;
-  padding-bottom: 8px;
+  padding-bottom: 15px;
 }
 .ftr-tp-gallery-dsc-hover em{
   display: inline-block;
