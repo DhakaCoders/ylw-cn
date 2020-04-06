@@ -31,14 +31,13 @@
 
 </head>
 <body>
-<header class="header has-banner">
+<header class="header page-hdr">
   <div class="header-inr">
     <div class="header-cntlr clearfix">
       <div class="hdr-lft">
-        <!-- <div class="logo">
+        <div class="logo">
           <a class="no-bnr-logo" href="#"><img src="assets/images/logo-black.png"></a>
-          <a class="has-bnr-logo" href="#"><img src="assets/images/logo-white.png"></a>
-        </div> -->
+        </div>
       </div>
       <div class="hdr-mid">
         <nav class="main-nav">
@@ -54,16 +53,23 @@
       <div class="hdr-rgt">
         <div class="hdr-rgt-items">
           <div class="hdr-search-btn">
-            <i><img src="assets/images/search-icon-white.png"></i>
+            <i><img src="assets/images/search-icon-dark.png"></i>
           </div>
           <div class="hdr-mini-cart-btn">
             <a href="#">
-              <i><img src="assets/images/cart-icon-white.png"></i>
+              <i><img src="assets/images/cart-icon-dark.png"></i>
               <span>3</span>
             </a>
           </div>
           <div class="hdr-account">
             <span>Account</span>
+            <ul class="reset-list clearfix">
+              <li><a href="#">My Profile</a></li>
+              <li>
+                <i class="fas fa-sign-out-alt"></i>
+                <a href="#">Log out</a>
+              </li>
+            </ul>
           </div>
           <div class="hdr-humbergur-btn">
             <span></span>
@@ -75,28 +81,52 @@
     </div>
   </div>
 </header>
-
-<section class="main-banner">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="main-banner-cntlr mainBnrSlider">
-          <div class="mainBnrSlider" id="mainBnrSlider">
-            <div class="mainBnrSlideItem">
-              <img src="assets/images/main-bnr-slide-img-01.jpg">
-            </div>
-            <div class="mainBnrSlideItem">
-              <img src="assets/images/main-bnr-slide-img-01.jpg">
-            </div>
-            <div class="mainBnrSlideItem">
-              <img src="assets/images/main-bnr-slide-img-01.jpg">
-            </div>
-          </div>
+<section id="header-popups" class="header-popups">
+  <div class="hdrpopups-inr">
+    <div class="pop-up-nav clearfix">
+        <div class="popup-cross">
+          <span></span>
+          <span></span>
         </div>
-      </div>
-    </div>
-  </div>    
-</section>
+    </div>  
+    <div class="header-popup-search clearfix">
+      <div class="search-form">
+          <form action="" class="form">
+            <div class="form-group">
+              <input id="search" class="form-input" type="text" />
+              <label class="form-label placeholder" for="search">Search for a product</span></label>
+              <input class="search-submit-btn" type="submit" value="">
+            </div>
+          </form>
+      </div>       
+    </div>  
+  </div>
+</section><!-- end of header-search -->
+
+
+<section id="header-popups" class="header-popups">
+  <div class="hdrpopups-inr">
+    <div class="pop-up-nav clearfix">
+        <div class="popup-cross">
+          <span></span>
+          <span></span>
+        </div>
+    </div>  
+    <div class="header-popup-search clearfix">
+      <div class="search-form">
+          <form action="" class="form">
+            <div class="form-group">
+              <input id="search" class="form-input" type="text" />
+              <label class="form-label placeholder" for="search">Search for a product</span></label>
+              <input class="search-submit-btn" type="submit" value="">
+            </div>
+          </form>
+      </div>       
+    </div>  
+  </div>
+</section><!-- end of header-search -->
+
+
 
 
 <section class="product-list-page-con">
@@ -128,9 +158,163 @@
             </div>
             <div class="fl-my-slect-items">
               <ul class="reset-list">
-                <li><label><a href="#">Jackets</a></label> <span><i class="fas fa-times"></i></span></li>
-                <li><label><a href="#">Boy</a></label> <span><i class="fas fa-times"></i></span></li>
+                <li><label>Jackets</label> <span><img src="assets/images/close-sm-icon.png"></span></li>
+                <li><label>Boy</label> <span><img src="assets/images/close-sm-icon.png"></span></li>
               </ul>
+            </div>
+          </div>
+          <div class="fl-wedget">
+            <h6  class="fl-wedget-title">Category</h6>
+            <div class="clearfix">
+              <div class="filter-check-row clearfix">
+                <input type="checkbox" id="Coats" name="Coats" value="Coats">
+                <span class="checkmark"></span> 
+                <label for="Coats">Coats</label> 
+                <span class="price-value">(51)</span>
+              </div>
+              <div class="filter-check-row clearfix">
+                <input type="checkbox" id="Tops" name="Tops" value="Tops">
+                <span class="checkmark"></span> 
+                <label for="Tops">Tops</label> 
+                <span class="price-value">(51)</span>
+              </div>
+              <div class="filter-check-row clearfix">
+                <input type="checkbox" id="Gloves" name="Gloves" value="Gloves">
+                <span class="checkmark"></span> 
+                <label for="Gloves">Gloves</label> 
+                <span class="price-value">(51)</span>
+              </div>
+              <div class="filter-check-row clearfix">
+                <input type="checkbox" id="Jackets" name="Jackets" value="Jackets">
+                <span class="checkmark"></span> 
+                <label for="Jackets">Jackets</label> 
+                <span class="price-value">(51)</span>
+              </div>
+              <div class="filter-check-row clearfix">
+                <input type="checkbox" id="Jeans" name="Jeans" value="Jeans">
+                <span class="checkmark"></span> 
+                <label for="Jeans">Jeans</label> 
+                <span class="price-value">(51)</span>
+              </div>
+              <div class="filter-check-row clearfix">
+                <input type="checkbox" id="JoggingBottoms" name="Jogging Bottoms" value="Jogging Bottoms">
+                <span class="checkmark"></span> 
+                <label for="JoggingBottoms">Jogging Bottoms</label> 
+                <span class="price-value">(51)</span>
+              </div>
+              <div class="filter-check-row clearfix">
+                <input type="checkbox" id="Jumpers" name="Jumpers" value="Jumpers">
+                <span class="checkmark"></span> 
+                <label for="Jumpers">Jumpers</label> 
+                <span class="price-value">(51)</span>
+              </div>
+            </div>
+          </div>
+          <div class="fl-wedget">
+            <h6  class="fl-wedget-title">Sex</h6>
+            <div class="clearfix">
+              <div class="filter-check-row clearfix">
+                <input type="checkbox" id="Boy" name="Boy" value="Boy">
+                <span class="checkmark"></span> 
+                <label for="Boy">Boy</label> 
+                <span class="price-value">(155)</span>
+              </div>
+              <div class="filter-check-row clearfix">
+                <input type="checkbox" id="Girl" name="Girl" value="Girl">
+                <span class="checkmark"></span> 
+                <label for="Girl">Girl</label> 
+                <span class="price-value">(100)</span>
+              </div>
+            </div>
+          </div>
+          <div class="fl-wedget">
+            <h6  class="fl-wedget-title">Size</h6>
+            <div class="clearfix">
+              <div class="filter-check-row clearfix">
+                <input type="checkbox" id="3M" name="3M" value="3M">
+                <span class="checkmark"></span> 
+                <label for="3M">3 M</label> 
+                <span class="price-value">(1)</span>
+              </div>
+              <div class="filter-check-row clearfix">
+                <input type="checkbox" id="6M" name="6M" value="6M">
+                <span class="checkmark"></span> 
+                <label for="6M">6 M</label> 
+                <span class="price-value">(1)</span>
+              </div>
+              <div class="filter-check-row clearfix">
+                <input type="checkbox" id="9M" name="9M" value="9M">
+                <span class="checkmark"></span> 
+                <label for="9M">9 M</label> 
+                <span class="price-value">(3)</span>
+              </div>
+              <div class="filter-check-row clearfix">
+                <input type="checkbox" id="12M" name="12M" value="12M">
+                <span class="checkmark"></span> 
+                <label for="12M">12 M</label> 
+                <span class="price-value">(1)</span>
+              </div>
+              <div class="filter-check-row clearfix">
+                <input type="checkbox" id="18M" name="18M" value="18M">
+                <span class="checkmark"></span> 
+                <label for="18M">18 M</label> 
+                <span class="price-value">(6)</span>
+              </div>
+            </div>
+          </div>
+          <div class="fl-wedget">
+            <h6  class="fl-wedget-title">Color</h6>
+            <div class="clearfix filter-check-row-2-cntlr">
+              <div class="filter-check-row-2 clearfix">
+                <input type="checkbox" id="color-1" name="color-1" value="color-1">
+                <span class="checkmark-2"><i style="background: #434656"></i></span> 
+              </div>
+              <div class="filter-check-row-2 clearfix">
+                <input type="checkbox" id="color-2" name="color-2" value="color-2">
+                <span class="checkmark-2"><i style="background: #FFC627"></i></span> 
+              </div>
+              <div class="filter-check-row-2 clearfix">
+                <input type="checkbox" id="color-3" name="color-3" value="color-3">
+                <span class="checkmark-2"><i style="background: #66735B"></i></span> 
+              </div>
+              <div class="filter-check-row-2 clearfix">
+                <input type="checkbox" id="color-4" name="color-4" value="color-4">
+                <span class="checkmark-2"><i style="background: #B6B1BA"></i></span> 
+              </div>
+            </div>
+          </div>
+          <div class="fl-wedget">
+            <h6  class="fl-wedget-title">Material</h6>
+            <div class="clearfix">
+              <div class="filter-check-row clearfix">
+                <input type="checkbox" id="Boy" name="Boy" value="Boy">
+                <span class="checkmark"></span> 
+                <label for="Boy">Boy</label> 
+                <span class="price-value">(155)</span>
+              </div>
+              <div class="filter-check-row clearfix">
+                <input type="checkbox" id="Girl" name="Girl" value="Girl">
+                <span class="checkmark"></span> 
+                <label for="Girl">Girl</label> 
+                <span class="price-value">(100)</span>
+              </div>
+            </div>
+          </div>
+          <div class="fl-wedget">
+            <h6  class="fl-wedget-title">Collection</h6>
+            <div class="clearfix">
+              <div class="filter-check-row clearfix">
+                <input type="checkbox" id="Boy" name="Boy" value="Boy">
+                <span class="checkmark"></span> 
+                <label for="Boy">Boy</label> 
+                <span class="price-value">(155)</span>
+              </div>
+              <div class="filter-check-row clearfix">
+                <input type="checkbox" id="Girl" name="Girl" value="Girl">
+                <span class="checkmark"></span> 
+                <label for="Girl">Girl</label> 
+                <span class="price-value">(100)</span>
+              </div>
             </div>
           </div>
         </div>
@@ -154,10 +338,91 @@
                     </div>
                   </div>
                   <div class="fl-product-item-des mHc">
+                    <strong class="fl-product-variable-title">NEW</strong>
+                    <h6 class="fl-product-title"><a href="#">Science Hoodie</a></h6>
+                    <div class="fl-product-box-prices">
+                      <div class="fl-product-regular-price">€ 54.50</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="fl-product-item offer">
+                  <div class="fl-product-item-fea-img">
+                    <a href="#">
+                      <img src="assets/images/new-arrivals-fea-img-01.jpg">
+                    </a>
+                    <div class="product-overlay-icons">
+                      <a class="product-overlay-icon-heart" href="#"> <i class="far fa-heart"></i></a>
+                      <a class="product-overlay-icon-search" href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                  </div>
+                  <div class="fl-product-item-des mHc">
                     <strong class="fl-product-variable-title">offer</strong>
                     <h6 class="fl-product-title"><a href="#">Science Hoodie</a></h6>
                     <div class="fl-product-box-prices">
                       <div class="fl-product-old-price"><del>€ 67 </del></div>
+                      <div class="fl-product-regular-price">€ 54.50</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="fl-product-item offer">
+                  <div class="fl-product-item-fea-img">
+                    <a href="#">
+                      <img src="assets/images/new-arrivals-fea-img-01.jpg">
+                    </a>
+                    <div class="product-overlay-icons">
+                      <a class="product-overlay-icon-heart" href="#"> <i class="far fa-heart"></i></a>
+                      <a class="product-overlay-icon-search" href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                  </div>
+                  <div class="fl-product-item-des mHc">
+                    <strong class="fl-product-variable-title">out of stock</strong>
+                    <h6 class="fl-product-title"><a href="#">Science Hoodie</a></h6>
+                    <div class="fl-product-box-prices">
+                      <div class="fl-product-old-price"><del>€ 67 </del></div>
+                      <div class="fl-product-regular-price">€ 54.50</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="fl-product-item">
+                  <div class="fl-product-item-fea-img">
+                    <a href="#">
+                      <img src="assets/images/new-arrivals-fea-img-01.jpg">
+                    </a>
+                    <div class="product-overlay-icons">
+                      <a class="product-overlay-icon-heart" href="#"> <i class="far fa-heart"></i></a>
+                      <a class="product-overlay-icon-search" href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                  </div>
+                  <div class="fl-product-item-des mHc">
+                    <strong class="fl-product-variable-title">out of stock</strong>
+                    <h6 class="fl-product-title"><a href="#">Science Hoodie</a></h6>
+                    <div class="fl-product-box-prices">
+                      <div class="fl-product-regular-price">€ 54.50</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="fl-product-item">
+                  <div class="fl-product-item-fea-img">
+                    <a href="#">
+                      <img src="assets/images/new-arrivals-fea-img-01.jpg">
+                    </a>
+                    <div class="product-overlay-icons">
+                      <a class="product-overlay-icon-heart" href="#"> <i class="far fa-heart"></i></a>
+                      <a class="product-overlay-icon-search" href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                  </div>
+                  <div class="fl-product-item-des mHc">
+                    <strong class="fl-product-variable-title">NEW</strong>
+                    <h6 class="fl-product-title"><a href="#">Science Hoodie</a></h6>
+                    <div class="fl-product-box-prices">
                       <div class="fl-product-regular-price">€ 54.50</div>
                     </div>
                   </div>
@@ -196,17 +461,16 @@
                     </div>
                   </div>
                   <div class="fl-product-item-des mHc">
-                    <strong class="fl-product-variable-title">offer</strong>
+                    <strong class="fl-product-variable-title">NEW</strong>
                     <h6 class="fl-product-title"><a href="#">Science Hoodie</a></h6>
                     <div class="fl-product-box-prices">
-                      <div class="fl-product-old-price"><del>€ 67 </del></div>
                       <div class="fl-product-regular-price">€ 54.50</div>
                     </div>
                   </div>
                 </div>
               </li>
               <li>
-                <div class="fl-product-item">
+                <div class="fl-product-item offer">
                   <div class="fl-product-item-fea-img">
                     <a href="#">
                       <img src="assets/images/new-arrivals-fea-img-01.jpg">
@@ -227,6 +491,27 @@
                 </div>
               </li>
               <li>
+                <div class="fl-product-item offer">
+                  <div class="fl-product-item-fea-img">
+                    <a href="#">
+                      <img src="assets/images/new-arrivals-fea-img-01.jpg">
+                    </a>
+                    <div class="product-overlay-icons">
+                      <a class="product-overlay-icon-heart" href="#"> <i class="far fa-heart"></i></a>
+                      <a class="product-overlay-icon-search" href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                  </div>
+                  <div class="fl-product-item-des mHc">
+                    <strong class="fl-product-variable-title">out of stock</strong>
+                    <h6 class="fl-product-title"><a href="#">Science Hoodie</a></h6>
+                    <div class="fl-product-box-prices">
+                      <div class="fl-product-old-price"><del>€ 67 </del></div>
+                      <div class="fl-product-regular-price">€ 54.50</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
                 <div class="fl-product-item">
                   <div class="fl-product-item-fea-img">
                     <a href="#">
@@ -238,10 +523,29 @@
                     </div>
                   </div>
                   <div class="fl-product-item-des mHc">
-                    <strong class="fl-product-variable-title">offer</strong>
+                    <strong class="fl-product-variable-title">out of stock</strong>
                     <h6 class="fl-product-title"><a href="#">Science Hoodie</a></h6>
                     <div class="fl-product-box-prices">
-                      <div class="fl-product-old-price"><del>€ 67 </del></div>
+                      <div class="fl-product-regular-price">€ 54.50</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="fl-product-item">
+                  <div class="fl-product-item-fea-img">
+                    <a href="#">
+                      <img src="assets/images/new-arrivals-fea-img-01.jpg">
+                    </a>
+                    <div class="product-overlay-icons">
+                      <a class="product-overlay-icon-heart" href="#"> <i class="far fa-heart"></i></a>
+                      <a class="product-overlay-icon-search" href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                  </div>
+                  <div class="fl-product-item-des mHc">
+                    <strong class="fl-product-variable-title">NEW</strong>
+                    <h6 class="fl-product-title"><a href="#">Science Hoodie</a></h6>
+                    <div class="fl-product-box-prices">
                       <div class="fl-product-regular-price">€ 54.50</div>
                     </div>
                   </div>

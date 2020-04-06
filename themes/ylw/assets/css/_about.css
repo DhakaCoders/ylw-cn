@@ -47,11 +47,15 @@ ylw-about-dsc-sec-wrp
 	width: 100%;
 	margin: 0 auto;
 }
-.ylw-about-counter-item{
-	width: 25%;
-	float: left;
-	text-align: center;
-	position: relative;
+.ylw-about-counter-item {
+    width: 26%;
+    float: left;
+    text-align: center;
+    position: relative;
+    padding: 0 25px;
+}
+.ylw-about-counter-inr:last-child .ylw-about-counter-item{
+	width: 22%;
 }
 .ylw-about-counter-item:before{
 	content: "";
@@ -64,6 +68,9 @@ ylw-about-dsc-sec-wrp
 	transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
+}
+.ylw-about-counter-inr:last-of-type .ylw-about-counter-item:before{
+	content: none;
 }
 .ylw-about-counter-item strong {
     display: inline-block;

@@ -22,8 +22,11 @@
     padding-right: 122px;
 }
 #items-content #sidebar{
-	width: 21%;
+	width: 15%;
 	float: left;
+}
+#sidebar{
+	position: absolute;
 }
 #items-content #sidebar .tcheadings{
 	padding: 5px 0 20px;
