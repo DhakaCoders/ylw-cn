@@ -5,13 +5,15 @@
 }
 .hmccs-hdr-title,
 .hnash-title,
-.hausc-title{
+.hausc-title,
+.hojs-tilte{
 	display: block;
 	font-weight: 700;
 	font-style: italic;
 	margin: 0;
 	font-size: 29px;
 	color: #3E3935;
+	text-align: center;
 }
 .hm-children-clothes-sec-grds ul{
 	margin: 0 -13px;
@@ -443,7 +445,9 @@ a.transparent-btn{
 .hm-happy-easter-products-cntlr ul li:nth-child(4n+1){
 	clear: left;
 }
-
+.hm-press-sec{
+	margin-bottom: 20px;
+}
 .hm-press-sec-cntlr{
 	background: #E3A155;
 	padding: 45px 0 10px;
@@ -507,7 +511,70 @@ a.white-transparent-btn{
     letter-spacing: 1px;
 }
 
+
 .hm-our-journal-sec-cntlr{
 	background: #F5F4F2;
-	padding: ;
+	padding: 45px 0 70px 0;
+}
+.hm-our-journal-sec-grd-cntlr{
+	padding-left: 45px;
+	padding-right: 45px;
+}
+.hm-our-journal-sec-grd-cntlr ul{
+	margin: 0 -10px;
+}
+.hm-our-journal-sec-grd-cntlr ul li{
+	float: left;
+	width: 33.3333%;
+	padding: 0 10px 20px;
+}
+.hm-our-journal-sec-grd-cntlr ul li:nth-child(3n+1){
+	clear: left;
+}
+
+.fl-blog-item-des{
+	padding: 30px 20px 5px 30px;
+	position: relative;
+	color: #000;
+}
+.fl-blog-item-des:before{
+	content: "";
+	position: absolute;
+	left: 15px;
+	top: -30px;
+	bottom: 0;
+	width: 1px;
+	background: #000000;
+	opacity: .5;
+}
+.hm-our-journal-sec-hdr{
+	padding-bottom: 50px;
+}
+
+.fl-blog-item-des strong{
+	display: block;
+	font-size: 11px;
+	font-weight: 400;
+	margin: 0 0 10px 0;
+	text-transform: uppercase;
+}
+.fl-blog-item-des-title{
+	display: block;
+	margin: 0 0 10px 0;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+.fl-blog-item-des-title a{
+	color: #000;
+}
+.fl-blog-item-des p{
+	font-size: 14px;
+	line-height: 21px;
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+}
+.hm-our-journal-more-btn {
+	padding-top: 30px;
 }
