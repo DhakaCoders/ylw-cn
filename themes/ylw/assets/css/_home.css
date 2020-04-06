@@ -1,4 +1,10 @@
 
+.mainBnrSlider{
+	margin: 0!important;
+}
+.mainBnrSlider ul.slick-dots{
+	bottom: 25px;
+}
 .hm-children-clothes-sec-hdr{
 	padding: 40px 0;
 	text-align: center;
