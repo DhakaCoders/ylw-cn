@@ -51,9 +51,15 @@
 	font-size: 18px;
 	color: #3E3935;
 	line-height: 1;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	font-weight: 700;
 	text-transform: capitalize;
+}
+.ylw-press-grid-item-des-title a{
+	color: #3E3935;
+}
+.ylw-press-grid-item-des-title a:hover{
+	color: #FFC627;
 }
 .ylw-press-grid-item-des span{
 	display: block;
@@ -98,4 +104,58 @@
 	color: #3E3935;
 	font-weight: 700;
 	font-size: 15px;
+}
+
+.ylw-press-select{
+	text-align: right;
+	padding-bottom: 22px;
+}
+.bootstrap-select>.dropdown-toggle {
+    border: 1px solid #E0E0E0;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #3E3935;
+    line-height: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border-radius: 0;
+}
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 125px;
+}
+.dropdown-toggle {
+    min-height: 30px;
+}
+.dropdown-toggle::before {
+    content: "\f067"!important;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    text-decoration: inherit;
+    color: #3E3935;
+    font-size: 22px;
+    padding-right: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    right: 20px;
+    line-height: 11px;
+    height: 11px;
+    width: 11px;
+}
+.bootstrap-select.show .dropdown-toggle::before{
+	content: "\f068"!important;
+}
+
+
+.dropdown-menu li{
+	width: 100%!important;
+	padding-bottom: 10px!important;
+	margin: 0!important;
+	padding: 0!important;
+	list-style: none!important;
+}
+.dropdown-menu li:before{
+	content: none;
 }

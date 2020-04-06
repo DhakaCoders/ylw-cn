@@ -132,7 +132,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 }
 /*---------------------------*/
 
-
+/*$( "#datepicker" ).datepicker();*/
 
 /*End of Shoriful*/
 

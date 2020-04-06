@@ -42,7 +42,7 @@
 	padding-left: 15px;
 }
 .ylw-blog-grid-item-des-inr{
-	padding: 30px 5px 3px 15px;
+	padding: 25px 5px 3px 15px;
 	position: relative;
 }
 .ylw-blog-grid-item-des-inr:before{
@@ -72,6 +72,12 @@
 	margin-bottom: 15px;
 	font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+}
+.ylw-blog-grid-item-des-title a{
+	color: #000;
+}
+.ylw-blog-grid-item-des-title a:hover{
+	color: #FFC627;
 }
 .ylw-blog-grid-item-des-inr p{
 	font-family: 'Playfair Display', serif;
@@ -109,4 +115,19 @@
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-top: 5px;
+}
+
+
+.ylw-blog-select{
+	padding-bottom: 30px;
+}
+.ylw-blog-select-left{
+	float: left;
+}
+.ylw-blog-select-right{
+	float: right;
+}
+
+.ylw-blog-grid-sec .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 188px;
 }
