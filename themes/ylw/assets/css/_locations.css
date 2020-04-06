@@ -124,7 +124,10 @@ ylw-location-grid-wrp
 .ylw-location-grid-dsc a:hover{
 	color: #ffc627;
 }
-#googlemap{
+#googlemap4,
+#googlemap3,
+#googlemap2,
+#googlemap1{
 	height: 340px;
 }
 .ylw-location-grid-map{
@@ -201,3 +204,45 @@ ylw-shop-list-address-sec-wrp
 .ylw-shop-list-address-dsc a:hover{
 	color: #ffc627;
 }
+.ylw-location-grid-fancy{
+	display: none;
+}
+.fancybox-infobar{
+    color: #FFFFFF;
+    font-size: 29px;
+    line-height: 31px;
+    height: 44px;
+    left: auto !important;
+    min-width: 44px;
+    padding: 0 10px;
+    top: auto !important;
+    bottom: 97px !important;
+    right: 155px !important;
+    font-family: 'Playfair Display', serif;
+}
+.fancybox-navigation .fancybox-button svg{
+	display: none;
+}
+.fancybox-button--arrow_right:before{
+    content: "";
+    position: absolute;
+    background: url(../images/next-arrow.png);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    left: 30px;
+    top: 35px;
+}
+.fancybox-button--arrow_left:before{
+    content: "";
+    position: absolute;
+    background: url(../images/prev-arrow.png);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    left: 10px;
+    top: 35px;
+}
+
