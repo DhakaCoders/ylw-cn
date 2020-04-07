@@ -92,3 +92,106 @@
 	margin-bottom:5px;
 	font-family: 'Montserrat', sans-serif;
 }
+
+/*
+-------------------
+ Responsive Css
+-------------------
+*/
+
+@media(max-width: 1199px){
+	.ylw-customer-care-sec-wrp {
+	    padding-bottom: 85px;
+	}
+	.policy-inner {
+	    padding-left: 100px;
+	    padding-right: 100px;
+	}
+	.ylw-customer-head {
+	    margin-bottom: 50px;
+	}
+	.ylw-customer-faq-sec-wrp {
+	    padding-bottom: 160px !important;
+	}
+
+}
+
+@media(max-width: 991px){
+	.ylw-customer-care-sec-wrp {
+	    padding-bottom: 65px;
+	}
+  	.policy-inner {
+	    padding-left: 60px;
+	    padding-right: 60px;
+	}
+	.ylw-customer-head {
+	    margin-bottom: 40px;
+	}
+	.faq-accordion-title:after{
+		right: 10px;
+	}
+	.ylw-customer-faq-sec-wrp {
+	    padding-bottom: 130px !important;
+	}
+  
+}
+
+@media(max-width: 767px){
+	.ylw-customer-care-sec-wrp {
+	    padding-bottom: 45px;
+	}
+	.ylw-customer-head {
+	    margin-bottom: 30px;
+	}
+	#items-content #sidebar .tcheadings {
+	    padding: 0px 0 20px;
+	}
+	.policy-inner {
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+	#items-content #sidebar{
+		width: 100%;
+	}
+	#sidebar {
+	    position: static;
+	    text-align: center;
+	}
+	.itemsipcontent {
+	    width: 100%;
+	}
+	.item-dsce {
+	    padding-left: 0;
+	}
+	.ylw-customer-menu-title{
+		margin-bottom: 15px;
+	}
+	.ylw-customer-title {
+	    font-size: 27px;
+	    line-height: 29px;
+	}
+	.ylw-customer-faq-sec-wrp {
+	    padding-bottom: 100px !important;
+	}
+}
+
+@media(max-width: 575px){
+  	.ylw-customer-title {
+	    font-size: 25px;
+	    line-height: 27px;
+	}
+	.faq-accordion-title{
+	    padding-right: 40px !important;
+	    padding-top: 30px !important;
+	    padding-bottom: 25px !important;
+	}
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
+}
