@@ -1,9 +1,14 @@
-
+.main-banner{
+	margin-top: 20px;
+}
 .mainBnrSlider{
 	margin: 0!important;
 }
 .mainBnrSlider ul.slick-dots{
 	bottom: 25px;
+}
+.mainBnrSlideItem img{
+	width: 100%;
 }
 .hm-children-clothes-sec-hdr{
 	padding: 40px 0;
