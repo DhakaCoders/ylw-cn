@@ -260,6 +260,9 @@
 	.ylw-press-grid-sec-inr ul li:nth-child(14) {
 	    padding-bottom: 55px;
 	}
+	.ylw-press-content-sec-inr p br{
+		display: none;
+	}
 }
 
 @media(max-width: 575px){

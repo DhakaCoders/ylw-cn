@@ -42,7 +42,7 @@
 	padding-left: 15px;
 }
 .ylw-blog-grid-item-des-inr{
-	padding: 25px 30px 3px 15px;
+	padding: 25px 18px 3px 15px;
 	position: relative;
 }
 .ylw-blog-grid-item-des-inr:before{
@@ -197,6 +197,9 @@
 	.ylw-blog-grid-sec {
 	    padding-bottom: 110px;
 	}
+	.ylw-blog-grid-item-des-title {
+	    font-size: 15px;
+	}
 
 @media(max-width: 991px){
 	.hide-md{
@@ -247,10 +250,13 @@
 	    clear: left;
 	}
 	.ylw-blog-grid-item-des-title{
-		font-size: 14px;
+		font-size: 13px;
 	}
 	.ylw-blog-grid-sec {
 	    padding-bottom: 90px;
+	}
+	.ylw-blog-grid-item-des-inr {
+	    padding: 20px 0px 3px 12px;
 	}
 }
 
@@ -298,6 +304,9 @@
 	}
 	.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
 	    width: 130px;
+	}
+	.ylw-blog-grid-item-des-inr:before {
+	    height: 175px;
 	}
 
 }
