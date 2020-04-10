@@ -32,7 +32,7 @@ contact-form-sec-wrp
 .ylw-contact-tp-img img{
 	width: 100%;
 }
-.ylw-contact-tp-dsc{
+.ylw-contact-tp-dsc-lft{
 	position: absolute;
 	left: 0;
 	top: 24px;
@@ -41,6 +41,8 @@ contact-form-sec-wrp
 	max-width: 435px;
 	width: 100%;
 	background:#ffc627;
+}
+.ylw-contact-tp-dsc{
 	padding: 45px 40px;
 }
 .ylw-contact-tp-dsc i{
@@ -238,4 +240,119 @@ contact-form-sec-wrp
 .ylw-contact-form-msg textarea:-moz-placeholder { /* Firefox 18- */
   color: #262321;
   opacity: 1;
+}
+
+/*
+-------------------
+ Responsive Css
+-------------------
+*/
+
+@media(max-width: 1199px){
+   .ylw-contact-tp-dsc-lft {
+	    position: absolute;
+	    top: 50%;
+	    bottom: auto;
+	    transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	    -webkit-transform: translateY(-50%);
+	}
+  .ylw-contact-tp-dsc {
+	   padding: 43px 40px;
+   }
+   .contact-form-sec-wrp {
+	    padding-bottom: 150px;
+	}
+}
+
+@media(max-width: 991px){
+	.ylw-contact-tp-img {
+	    padding-left: 25px;
+	}
+  	.ylw-contact-tp-dsc {
+	    padding: 20px 20px 20px 25px;
+	}
+	.ylw-contact-tp-dsc i {
+	    padding-bottom: 10px;
+	}
+	.ylw-contact-tp-dsc p {
+	    margin-bottom: 15px;
+	}
+	.contact-form-sec-wrp {
+	    padding-bottom: 120px;
+	}
+}
+
+@media(max-width: 767px){
+  .ylw-contact-tp-dsc-lft {
+	    position: static;
+	    max-width: 100%;
+	    width: 100%;
+	    margin: 0 auto;
+	    margin-top: -20px;
+	    transform: none;
+	    background:transparent;
+	    padding-left: 15px;
+	    padding-right: 15px;
+	}
+	.ylw-contact-tp-dsc{
+		background: #ffc627;
+		padding: 25px 20px 25px 25px;
+	}
+	.ylw-contact-tp-img {
+	    padding-left: 0;
+	    position: relative;
+	    z-index: -1;
+	}
+	.ylw-contact-info-lft {
+	    padding-right: 60px;
+	}
+	.ylw-contact-form-btm-block{
+		padding-top: 50px;
+	}
+	.contact-form-sec-wrp {
+	    padding-bottom: 80px;
+	}
+	.ylw-contact-title {
+	    margin-bottom: 30px;
+	    font-size: 27px;
+	    line-height: 29px;
+	}
+}
+
+@media(max-width: 575px){
+  	.ylw-contact-info-lft {
+	    padding-right: 0;
+	    width: 100%;
+	}
+	.ylw-contact-info {
+	    padding-bottom: 20px;
+	}
+	.ylw-contact-form-rgt {
+	    width: 100%;
+	}
+	.ylw-contact-form-field input[type="text"],
+	.ylw-contact-form-field input[type="email"] {
+	    height: 45px;
+	    padding: 15px 25px;
+	}
+	.ylw-contact-form-msg textarea{
+		height: 140px;
+		padding-top: 17px;
+	}
+	.ylw-contact-form-submit button{
+		height: 45px;
+	}
+}
+
+@media(max-width: 479px){
+	.ylw-contact-title {
+	    font-size: 25px;
+	    line-height: 27px;
+	}
+
+}
+
+@media(max-width: 359px){
+
 }

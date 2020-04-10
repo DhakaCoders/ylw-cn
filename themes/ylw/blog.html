@@ -18,6 +18,7 @@
   <link rel="stylesheet" type="text/css" href="assets/fancybox3/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/jquery-ui.css">
   <link rel="stylesheet" type="text/css" href="assets/fonts/custom-fonts.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
@@ -94,8 +95,9 @@
       <div class="col-sm-12">
         <div class="ylw-blog-grid-sec-inr">
           <div class="ylw-blog-select clearfix">
-            <div class="ylw-blog-select-left">
-              <input type="text" id="datepicker" placeholder="Archive">
+            <div class="blog-archive-date">
+              <input type="text" name id="datepicker" placeholder="Archive">
+              <img src="assets/images/ylw-blog-calender.png">
             </div>
             <div class="ylw-blog-select-right">
               <select class="selectpicker">
@@ -312,61 +314,41 @@
           <ul class="ulc clearfix">
             <li>
               <div class="ftr-top-gallery-item">
-                <div class="ftr-tp-gallery-img">
-                  <img src="assets/images/ftr-tp-gallery-item-img-1.png">
+                <div class="ftr-tp-gallery-img" style="background:url(assets/images/ftr-tp-gallery-item-img-1.png);">
+                  <a class="overlay-link" href="#"></a>
                 </div>
-                <div class="ftr-tp-gallery-dsc-hover">
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <i><img src="assets/images/ftr-logo.png" alt=""></i>
-                  <em>Instagram</em>
+              </div>
+            </li>
+            <li>
+              <div class="ftr-top-gallery-item">
+                <div class="ftr-tp-gallery-img" style="background:url(assets/images/ftr-tp-gallery-item-img-2.png);">
+                  <a class="overlay-link" href="#"></a>
                 </div>
               </div>
             </li>
             <li>
               <div class="ftr-top-gallery-item">
                 <div class="ftr-tp-gallery-img">
-                  <img src="assets/images/ftr-tp-gallery-item-img-2.png">
-                </div>
-                <div class="ftr-tp-gallery-dsc-hover">
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <i><img src="assets/images/ftr-logo.png" alt=""></i>
-                  <em>Instagram</em>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="ftr-top-gallery-item">
-                <div class="ftr-tp-gallery-img">
-                  <img src="assets/images/ftr-tp-gallery-item-img-1.png">
-                </div>
-                <div class="ftr-tp-gallery-dsc-hover">
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <i><img src="assets/images/ftr-logo.png" alt=""></i>
-                  <em>Instagram</em>
+                  <a class="overlay-link" href="#"></a>
+                  <div class="ftr-tp-gallery-dsc-hover">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <i><img src="assets/images/ftr-logo.png" alt=""></i>
+                    <em>Instagram</em>
+                  </div>
                 </div>
               </div>
             </li>
             <li>
               <div class="ftr-top-gallery-item">
-                <div class="ftr-tp-gallery-img">
-                  <img src="assets/images/ftr-tp-gallery-item-img-3.png">
-                </div>
-                <div class="ftr-tp-gallery-dsc-hover">
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <i><img src="assets/images/ftr-logo.png" alt=""></i>
-                  <em>Instagram</em>
+                <div class="ftr-tp-gallery-img" style="background:url(assets/images/ftr-tp-gallery-item-img-3.png);">
+                  <a class="overlay-link" href="#"></a>
                 </div>
               </div>
             </li>
             <li>
               <div class="ftr-top-gallery-item">
-                <div class="ftr-tp-gallery-img">
-                  <img src="assets/images/ftr-tp-gallery-item-img-4.png">
-                </div>
-                <div class="ftr-tp-gallery-dsc-hover">
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <i><img src="assets/images/ftr-logo.png" alt=""></i>
-                  <em>Instagram</em>
+                <div class="ftr-tp-gallery-img" style="background:url(assets/images/ftr-tp-gallery-item-img-4.png);">
+                  <a class="overlay-link" href="#"></a>
                 </div>
               </div>
             </li>
@@ -446,6 +428,7 @@
 <script src="assets/slick.slider/slick.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo2-QJ7RdCkLw3NFZEu71mEKJ_8LczG-c"></script>
 <script src="assets/js/jquery.matchHeight-min.js"></script>
+<script src="assets/js/jquery-ui.js"></script>
 <script src="assets/js/app.js"></script>
 <script src="assets/js/main.js"></script>
 
