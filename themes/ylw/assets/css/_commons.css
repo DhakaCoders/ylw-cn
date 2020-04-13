@@ -399,15 +399,18 @@ ul.slick-dots li button:before{
 /*slider brk*/
 
 .mainBnrSlider .mainBnrSlideItem,
-.giftIdeasSecFeaImgSlider .gift-ideas-sec-fea-img-bx-item{
+.giftIdeasSecFeaImgSlider .gift-ideas-sec-fea-img-bx-item,
+.hmNewAarrivalsSlider .hm-new-arrivals-item{
 	display: none;
 }
 .mainBnrSlider .mainBnrSlideItem:first-child,
-.giftIdeasSecFeaImgSlider .gift-ideas-sec-fea-img-bx-item:first-child{
+.giftIdeasSecFeaImgSlider .gift-ideas-sec-fea-img-bx-item:first-child,
+.hmNewAarrivalsSlider .hm-new-arrivals-item:first-child{
 	display: block;
 }
 
 .mainBnrSlider.slick-initialized .mainBnrSlideItem,
-.giftIdeasSecFeaImgSlider.slick-initialized .gift-ideas-sec-fea-img-bx-item:{
+.giftIdeasSecFeaImgSlider.slick-initialized .gift-ideas-sec-fea-img-bx-item,
+.hmNewAarrivalsSlider.slick-initialized .hm-new-arrivals-item{
 	display: block;
 }

@@ -1,5 +1,19 @@
 .main-banner{
 	margin-top: 20px;
+	position: relative;
+}
+.main-bnr-logo{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	z-index: 20;
+}
+.main-bnr-logo a{
+	display: inline-block;
+	vertical-align: baseline;
 }
 .mainBnrSlider{
 	margin: 0!important;
@@ -248,6 +262,21 @@ a.transparent-btn{
 	background-position: center center;
 	background-size: 100% auto;
 }
+
+.fl-prev:hover{
+	background: url(../images/prev-gray-hover.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;	
+}
+.fl-next:hover{
+	background: url(../images/next-gray-hover.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+}
+
+
 .hm-new-arrivals-sec-hdr .hnash-title{
 	margin-bottom: 17px;
 }

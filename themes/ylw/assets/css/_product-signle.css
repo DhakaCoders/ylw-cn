@@ -8,7 +8,17 @@
 .pro-single-monsters-sec-cntlr{
 	background: #4F9CC5;
 	padding: 60px 0 40px;
-
+	position: relative;
+}
+.pro-single-monsters-sec-cntlr .block-1260{
+	position: relative;
+	z-index: 2;
+}
+.monsters-img-02{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
 }
 .block-1260{
 	max-width: 1260px;
@@ -21,12 +31,12 @@
 }
 .pro-single-monsters-sec-fea-img{
 	float: left;
-	width: 37%;
+	width: 35%;
 	padding-right: 20px;
 }
 
 .pro-single-monsters-sec-des{
-	width: 63%;
+	width: 65%;
 	float: left;
 	color: #fff;
 }
