@@ -26,6 +26,9 @@
 	color: #3E3935;
 	text-align: center;
 }
+.hm-about-us-sec-col-2 .hausc-title{
+	text-align: left;
+}
 .hm-children-clothes-sec-grds ul{
 	margin: 0 -13px;
 }
@@ -74,11 +77,92 @@
 	font-style: italic;
 	margin: 0;
 }
-
-.children-option{
-	display: none;
+.hover-after{
+	transform: scale3d(1,0,1);
+    -ms-transform: scale3d(1,0,1);
+    -webkit-transform: scale3d(1,0,1);
+    position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+	opacity: 0;
 }
+.hover-before{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 3;
+	opacity: 0;
+}
+.children-option{
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+	color: #fff;
+	justify-content: center;
+	padding-top: 55px;
+}
+.hm-children-clothes-fea-box .hm-children-clothes-fea-box-des .hover-before{
+	transform: scale3d(1,1,1);
+    -ms-transform: scale3d(1,1,1);
+    -webkit-transform: scale3d(1,1,1);
+    opacity: 1;
+}
+.hm-children-clothes-fea-box:hover .hm-children-clothes-fea-box-des .hover-before{
+	transform: scale3d(1,0,1);
+    -ms-transform: scale3d(1,0,1);
+    -webkit-transform: scale3d(1,0,1);
+    opacity: 1;
+    z-index: 2;
+}
+.hm-children-clothes-fea-box:hover .hover-after{
+	transform: scale3d(1,1,1);
+    -ms-transform: scale3d(1,1,1);
+    -webkit-transform: scale3d(1,1,1);
+    opacity: 1;
+    z-index: 3;
+}
+.children-option span{
+	padding: 0 12px;
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 12px;
+	font-weight: 700;
+	position: relative;
 
+}
+.children-option span:not(:last-child):after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	right: 0;
+	width: 1px;
+	height: 16px;
+	background: #fff;
+
+}
+.children-option a{
+	color: #fff;
+	text-transform: uppercase;
+	padding: 5px 12px;
+}
+.children-option a:hover{
+	background: #FFC627;
+	color: #3E3935;
+}
 .hm-about-us-section{
 	background: #FFC627;
 	color: #3E3935;
@@ -458,6 +542,13 @@ a.transparent-btn{
 }
 .hm-press-sec{
 	margin-bottom: 20px;
+	position: relative;
+}
+.logo-black-4{
+	position: absolute;
+	right: 52px;
+	bottom: 55px;
+	max-width: 170px;
 }
 .hm-press-sec-cntlr{
 	background: #E3A155;
@@ -538,6 +629,15 @@ a.white-transparent-btn{
 	float: left;
 	width: 33.3333%;
 	padding: 0 10px 20px;
+}
+.fl-blog-item:hover .fl-blog-item-des:before{
+	background: #FFC627;
+}
+.fl-blog-item-fea-img{
+	overflow: hidden;
+}
+.fl-blog-item-fea-img a{
+	display: block;
 }
 .hm-our-journal-sec-grd-cntlr ul li:nth-child(3n+1){
 	clear: left;
