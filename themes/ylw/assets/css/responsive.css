@@ -27,6 +27,24 @@
 	.show-md{
 		display: block!important;
 	}
+	h1{
+		font-size: 32px;
+	}
+	h2{
+		font-size: 28px;
+	}
+	h3{
+		font-size: 26px;
+	}
+	h4{
+		font-size: 22px;
+	}
+	h5{
+		font-size: 16px;
+	}
+	h6{
+		font-size: 12px;
+	}
 	
 }
 
@@ -37,6 +55,28 @@
 	.show-sm{
 		display: block!important;
 	}
+	ul.slick-dots li{
+		width: 10px;
+		height: 10px;
+	}
+	h1{
+		font-size: 30px;
+	}
+	h2{
+		font-size: 27px;
+	}
+	h3{
+		font-size: 25px;
+	}
+	h4{
+		font-size: 20px;
+	}
+	h5{
+		font-size: 16px;
+	}
+	h6{
+		font-size: 12px;
+	}
 }
 
 @media(max-width: 575px){
@@ -45,6 +85,24 @@
 	}
 	.show-xs{
 		display: block!important;
+	}
+	h1{
+		font-size: 28px;
+	}
+	h2{
+		font-size: 25px;
+	}
+	h3{
+		font-size: 23px;
+	}
+	h4{
+		font-size: 18px;
+	}
+	h5{
+		font-size: 16px;
+	}
+	h6{
+		font-size: 12px;
 	}
 
 }
