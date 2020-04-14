@@ -41,6 +41,9 @@
 	color: #3E3935;
 	text-align: center;
 }
+.hm-about-us-sec-col-2{
+	padding-right: 15px;
+}
 .hm-about-us-sec-col-2 .hausc-title{
 	text-align: left;
 }
@@ -691,6 +694,9 @@ a.white-transparent-btn{
 .fl-blog-item-fea-img a{
 	display: block;
 }
+.fl-blog-item-fea-img a img{
+	width: 100%;
+}
 .hm-our-journal-sec-grd-cntlr ul li:nth-child(3n+1){
 	clear: left;
 }
@@ -882,9 +888,22 @@ a.white-transparent-btn{
 		clear: initial;
 	}
 	.hm-press-sec-cntlr{
-		padding-bottom: 50px;
+		padding-bottom: 107px;
 	}
-
+	.hm-our-journal-sec-grd-cntlr {
+	    padding-left: 20px;
+	    padding-right: 20px;
+	}
+	.fl-blog-item-des{
+		padding-right: 15px;
+		padding-left: 25px;
+	}
+	.fl-blog-item-des:before{
+		left: 10px;
+	}
+	.hm-our-journal-sec-hdr {
+	    padding-bottom: 35px;
+	}
 }
 
 @media(max-width: 767px){
@@ -920,6 +939,35 @@ a.white-transparent-btn{
 		font-size: 17px;
 		width: 35px;
 		height: 35px;
+	}
+	.press-sec-fea-img {
+	    float: none;
+	    width: 100%;
+	    text-align: center;
+	}
+	.press-sec-des{
+		width: 100%;
+	}
+	.logo-black-4 {
+	    right: 31px;
+	    bottom: 34px;
+	    max-width: 150px;
+	}
+	.press-sec-des{
+		padding-left: 15px;
+	}
+	.hm-our-journal-sec-grd-cntlr ul li:nth-child(3n+1) {
+	    clear: initial;
+	}
+	.hm-our-journal-sec-grd-cntlr ul li:nth-child(2n+1) {
+	    clear: left;
+	}
+	.hm-our-journal-sec-grd-cntlr ul li{
+		width: 50%;
+		margin-bottom: 25px;
+	}
+	.fl-blog-item-des{
+		padding-top: 25px;
 	}
 }
 
@@ -957,7 +1005,7 @@ a.white-transparent-btn{
 		text-align: center;
 	}
 	.hm-about-us-sec-inr {
-	    padding: 80px 0 70px;
+	    padding: 70px 0 60px;
 	}
 	.hm-about-us-sec-col-2 p {
 	    font-size: 19px;
@@ -1012,7 +1060,30 @@ a.white-transparent-btn{
 		margin-left: 20px;
 		margin-right: 20px;
 	}
-
+	.press-sec-des p {
+	    font-size: 17px;
+	    line-height: 24px;
+	    margin-bottom: 40px;
+	}
+	.press-sec-des-sub-title{
+		margin-bottom: 20px;
+	}
+	.hm-about-us-sec-col-2{
+		padding-left: 15px;
+	}
+	.hm-our-journal-sec-grd-cntlr ul li{
+		width: 100%;
+	}
+	.fl-blog-item{
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.hmNewAarrivalsSlider .fl-product-item{
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 @media(max-width: 479px){
