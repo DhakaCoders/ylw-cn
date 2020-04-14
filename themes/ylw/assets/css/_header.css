@@ -1,6 +1,6 @@
 header.header.has-banner{
 	position: absolute;
-	top: 20px;
+	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 99;
@@ -143,6 +143,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 	font-weight: 600;
 	display: block;
 	letter-spacing: 1px;
+	cursor: pointer;
 }
 .hdr-account > span:after{
 	content: "";
@@ -218,8 +219,14 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 .hdr-account ul li a {
     color: #000;
 }
+.hdr-account ul li a:hover,
+.hdr-account ul li a:hover i{
+	color: #FFC627;
+}
 .hdr-account ul li i{
 	color: #000;
+	position: relative;
+	top: 1px;
 }
 
 .page-hdr .header-inr{
@@ -346,7 +353,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 	font-size: 18px;
 	line-height: 1px;
 	cursor: auto;
-	font-weight: normal;
+	font-weight: 700;
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
@@ -375,9 +382,6 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 	outline: none;
 	padding: 0px 55px 10px 20px;
 	height: 40px;
-	background-image: url(../images/search-ico2.png);
-	background-repeat: no-repeat;
-	background-position: right 15px center;
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
@@ -386,16 +390,27 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
  
 
 
-
+.search-submit-btn-cnltr{
+	height: 23px;
+	width: 23px;
+	right: 17px;
+	top: 8px;
+	position: absolute;
+	background-image: url(../images/search-ico2.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	z-index: 100;
+	
+}
 .search-submit-btn{
 	background-color: transparent;
 	border: none;
 	outline: none;
-	background-image: url(../images/search-btn.png);
-	background-repeat: no-repeat;
-	height: 16px;
-	width: 9px;
-	position: absolute;
-	right: 17px;
-	top: 13px;
+	width: 100%;
+	height: 100%;
+	padding: 0;	
+	cursor: pointer;
+}
+.search-submit-btn-cnltr:hover{
+	opacity: .8;
 }

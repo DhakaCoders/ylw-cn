@@ -12,6 +12,21 @@ $('.navbar-toggle').on('click', function(){
 if($('.mHc').length){
   $('.mHc').matchHeight();
 };
+if($('.mHc1').length){
+  $('.mHc1').matchHeight();
+};
+if($('.mHc2').length){
+  $('.mHc2').matchHeight();
+};
+if($('.mHc3').length){
+  $('.mHc3').matchHeight();
+};
+if($('.mHc4').length){
+  $('.mHc4').matchHeight();
+};
+if($('.mHc5').length){
+  $('.mHc5').matchHeight();
+};
 
 //$('[data-toggle="tooltip"]').tooltip();
 
@@ -239,24 +254,19 @@ if( $('.hmNewAarrivalsSlider').length ){
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
+            slidesToShow: 3
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 640,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
+            slidesToShow: 2
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 576,
           settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToShow: 1
           }
         }
         // You can unslick at a given breakpoint now by adding:

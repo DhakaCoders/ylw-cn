@@ -1,5 +1,19 @@
 .main-banner{
 	margin-top: 20px;
+	position: relative;
+}
+.main-bnr-logo{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	z-index: 20;
+}
+.main-bnr-logo a{
+	display: inline-block;
+	vertical-align: baseline;
 }
 .mainBnrSlider{
 	margin: 0!important;
@@ -7,6 +21,7 @@
 .mainBnrSlider ul.slick-dots{
 	bottom: 25px;
 }
+
 .mainBnrSlideItem img{
 	width: 100%;
 }
@@ -26,6 +41,12 @@
 	color: #3E3935;
 	text-align: center;
 }
+.hm-about-us-sec-col-2{
+	padding-right: 15px;
+}
+.hm-about-us-sec-col-2 .hausc-title{
+	text-align: left;
+}
 .hm-children-clothes-sec-grds ul{
 	margin: 0 -13px;
 }
@@ -38,7 +59,11 @@
 	position: relative;
 	height: 340px;
 	overflow: hidden;
+	
 
+}
+.hm-children-clothes-fea-box:hover .hm-children-clothes-fea-box-des{
+	background: rgba(62,57,53,.8);
 }
 .hm-children-clothes-fea-box-des{
 	position: absolute;
@@ -74,12 +99,93 @@
 	font-style: italic;
 	margin: 0;
 }
-
-.children-option{
-	display: none;
+.hover-after{
+	transform: scale3d(1,0,1);
+    -ms-transform: scale3d(1,0,1);
+    -webkit-transform: scale3d(1,0,1);
+    position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+	opacity: 0;
 }
+.hover-before{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 3;
+	opacity: 0;
+}
+.children-option{
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+	color: #fff;
+	justify-content: center;
+	padding-top: 55px;
+}
+.hm-children-clothes-fea-box .hm-children-clothes-fea-box-des .hover-before{
+	transform: scale3d(1,1,1);
+    -ms-transform: scale3d(1,1,1);
+    -webkit-transform: scale3d(1,1,1);
+    opacity: 1;
+}
+.hm-children-clothes-fea-box:hover .hm-children-clothes-fea-box-des .hover-before{
+	transform: scale3d(1,0,1);
+    -ms-transform: scale3d(1,0,1);
+    -webkit-transform: scale3d(1,0,1);
+    opacity: 1;
+    z-index: 2;
+}
+.hm-children-clothes-fea-box:hover .hover-after{
+	transform: scale3d(1,1,1);
+    -ms-transform: scale3d(1,1,1);
+    -webkit-transform: scale3d(1,1,1);
+    opacity: 1;
+    z-index: 3;
+}
+.children-option span{
+	padding: 0 12px;
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 12px;
+	font-weight: 700;
+	position: relative;
 
-.hm-about-us-section{
+}
+.children-option span:not(:last-child):after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	right: 0;
+	width: 1px;
+	height: 16px;
+	background: #fff;
+
+}
+.children-option a{
+	color: #fff;
+	text-transform: uppercase;
+	padding: 5px 12px;
+}
+.children-option a:hover{
+	background: #FFC627;
+	color: #3E3935;
+}
+.hm-about-us-sec-inr{
 	background: #FFC627;
 	color: #3E3935;
 	padding: 115px 0 110px;
@@ -93,9 +199,10 @@
 }
 .hm-about-us-sec-col-1{
 	margin-right: 40px;
-	max-width: 176px;
+	max-width: 191px;
 	width: 100%;
 	padding-top: 15px;
+	padding-left: 15px;
 }
 .hausc-title{
 	margin-bottom: 15px;	
@@ -164,6 +271,21 @@ a.transparent-btn{
 	background-position: center center;
 	background-size: 100% auto;
 }
+
+.fl-prev:hover{
+	background: url(../images/prev-gray-hover.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;	
+}
+.fl-next:hover{
+	background: url(../images/next-gray-hover.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+}
+
+
 .hm-new-arrivals-sec-hdr .hnash-title{
 	margin-bottom: 17px;
 }
@@ -261,7 +383,8 @@ a.transparent-btn{
 }
 .gray-transparent-btn a{
     border: 1px solid #CCCCCC;
-    width: 250px;
+    max-width: 250px;
+    width: 100%;
     height: 50px;
     display: flex;
     align-items: center;
@@ -415,6 +538,19 @@ a.transparent-btn{
 }
 
 .hm-happy-easter-sec-hdr{
+	position: relative;
+}
+.hm-happy-easter-sec-hdr-img{
+	position: absolute;
+	left: 30px;
+	top: 10px;
+	max-width: 342px;
+	z-index: 1;
+}
+.hm-happy-easter-sec-hdr-inr{
+	position: relative;
+	z-index: 2;
+	background: rgba(56,121,161,.7);
 	padding: 70px 0 118px;
 }
 .hm-happy-easter-sec-hdr-cntlr{
@@ -444,6 +580,8 @@ a.transparent-btn{
 	margin-left: 30px;
 	margin-right: 30px;
 	margin-top: -70px;
+	position: relative;
+	z-index: 4;
 }
 .hm-happy-easter-products-cntlr ul{
 	margin: 0 -15px;
@@ -458,6 +596,13 @@ a.transparent-btn{
 }
 .hm-press-sec{
 	margin-bottom: 20px;
+	position: relative;
+}
+.logo-black-4{
+	position: absolute;
+	right: 52px;
+	bottom: 55px;
+	max-width: 170px;
 }
 .hm-press-sec-cntlr{
 	background: #E3A155;
@@ -472,7 +617,7 @@ a.transparent-btn{
 	float: left;
 	width: 50%;
 	color: #fff;
-	padding: 15px 0 0 40px;
+	padding: 15px 15px 0 40px;
 }
 .press-sec-des-inr{
 	max-width: 450px;
@@ -509,7 +654,8 @@ a.transparent-btn{
 
 a.white-transparent-btn{
 	border: 1px solid #fff;
-    width: 250px;
+    max-width: 250px;
+    width: 100%;
     height: 50px;
     display: flex;
     align-items: center;
@@ -538,6 +684,18 @@ a.white-transparent-btn{
 	float: left;
 	width: 33.3333%;
 	padding: 0 10px 20px;
+}
+.fl-blog-item:hover .fl-blog-item-des:before{
+	background: #FFC627;
+}
+.fl-blog-item-fea-img{
+	overflow: hidden;
+}
+.fl-blog-item-fea-img a{
+	display: block;
+}
+.fl-blog-item-fea-img a img{
+	width: 100%;
 }
 .hm-our-journal-sec-grd-cntlr ul li:nth-child(3n+1){
 	clear: left;
@@ -588,4 +746,377 @@ a.white-transparent-btn{
 }
 .hm-our-journal-more-btn {
 	padding-top: 30px;
+}
+.hmNewAarrivalsSlider .hm-new-arrivals-item{
+	width: 33.3333%;
+}
+
+
+
+@media(min-width: 1367px){
+	.hm-children-clothes-fea-box{
+		height: 440px;
+	}	
+}
+@media(min-width: 1920px){
+	.hm-children-clothes-fea-box{
+		height: 540px;
+	}	
+}
+
+@media(max-width: 1499px){
+
+}
+
+@media(max-width: 1399px){
+
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+	.children-option{
+		padding-top: 30px;
+	}
+	.hccfbd-title {
+	    font-size: 30px;
+	    line-height: 35px;
+	}
+	.hm-children-clothes-fea-box{
+		height: 300px;
+	}
+	.gift-ideas-sec-rgt{
+		position: static;
+		float: right;
+		width: 50%;
+	}
+	.gift-ideas-sec-cntlr{
+		padding-bottom: 45px;
+	}
+	.gift-ideas-sec-lft{
+		padding-bottom: 0;
+		padding-left: 0;
+	}
+	.gift-ideas-sec-fea-img-bx-item strong {
+	    font-size: 22px;
+	    line-height: 27px;
+	}
+	.gift-ideas-title {
+	    font-size: 24px;
+	    line-height: 30px;
+	}
+	.gift-ideas-sec{
+		margin-bottom: 50px;
+	}
+	.hm-happy-easter-products-cntlr ul {
+	    margin: 0 -10px;
+	}
+	.hm-happy-easter-products-cntlr ul li{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.hm-happy-easter-products-cntlr{
+		padding: 25px 25px 80px;
+	}
+	.press-sec-des p {
+	    font-size: 18px;
+	    line-height: 25px;
+	}
+	.hm-press-sec-cntlr{
+		padding-bottom: 30px;
+	}
+}
+
+@media(max-width: 991px){
+	.main-bnr-logo a{
+		max-width: 150px;
+	}
+	.main-bnr-logo a img{
+		width: 100%;
+	}
+	.hmccs-hdr-title, .hnash-title, .hausc-title, .hojs-tilte{
+		font-size: 27px;
+	}
+	.hm-children-clothes-sec-grds ul{
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	.hm-children-clothes-sec-grds ul li{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.hm-children-clothes-fea-box {
+	    height: 280px;
+	}
+	.hm-new-arrivals-sec {
+	    padding: 70px 0 85px 0;
+	}
+	.hm-about-us-sec-inr{
+		padding: 100px 0 95px
+	}
+	.gift-ideas-sec-lft{
+		width: 100%;
+		float: none;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.gift-ideas-sec-rgt{
+		max-width: 480px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+	}
+	.gift-ideas-sec-lft-top-con-rgt{
+		padding-right: 150px;
+	}
+	.ift-ideas-sec-lft-btns ul li:last-child{
+		padding-right: 0;
+	}
+	.hm-happy-easter-sec-hdr-img{
+		max-width: 330px;
+	}
+	.hm-happy-easter-products-cntlr ul li{
+		width: 50%;
+	}
+	.hm-happy-easter-products-cntlr ul li:nth-child(4n+1){
+		clear: initial;
+	}
+	.hm-happy-easter-products-cntlr ul li:nth-child(2n+1){
+		clear: initial;
+	}
+	.hm-press-sec-cntlr{
+		padding-bottom: 107px;
+	}
+	.hm-our-journal-sec-grd-cntlr {
+	    padding-left: 20px;
+	    padding-right: 20px;
+	}
+	.fl-blog-item-des{
+		padding-right: 15px;
+		padding-left: 25px;
+	}
+	.fl-blog-item-des:before{
+		left: 10px;
+	}
+	.hm-our-journal-sec-hdr {
+	    padding-bottom: 35px;
+	}
+}
+
+@media(max-width: 767px){
+	.main-bnr-logo a{
+		max-width: 100px;
+	}
+	.hm-children-clothes-sec-grds ul{
+		margin-left: -7px;
+		margin-right: -7px;
+	}
+	.hm-children-clothes-sec-grds ul li{
+		padding-left: 7px;
+		padding-right: 7px;
+	}
+	.hccfbd-title {
+	    font-size: 25px;
+	    line-height: 28px;
+	}
+	.hm-children-clothes-fea-box {
+	    height: 250px;
+	}
+
+	.hm-about-us-sec-col-2 p{
+		font-size: 21px;
+	}
+	.gift-ideas-sec-lft-top-con-rgt{
+		padding-right: 0;
+	}
+	.gift-ideas-sec-lft{
+		padding-top: 75px;
+	}
+	.product-overlay-icons a{
+		font-size: 17px;
+		width: 35px;
+		height: 35px;
+	}
+	.press-sec-fea-img {
+	    float: none;
+	    width: 100%;
+	    text-align: center;
+	}
+	.press-sec-des{
+		width: 100%;
+	}
+	.logo-black-4 {
+	    right: 31px;
+	    bottom: 34px;
+	    max-width: 150px;
+	}
+	.press-sec-des{
+		padding-left: 15px;
+	}
+	.hm-our-journal-sec-grd-cntlr ul li:nth-child(3n+1) {
+	    clear: initial;
+	}
+	.hm-our-journal-sec-grd-cntlr ul li:nth-child(2n+1) {
+	    clear: left;
+	}
+	.hm-our-journal-sec-grd-cntlr ul li{
+		width: 50%;
+		margin-bottom: 25px;
+	}
+	.fl-blog-item-des{
+		padding-top: 25px;
+	}
+}
+
+@media(max-width: 639px){
+	.hm-children-clothes-sec-grds ul li{
+		width: 100%;
+		padding: 0 0 25px;
+	}
+	.hm-children-clothes-fea-box{
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+
+@media(max-width: 575px){
+	.hmccs-hdr-title, .hnash-title, .hausc-title, .hojs-tilte{
+		font-size: 25px;
+	}
+	.hm-about-us-sec-cntlr{
+		display: block;
+		text-align: center;
+	}
+	.hm-about-us-sec-col-1{
+		margin-bottom: 40px;
+	}
+	.hm-about-us-section a.transparent-btn,
+	.hm-about-us-sec-col-1{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.hm-about-us-section .hausc-title{
+		text-align: center;
+	}
+	.hm-about-us-sec-inr {
+	    padding: 70px 0 60px;
+	}
+	.hm-about-us-sec-col-2 p {
+	    font-size: 19px;
+	    line-height: 1.2;
+	}
+	.hausc-title-2{
+		margin-bottom: 20px;
+	}
+	.hm-about-us-sec-col-1{
+		padding-left: 0;
+		max-width: 100%;
+		text-align: center;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.hm-about-us-sec-col-1 img{
+		max-width: 167px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.hm-new-arrivals-sec {
+	    padding: 60px 0 75px 0;
+	}
+	.hmNewAarrivalsSlider .hm-new-arrivals-item{
+		width: 100%;
+	}
+	.gift-ideas-sec-fea-img-bx-item{
+		height: 480px;
+	}
+	.gift-ideas-sec-rgt{
+		height: 494px;
+	}
+	.ift-ideas-sec-lft-btns ul{
+		text-align: center;
+	}
+	.ift-ideas-sec-lft-btns ul li{
+		padding-left: 5px!important;
+		padding-right: 5px!important;
+		padding-bottom: 10px!important;
+	}
+	.hm-happy-easter-products-cntlr ul li{
+		width: 100%;
+	}
+	.hm-happy-easter-products-cntlr ul li .fl-product-item{
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.hm-happy-easter-products-cntlr{
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.press-sec-des p {
+	    font-size: 17px;
+	    line-height: 24px;
+	    margin-bottom: 40px;
+	}
+	.press-sec-des-sub-title{
+		margin-bottom: 20px;
+	}
+	.hm-about-us-sec-col-2{
+		padding-left: 15px;
+	}
+	.hm-our-journal-sec-grd-cntlr ul li{
+		width: 100%;
+	}
+	.fl-blog-item{
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.hmNewAarrivalsSlider .fl-product-item{
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media(max-width: 479px){
+	.gift-ideas-sec-fea-img-bx-item {
+	    height: 340px;
+	}
+	.gift-ideas-sec-rgt {
+	    height: 354px;
+	}
+	.gift-ideas-sec-fea-img-bx-item strong {
+	    font-size: 18px;
+	    line-height: 20px;
+	    right: 20px;
+	}
+	.gift-ideas-title {
+	    font-size: 18px;
+	    line-height: 22px;
+	}
+	.gift-ideas-title span{
+		padding-top: 15px;
+	}
+	.gift-ideas-sec-lft-top-con-rgt {
+		padding-left: 25px;
+		margin-top: 0;
+	}
+	.hm-happy-easter-sec-hdr-img{
+		display: none;
+	}
+	.hm-happy-easter-sec-hdr-inr{
+		padding: 50px 0 100px;
+	}
+}
+
+@media(max-width: 359px){
+
 }

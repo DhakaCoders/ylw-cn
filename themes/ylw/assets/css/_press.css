@@ -68,11 +68,18 @@
 	font-weight: 500;
 	text-transform: uppercase;
 }
-.ylw-press-grid-item-img{
+.ylw-press-grid-item-img-ctlr{
 	position: relative;
 	overflow: hidden;
 }
-.ylw-press-grid-item-img:hover img{
+.ylw-press-grid-item-img{
+	min-height: 400px;
+	background-repeat: no-repeat!important;
+	background-size: cover!important;
+	background-position: center center!important;
+	transition: all 0.5s;
+}
+.ylw-press-grid-item:hover .ylw-press-grid-item-img{
 	transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	-ms-transform: scale(1.1);
@@ -131,15 +138,15 @@
     font-family: 'Font Awesome 5 Free';
     font-weight: 600;
     text-decoration: inherit;
-    color: #3E3935;
-    font-size: 22px;
+    color: #55504d;
+    font-size: 11px;
     padding-right: 0;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-    right: 20px;
+    right: 10px;
     line-height: 11px;
     height: 11px;
     width: 11px;
@@ -259,6 +266,9 @@
 	.ylw-press-grid-sec-inr ul li:nth-child(13), 
 	.ylw-press-grid-sec-inr ul li:nth-child(14) {
 	    padding-bottom: 55px;
+	}
+	.ylw-press-content-sec-inr p br{
+		display: none;
 	}
 }
 

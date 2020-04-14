@@ -28,6 +28,9 @@
 	display: inline-block;
 	vertical-align: baseline;
 }
+.fl-breadcrumbs ul li a:hover{
+	color: #FFC627;
+}
 .fl-breadcrumbs ul{
 	font-size: 12px;
 	line-height: 1;
@@ -359,4 +362,73 @@
 
 .product-list-page-con .offer .fl-product-regular-price{
 	color: #FF0045;
+}
+
+
+
+@media(max-width: 1499px){
+
+}
+
+@media(max-width: 1399px){
+
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+	.fl-sidebar-cntlr {
+	    padding: 0 20px 0 0;
+	}
+
+}
+
+@media(max-width: 991px){
+	.fl-pagi-pagi-ctlr ul{
+		padding-top: 100px;
+	}
+	
+}
+
+@media(max-width: 639px){
+	.fl-product-list-cntlr ul li:nth-child(3n+1) {
+	    clear: initial;
+	}
+	.fl-product-list-cntlr ul li:nth-child(2n+1) {
+	    clear: left;
+	}
+	.fl-product-list-cntlr ul li{
+		width: 50%;
+	}
+
+}
+
+@media(max-width: 575px){
+	.fl-product-list-cntlr ul li {
+	    width: 100%;
+	}
+	.fl-product-list-cntlr ul li .fl-product-item{
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 350px;
+		width: 100%;
+	}
+	.fl-pagi-pagi-ctlr ul {
+	    padding-top: 50px;
+	}
+	.product-list-page-con{
+		padding-bottom: 100px;
+	}
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
 }

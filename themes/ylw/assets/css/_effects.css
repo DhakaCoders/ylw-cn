@@ -2,12 +2,16 @@
 All Transitions
 */
 a,input,img,textarea,button,svg,
-.product-overlay-icons{
+.product-overlay-icons,.hdr-account ul li i,
+.hm-children-clothes-fea-box:hover .hover-after,
+ul.slick-dots li,.fl-blog-item-des:before,
+.fl-prev,.fl-next,.hm-children-clothes-fea-box-des{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
-.scale,.fl-product-item-fea-img:hover a img{
+.scale,.fl-product-item-fea-img:hover a img,
+.fl-blog-item-fea-img:hover img{
 	transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
@@ -27,4 +31,30 @@ a:hover{
 nav.main-nav ul li.current-menu-item a{
 	font-weight: 700;
 }
+
+
+
+/* button hover*/
+a.transparent-btn:hover{
+	background: #FFC627;
+	border-color: #FFC627;
+	color: #3E3935;
+}
+.hm-about-us-section a.transparent-btn:hover{
+	background: #3E3935;
+	border-color: #3E3935;
+	color: #fff;
+}
+a.white-transparent-btn:hover{
+	background: #fff;
+	border-color: #fff;
+	color: #3E3935;
+}
+
+/*link color*/
+.fl-product-title a:hover,
+.fl-blog-item-des-title a:hover{
+	color: #FFC627;
+}
+
 
