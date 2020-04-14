@@ -38,7 +38,7 @@ ylw-customer-faq-sec-wrp
 
 .faq-accordion-title{
     font-size: 16px;
-    line-height: 17px;
+    line-height: 18px;
     font-weight: 400;
     padding-top: 39px;
     padding-bottom: 30px;
@@ -89,49 +89,4 @@ ylw-customer-faq-sec-wrp
 	font-size: 14px;
 	line-height: 26px;
 	margin-bottom: 30px;
-}
-
-/*
--------------------
- Responsive Css
--------------------
-*/
-@media(max-width: 1499px){
-
-}
-
-@media(max-width: 1399px){
-
-}
-
-@media(max-width: 1299px){
-
-}
-
-@media(max-width: 1199px){
-  
-
-}
-
-@media(max-width: 991px){
-  
-  
-}
-
-@media(max-width: 767px){
-  
-}
-
-@media(max-width: 575px){
-  
-
-}
-
-@media(max-width: 479px){
-
-
-}
-
-@media(max-width: 359px){
-
 }
