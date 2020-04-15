@@ -15,6 +15,15 @@
 	font-family: 'Playfair Display', serif;
 }
 
+.filter-select .ylw-press-select{
+	padding-bottom: 13px!important;
+}
+
+.filter-select .ylw-press-select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+	width: 100%;
+	max-width: 127px;
+}
+
 .fl-total-products-number{
 	display: block;
 	font-size: 12px;
