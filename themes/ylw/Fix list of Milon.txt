@@ -1,0 +1,146 @@
+-------------------------------------------
+Footer
+------------------------------------------
+Desktop--->>
+1. https://www.screencast.com/t/jQaokrU5x
+	container-fluid class hobe
+
+2. https://www.screencast.com/t/jucrHjxozl
+	ai section tar moto, ami upore akta section korechi home page a, 
+	 ata thake idea nite paro --> https://www.screencast.com/t/pTThDRTDII
+	 ami min-width: 1367px  and min-width: 1920px  min-width medea use kore akta height user korechi r niche normal ta
+
+3. https://www.screencast.com/t/Rh5zpVEwv
+	ata active thakbena, hover korle show hobe
+
+4. https://www.screencast.com/t/0Shhajy4uv
+	font-weight mileni
+
+5. https://www.screencast.com/t/3shsYAAeQQCx
+	ai text ta missing
+
+
+
+-------------------------------------------
+About
+------------------------------------------
+Desktop--->>
+1. https://www.screencast.com/t/eJFhxOC2d
+	ata black color hoye geche
+
+2. https://prnt.sc/rzqy45
+	line-height kom hoye geche, text ta full wrap hoyna
+
+3. https://www.screencast.com/t/Ye1oQsPEX2
+	joto heading ache display block lagbe, stong tag use korle design pabena
+
+
+-------------------------------------------
+contact
+------------------------------------------
+Desktop --->>
+
+1. https://www.screencast.com/t/pnjIG9OCHz
+	h1 hobe
+
+2. https://www.screencast.com/t/xwSru8mid
+	ai img ta div a use koro, img tag tao thakbe, dekstop a div a r xs a img tag ta
+
+3. https://www.screencast.com/t/uMOYSbFEB
+	focus a border ar color ar aktu deep kore daw
+
+4. https://prnt.sc/rzr7u6
+	ie te hover korle border payna
+
+5. https://www.screencast.com/t/LIC6fRT1e
+	h2 daw  heaidng 2 ta
+
+
+-------------------------------------------
+Customer Care
+------------------------------------------
+Desktop --->>
+1. https://www.screencast.com/t/nseM4APvi
+	h1 hobe
+
+2. https://www.screencast.com/t/qvR1zdo7Zr
+	ai id gulo ai name a nao
+
+3. https://www.screencast.com/t/nWImqEoHQ
+	h2 hobe
+
+4. https://www.screencast.com/t/Cu3DlbGohD
+	one-page nav plugin ta use hobe, scroll kore j section asbe tar li te active thakbe
+
+
+-------------------------------------------
+Customer Care – Faq
+------------------------------------------
+Desktop --->>
+
+1. https://www.screencast.com/t/WTPnCweSu
+	h1 hobe
+
+2. ager page ar moddhe ja ja fix pore
+
+
+-------------------------------------------
+Locations
+------------------------------------------
+Desktop --->>
+1. https://www.screencast.com/t/K1Xlz69J
+	h1 hobe
+
+2. https://www.screencast.com/t/H5hMpwB4Z
+	https://www.screencast.com/t/9eBAeOTIvUp
+	h2 hobe
+
+3. https://www.screencast.com/t/QqcMsfFkfM2
+	ai img 2 ta dark shadow layer gulo soho kete bosao
+
+4. https://www.screencast.com/t/YE2cHIIDNL8l
+	ai button tate hover korle amon daw, aikhane transparent hover ta buja jaschena
+
+5. https://www.screencast.com/t/YGTZf7XE
+	clear left lagbe
+
+6. https://www.screencast.com/t/1CFUXElecu
+	ai ta akta class diye design koro, heading dite pare
+
+
+
+-------------------------------------------
+Lookbook
+------------------------------------------
+Desktop --->>
+
+sob img ar grd gulor  left and right gap same padding diye, parent a margin (-) korte hobe.
+
+1. https://www.screencast.com/t/2BtjBUkcX8s
+	img to 2 ta , but class three grd keno? 
+
+2. https://prnt.sc/rzs0b5
+	right img ta jodi boro dey tahole to lege jabe left img ar sathe, padding lagbe
+
+3. https://www.screencast.com/t/MioBv6vw15
+	i) img to 3 ta but class a grd four keno?
+		ai module gulo upore niche use hote pare tai sevabe design kore rakhte hobe,
+	ii) https://www.screencast.com/t/ZWxAfAVxVO
+		3 ta grd hobe
+	iii) potita grd display flex diye manage korte hobe,parent ata daw
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+	
+4. https://www.screencast.com/t/wSlAjWRKhaT
+	sob img gulo img tag a use hobe div a hobena
+
+
+
+
+
+
+
+
+

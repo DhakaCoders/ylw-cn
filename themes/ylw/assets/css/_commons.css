@@ -358,7 +358,7 @@ ul li.refGridItem:before{
 .default-page-con ol li::before,
 ol li::before {
 	content: counter(my-awesome-counter) ".";
-	color: #C01718;
+	color: #FFC627;
 	font-weight: 700;
 	margin-right: 17px;
 	text-align: center;
