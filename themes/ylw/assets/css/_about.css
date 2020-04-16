@@ -40,7 +40,7 @@ ylw-about-dsc-sec-wrp
 	color: #3E3935;
 	font-weight: 400;
 	font-family: 'Playfair Display', serif;
-	margin-bottom: 55px;
+	margin-bottom: 30px;
 	text-align: center;
 	display: block;
 }
@@ -78,19 +78,20 @@ ylw-about-dsc-sec-wrp
     display: inline-block;
     vertical-align: baseline;
     font-size: 73px;
-    line-height: 25px;
+    line-height: 80px;
     font-weight: 700;
     color: #3E3935;
     font-family: 'Playfair Display', serif;
 }
-.ylw-about-counter-item b{
+.ylw-about-counter-item b {
     font-size: 30px;
     line-height: 32px;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     display: inline-block;
     vertical-align: top;
-    padding-top: 10px;
+    padding-top: 38px;
+    color: #3E3935;
 }
 .ylw-about-counter-item > span{
 	font-size: 13px;
@@ -160,6 +161,7 @@ ylw-about-dsc-sec-wrp
 	font-weight: 400;
 	margin-bottom: 35px;
 	font-family: 'Playfair Display', serif;
+	display: block;
 }
 
 /*
@@ -170,6 +172,7 @@ ylw-about-dsc-sec-wrp
 @media(max-width: 1199px){
 	.ylw-about-counter-item strong{
 		font-size: 68px;
+		line-height: 75px;
 	}
 	.ylw-about-dsc span br{
 		display: none;
@@ -186,6 +189,7 @@ ylw-about-dsc-sec-wrp
 @media(max-width: 991px){
   	.ylw-about-counter-item strong{
 		font-size: 63px;
+		line-height: 72px;
 	}
 	.ylw-about-brand-sec-wrp {
 	    padding-top: 70px;
@@ -193,6 +197,9 @@ ylw-about-dsc-sec-wrp
 	}
 	.ylw-about-brand-grid-dsc {
 	    padding: 50px 25px 30px 25px;
+	}
+	.ylw-about-counter-item b {
+	    padding-top: 30px;
 	}
 }
 
@@ -208,11 +215,12 @@ ylw-about-dsc-sec-wrp
 	}
 	.ylw-about-counter-item strong{
 		font-size: 58px;
+		line-height: 50px;
 	}
 	.ylw-about-counter-title {
 	    font-size: 27px;
 	    line-height: 29px;
-	    margin-bottom: 45px;
+	    margin-bottom: 35px;
 	}
 	.ylw-about-counter-item{
 	    width: 50%;
@@ -250,6 +258,9 @@ ylw-about-dsc-sec-wrp
 	    font-size: 27px;
 	    line-height: 29px;
 	    margin-bottom: 20px;
+	}
+	.ylw-about-counter-item b {
+	    padding-top: 18px;
 	}
 
 }

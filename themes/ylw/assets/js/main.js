@@ -214,6 +214,36 @@ if (windowWidth > 767) {
 }
 }
 
+/*
+-----------------------
+Start scrollNav ->> 
+-----------------------
+*/
+$('#scrollNav').onePageNav({
+  changeHash: false,
+  scrollSpeed: 500,
+  scrollThreshold: 0.5,
+  filter: '',
+  easing: 'swing',
+  scrollChange: function($currentListItem) {
+    //console.log($currentListItem);
+    var acnum = $('#scrollNav').find('li.current').find('a').text();
+    var actext = $('#scrollNav').find('li.current').find('a').attr('title');
+    $('#hdr-scroll-nav').removeClass();
+    $('#hdr-scroll-nav').addClass('acsec-'+acnum);
+    $('#astitle').text(actext);
+  }
+});
+
+
+$('#scrollToAarea').onePageNav({
+  changeHash: false,
+  scrollSpeed: 500,
+  scrollThreshold: 0.5,
+  filter: '',
+  easing: 'swing',
+});
+
 
 $('.ylw-location-grid-img a').on('click',function(){
   $('.ylw-location-grid-fancy a:first-child').trigger('click');

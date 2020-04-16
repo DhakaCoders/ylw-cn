@@ -27,10 +27,15 @@ contact-form-sec-wrp
 	display: block;
 }
 .ylw-contact-tp-img{
-	padding-left: 40px;
+	margin-left: 40px;
+	height: 396px !important;
+	background-repeat: no-repeat !important;
+	background-position: center center !important;
+	background-size: cover !important;
 }
 .ylw-contact-tp-img img{
 	width: 100%;
+	display: none;
 }
 .ylw-contact-tp-dsc-lft{
 	position: absolute;
@@ -205,7 +210,7 @@ contact-form-sec-wrp
 .ylw-contact-form-msg textarea:focus,
 .ylw-contact-form-field input[type="text"]:focus,
 .ylw-contact-form-field input[type="email"]:focus{
-	border-color: #cecccc;
+	border-color: #bfbdbd;
 }
 
 .ylw-contact-form-field input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -267,7 +272,7 @@ contact-form-sec-wrp
 
 @media(max-width: 991px){
 	.ylw-contact-tp-img {
-	    padding-left: 25px;
+	    margin-left: 25px;
 	}
   	.ylw-contact-tp-dsc {
 	    padding: 20px 20px 20px 25px;
@@ -300,9 +305,14 @@ contact-form-sec-wrp
 		padding: 25px 20px 25px 25px;
 	}
 	.ylw-contact-tp-img {
-	    padding-left: 0;
+	    margin-left: 0;
 	    position: relative;
 	    z-index: -1;
+	    background: transparent !important;
+	    height: auto !important;
+	}
+	.ylw-contact-tp-img img{
+		display: block;
 	}
 	.ylw-contact-info-lft {
 	    padding-right: 60px;

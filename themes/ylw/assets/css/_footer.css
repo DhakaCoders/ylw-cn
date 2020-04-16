@@ -110,7 +110,7 @@
 .ftr-socail-icon ul li a:hover{
   color: #ffc627;
 }
-.ftr-col-5 span{
+.ftr-col-5 > span{
   display: block;
   font-size: 12px;
   line-height: 14px;
@@ -167,11 +167,29 @@
 .ftr-tp-gallery-img a{
   display: block;
 }
-.ftr-tp-gallery-dsc-hover{
-  text-align: center;
-  background:#FFC627;
-  padding: 45px 15px 15px 15px;
-  min-height: 265px;
+.ftr-tp-gallery-dsc-hover {
+    text-align: center;
+    background: #FFC627;
+    padding: 45px 15px 15px 15px;
+    min-height: 265px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    transform: scale3d(1,0,1);
+   -ms-transform: scale3d(1,0,1);
+   -webkit-transform: scale3d(1,0,1);
+   transition: all 0.5s;
+   -ms-transition: all 0.5s;
+   -webkit-transition: all 0.5s;
+}
+.ftr-top-gallery-item:hover .ftr-tp-gallery-dsc-hover{
+  opacity: 1;
+  transform: scale3d(1,1,1);
+  -ms-transform: scale3d(1,1,1);
+  -webkit-transform: scale3d(1,1,1);
 }
 .ftr-tp-gallery-dsc-hover a{
   font-size: 27px;
