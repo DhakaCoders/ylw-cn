@@ -157,6 +157,22 @@ if( $('#datepicker').length ){
 
 
 /*End of Milon*/
+
+$('.ylw-location-grid-img a').on('click',function(){
+  $('.ylw-location-grid-fancy a:first-child').trigger('click');
+})
+
+$('[data-fancybox="images"]').fancybox({
+    afterLoad : function(instance, current) {
+        var pixelRatio = window.devicePixelRatio || 1;
+
+        if ( pixelRatio > 1.5 ) {
+            current.width  = current.width  / pixelRatio;
+            current.height = current.height / pixelRatio;
+        }
+    }
+});
+
 var allPanels = $('.faq-accordion-des').hide();
 $('.faq-accordion-tab-row').removeClass('remove-border');
   $('.faq-accordion-title').click(function() {
@@ -244,21 +260,6 @@ $('#scrollToAarea').onePageNav({
   easing: 'swing',
 });
 
-
-$('.ylw-location-grid-img a').on('click',function(){
-  $('.ylw-location-grid-fancy a:first-child').trigger('click');
-})
-
-$('[data-fancybox="images"]').fancybox({
-    afterLoad : function(instance, current) {
-        var pixelRatio = window.devicePixelRatio || 1;
-
-        if ( pixelRatio > 1.5 ) {
-            current.width  = current.width  / pixelRatio;
-            current.height = current.height / pixelRatio;
-        }
-    }
-});
 
 
 

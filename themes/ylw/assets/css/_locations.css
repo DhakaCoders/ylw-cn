@@ -83,9 +83,9 @@ ylw-location-grid-wrp
 	-webkit-transition: all 0.5s;
 }
 .ylw-location-grid-img a:hover{
-	color: #FFC627;
-	border-color:#FFC627;
-	background:transparent; 
+	color: #3E3935;
+	border-color:#fff;
+	background:#fff; 
 }
 .ylw-location-grid-dsc{
 	padding: 18px 70px 40px 70px;
@@ -180,12 +180,14 @@ ylw-shop-list-address-sec-wrp
 	padding-right: 65px;
 	padding-bottom: 90px;
 }
+.ylw-shop-list-address-wrp ul li:nth-child(4n+1){
+	clear: left;
+}
 .ylw-shop-list-address-wrp ul li:before{
 	content: none;
 }
-.ylw-shop-list-address-dsc span{
-	display: inline-block;
-	vertical-align: baseline;
+.shop-list-address-title{
+	display:block;
 	font-size: 17px;
 	line-height: 19px;
 	color: #3E3935;
@@ -335,6 +337,9 @@ ylw-shop-list-address-sec-wrp
 	    padding-right: 20px;
 	    padding-bottom: 30px;
 	    width: 33.3333%;
+	}
+	.ylw-shop-list-address-wrp ul li:nth-child(4n+1){
+		clear: none;
 	}
 	.ylw-shop-list-address-wrp ul li:nth-child(3n+1){
 		clear: left;
