@@ -101,6 +101,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 	width: 26px;
 	height: 20px;
 	position: relative;
+	cursor: pointer;
 }
 .hdr-humbergur-btn span{
 	position: absolute;
@@ -558,7 +559,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 	    padding: 30px 0 0 30px;
 	}
 	.mega-menu-inr{
-		min-height: 465px;
+		min-height: 365px;
 	}
 	.mega-menu-fea-img strong {
 	    font-size: 35px;
