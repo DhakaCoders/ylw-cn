@@ -114,6 +114,9 @@
 	display: inline-block;
 	vertical-align: baseline;
 }
+.fl-pagi-pagi-ctlr ul.page-numbers li a:hover{
+	color: #FFC627;
+}
 .fl-pagi-pagi-ctlr ul.page-numbers li{
 	padding: 0 10px;
 	font-size: 15px;
