@@ -235,7 +235,7 @@ if (windowWidth > 767) {
 Start scrollNav ->> 
 -----------------------
 */
-if( $('#scrollNav').length ){
+if( $('#sidebar').length ){
   $('#scrollNav').onePageNav({
     changeHash: false,
     scrollSpeed: 500,
@@ -253,7 +253,7 @@ if( $('#scrollNav').length ){
   });
 }
 
-if( $('#scrollNav').length ){
+if( $('#sidebar').length ){
   $('#scrollToAarea').onePageNav({
     changeHash: false,
     scrollSpeed: 500,
@@ -262,6 +262,8 @@ if( $('#scrollNav').length ){
     easing: 'swing',
   });
 }
+
+
 
 
 

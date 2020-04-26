@@ -234,7 +234,7 @@
 </section>
 
 <footer class="footer-wrp">
-  <div class="container-xlg">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-12">
         <div class="ftr-col-main clearfix">
@@ -251,6 +251,7 @@
               <li><a href="#">Terms and Conditions</a></li>
               <li><a href="#">Our Stores</a></li>
               <li><a href="#">Press Room</a></li>
+              <li><a href="#">Showrooms</a></li>
             </ul>
           </div>
           <div class="ftr-col ftr-col-3">
@@ -283,13 +284,47 @@
           <div class="ftr-col ftr-col-5">
             <h6 class="ftr-title"><span>Newsletter</span></h6>
             <span>Sign up to get the latest on new <br> releases and more.</span>  
-            <a href="#">Get Emailed Insider Exclusives</a>
+            <a id="quickViewOpener" href="#" data-toggle="modal" data-target="#quickViewModal">Get Emailed Insider Exclusives</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </footer>
+
+<div class="modal fade ylw-modal-con-wrap" id="quickViewModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-content">
+          <div class="modal-login-form">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span><img src="assets/images/modal-close-icon.png"></span>
+            </button>
+            <h3 class="modal-login-form-title">Sign Up to our newsletter</h3>
+            <span>& get our latest special offers</span>
+            <div class="login-form">
+              <form>
+                <div class="ylw-input-field-row">
+                  <input type="text" name="" placeholder="Your Name">
+                </div>
+                <div class="ylw-input-field-row">
+                  <input type="email" name="" placeholder="Your Email">
+                </div>
+                <div class="ylw-submit-btn">
+                  <input type="submit" value="SUBSCRIBE">
+                </div>
+                <div class="ylw-modal-logo">
+                  <a href="#">
+                    <img src="assets/images/ylw-modal-logo.png">
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
 <script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>

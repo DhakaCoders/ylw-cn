@@ -232,10 +232,10 @@ ylw-shop-list-address-sec-wrp
 .fancybox-button--arrow_right:before{
     content: "";
     position: absolute;
-    background: url(../images/next-arrow.png);
+    background: url(../images/fancybox-next.png);
     background-repeat: no-repeat;
-    background-size: 30px 30px;
-    width: 30px;
+    background-size: 16px 30px;
+    width: 16px;
     height: 30px;
     left: 30px;
     top: 35px;
@@ -243,12 +243,12 @@ ylw-shop-list-address-sec-wrp
 .fancybox-button--arrow_left:before{
     content: "";
     position: absolute;
-    background: url(../images/prev-arrow.png);
+    background: url(../images/fancybox-prev.png);
     background-repeat: no-repeat;
-    background-size: 30px 30px;
-    width: 30px;
+    background-size: 16px 30px;
+    width: 16px;
     height: 30px;
-    left: 10px;
+    left: 30px;
     top: 35px;
 }
 .ylw-location-show-sec{
@@ -265,8 +265,52 @@ ylw-shop-list-address-sec-wrp
 }
 
 .fancybox-toolbar {
-    right: 200px;
+    right: 130px;
     top: 60px;
+}
+
+.fancybox-content element.style{
+    transform: none;
+    width: auto !important;
+    height: auto !important;
+}
+
+.fancybox-content style{
+    transform: translate(-50%,-50%) !important;
+    width: 980px !important;
+    height: 600 !important;
+    margin: 0 auto !important;
+    left: 50% !important;
+    top: 50% !important;
+}
+.fancybox-button--close{
+	background: transparent;
+	position: relative;
+}
+.fancybox-button--close:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(../images/fancy-box-close.png);
+	background-repeat: no-repeat;
+	background-size: 21px 21px;
+	width: 21px;
+	height: 21px;
+}
+.fancybox-button svg{
+	display: none;
+}
+
+
+.fancybox-navigation .fancybox-button div {
+    background: transparent;
+    height: 100%;
+    padding: 7px;
+}
+
+.fancybox-bg{
+	background:#707070;
 }
 
 /*
