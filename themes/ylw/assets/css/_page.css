@@ -231,3 +231,26 @@ Page looader
 }
 
 
+/*---sitemap----*/
+
+.sitemap-cntlr{
+    padding: 100px 0;
+}
+.sitemap-cntlr h2{
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #FFC627;
+    padding-bottom: 10px;
+}
+
+.sitemap-cntlr ul li{
+    text-transform: capitalize;
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+.sitemap-cntlr ul li a{
+    color: inherit;
+}
+.sitemap-cntlr ul li a:focus{
+    text-decoration: underline;
+}

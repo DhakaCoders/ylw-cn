@@ -146,6 +146,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover .mega-menu-cntlr{
 
 .hdr-search-btn{
 	color: #fff;
+	cursor: pointer;
 }
 .hdr-rgt{
 	margin-left: auto;
