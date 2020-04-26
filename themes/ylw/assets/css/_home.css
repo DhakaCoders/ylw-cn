@@ -756,11 +756,17 @@ a.white-transparent-btn{
 @media(min-width: 1367px){
 	.hm-children-clothes-fea-box{
 		height: 440px;
+	}
+	.ftr-top-gallery-item {
+	    height: 365px !important;
 	}	
 }
 @media(min-width: 1920px){
 	.hm-children-clothes-fea-box{
 		height: 540px;
+	}	
+	.ftr-top-gallery-item {
+	    height: 465px !important;
 	}	
 }
 

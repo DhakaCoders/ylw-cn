@@ -100,4 +100,134 @@ Page looader
     }
 }
 
+/*
+-------------------
+ Modal Css
+-------------------
+*/
+.modal-open .modal{
+    padding-left: 5px!important;
+    padding-right: 5px!important;
+}
+.modal-content {
+    border-radius: 0;
+    border: none;
+}
+.modal-backdrop{
+    background-color: #707070;
+}
+.modal-backdrop.show {
+    opacity: .8;
+}
+.ylw-modal-con-wrap .modal-dialog {
+    max-width: 685px;
+    width: 100%;
+    margin: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 90px !important;
+    position: relative;
+}
+.modal-login-form button span {
+    display: inline-block;
+    vertical-align: baseline;
+    position: absolute;
+    top: 23px;
+    right: 25px;
+}
+.ylw-modal-con-wrap .modal-login-form {
+    padding: 65px 20px 80px;
+    max-width: 370px;
+    width: 100%;
+    margin: 0 auto;
+}
+.modal-login-form-title{
+    margin: 0;
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 29px;
+    line-height: 31px;
+    font-weight: 400;
+    color: #3E3935;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.modal-login-form > span{
+    display: block;
+    margin-bottom: 45px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #3E3935;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+}
+.ylw-input-field-row input[type="email"],
+.ylw-input-field-row input[type="text"]{
+    width: 100%;
+    height: 55px;
+    border:1px solid #dfdfdf;
+    padding: 22px 22px;
+    text-align: center;
+    background:transparent;
+    margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #3E3935;
+}
+.ylw-input-field-row input[type="text"]:focus,
+.ylw-input-field-row input[type="email"]:focus{
+    border-color: #bfbdbd;
+}
+.modal-login-form .ylw-submit-btn input[type="submit"]{
+    width: 100%;
+    height: 55px;
+    background: #FFC627;
+    font-size: 12px;
+    line-height: 14px;
+    color: #3E3935;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    border:2px solid #FFC627;
+    cursor: pointer;
+    transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    margin-top: 10px;
+}
+.modal-login-form .ylw-submit-btn input[type="submit"]:hover{
+    background:transparent;
+    border-color: #FFC627;
+    color: #FFC627;
+}
+.ylw-modal-logo{
+    text-align: center;
+    padding-top: 40px;
+}
+.ylw-modal-logo a{
+    display: inline-block;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+
+.ylw-input-field-row input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #3E3935;
+  opacity: 1;
+}
+.ylw-input-field-row input::-moz-placeholder { /* Firefox 19+ */
+  color: #3E3935;
+  opacity: 1;
+}
+.ylw-input-field-row input:-ms-input-placeholder { /* IE 10+ */
+  color: #3E3935;
+  opacity: 1;
+}
+.ylw-input-field-row input:-moz-placeholder { /* Firefox 18- */
+  color: #3E3935;
+  opacity: 1;
+}
+
 

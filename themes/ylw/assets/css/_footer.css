@@ -157,20 +157,20 @@
 }
 .ftr-top-gallery-item{
   position: relative;
+  height: 265px;
 }
 .ftr-tp-gallery-img{
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
-  height: 265px;
+  height: 100%;
 }
 .ftr-tp-gallery-img a{
   display: block;
 }
-.ftr-tp-gallery-dsc-hover {
+.ftr-tp-gallery-dsc-hover{
     text-align: center;
     background: #FFC627;
-    padding: 45px 15px 15px 15px;
     min-height: 265px;
     position: absolute;
     left: 0;
@@ -184,6 +184,9 @@
    transition: all 0.5s;
    -ms-transition: all 0.5s;
    -webkit-transition: all 0.5s;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 .ftr-top-gallery-item:hover .ftr-tp-gallery-dsc-hover{
   opacity: 1;
@@ -191,7 +194,10 @@
   -ms-transform: scale3d(1,1,1);
   -webkit-transform: scale3d(1,1,1);
 }
-.ftr-tp-gallery-dsc-hover a{
+.ftr-tp-gallery-dsc{
+  padding: 15px 15px 35px 15px;
+}
+.ftr-tp-gallery-dsc a{
   font-size: 27px;
   line-height: 29px;
   color: #3E3935;
@@ -199,14 +205,14 @@
   text-decoration: none;
   padding-bottom:20px;
 }
-.ftr-tp-gallery-dsc-hover > i {
+.ftr-tp-gallery-dsc > i {
     display: block;
     padding-bottom: 15px;
     max-width: 125px;
     width: 100%;
     margin: 0 auto;
 }
-.ftr-tp-gallery-dsc-hover em{
+.ftr-tp-gallery-dsc em{
   display: inline-block;
   vertical-align: baseline;
   font-size: 25px;
@@ -225,6 +231,17 @@
  Responsive Css
 -------------------
 */
+
+@media(min-width: 1367px){
+  .ftr-top-gallery-item {
+      height: 365px !important;
+  } 
+}
+@media(min-width: 1920px){
+  .ftr-top-gallery-item {
+      height: 465px !important;
+  } 
+}
 
 @media(max-width: 1199px){
   .ftr-col-main {
@@ -305,7 +322,7 @@
   .footer-top-gallery-wrp ul li:nth-child(3n+1){
     clear: left;
   }
-  .ftr-tp-gallery-dsc-hover em{
+  .ftr-tp-gallery-dsc em{
     font-size: 23px;
     line-height: 25px;
   }
@@ -327,7 +344,7 @@
   .footer-top-gallery-wrp ul li:nth-child(2n+1){
     clear: left;
   }
-  .ftr-tp-gallery-dsc-hover em{
+  .ftr-tp-gallery-dsc em{
     font-size: 21px;
     line-height: 23px;
   }
@@ -340,9 +357,15 @@
   .footer-top-gallery-wrp ul li:nth-child(2n+1){
     clear: none;
   }
-  .ftr-tp-gallery-dsc-hover em{
+  .ftr-tp-gallery-dsc em{
     font-size: 20px;
     line-height: 22px;
+  }
+  .ylw-modal-con-wrap .modal-login-form {
+      padding: 60px 10px 70px !important;
+  }
+  .modal-login-form > span{
+    margin-bottom: 30px !important;
   }
 }
 

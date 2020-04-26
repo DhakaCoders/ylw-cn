@@ -254,6 +254,20 @@ ylw-shop-list-address-sec-wrp
 .ylw-location-show-sec{
 	padding-bottom: 40px;
 }
+.fancybox-button.disabled,
+.fancybox-button.disabled:hover,
+.fancybox-button[disabled],
+.fancybox-button[disabled]:hover {
+    display: none !important;
+}
+.fancybox-button--thumbs{
+	display: none !important;
+}
+
+.fancybox-toolbar {
+    right: 200px;
+    top: 60px;
+}
 
 /*
 -------------------
