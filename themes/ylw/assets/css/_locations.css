@@ -56,12 +56,25 @@ ylw-location-grid-wrp
 	margin-left: 0;
 	margin-right: -60px;
 }
+.ylw-location-grid-wrp ul li:nth-child(2n+2) .ylw-location-grid-inr .ylw-location-grid-img a{
+	right: auto;
+	left: 90px;
+}
 .ylw-location-grid-img{
-	background-size: cover !important;
-	background-position: center center !important;
-	background-repeat: no-repeat !important;
 	height: 500px !important;
 	position: relative;
+}
+.ylw-location-grid-img span{
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+.ylw-location-grid-img span img{
+	height: 100%;
 }
 .ylw-location-grid-img a{
 	display: inline-block;
@@ -117,7 +130,7 @@ ylw-location-grid-wrp
 .ylw-location-grid-dsc a:last-child{
 	font-weight: 700;
 }
-.ylw-location-grid-dsc a:last-child i {
+.ylw-location-grid-dsc a:last-child i{
     transform: rotate(-270deg);
     -ms-transform: rotate(-270deg);
     -webkit-transform: rotate(-270deg);
@@ -213,7 +226,7 @@ ylw-shop-list-address-sec-wrp
 .ylw-location-grid-fancy{
 	display: none;
 }
-.fancybox-infobar{
+.fancybox-infobar {
     color: #FFFFFF;
     font-size: 29px;
     line-height: 31px;
@@ -222,8 +235,8 @@ ylw-shop-list-address-sec-wrp
     min-width: 44px;
     padding: 0 10px;
     top: auto !important;
-    bottom: 97px !important;
-    right: 155px !important;
+    bottom: 55px !important;
+    right: 24.5% !important;
     font-family: 'Playfair Display', serif;
 }
 .fancybox-navigation .fancybox-button svg{
@@ -260,12 +273,14 @@ ylw-shop-list-address-sec-wrp
 .fancybox-button[disabled]:hover {
     display: none !important;
 }
+.fancybox-button--zoom,
 .fancybox-button--thumbs{
 	display: none !important;
+	background: transparent;
 }
 
 .fancybox-toolbar {
-    right: 130px;
+    right: 24%;
     top: 60px;
 }
 
@@ -310,7 +325,10 @@ ylw-shop-list-address-sec-wrp
 }
 
 .fancybox-bg{
-	background:#707070;
+	background:#3E3935;
+}
+.fancybox-is-open .fancybox-bg {
+    opacity: 1;
 }
 
 /*
@@ -374,11 +392,15 @@ ylw-shop-list-address-sec-wrp
 	    margin-left: 0;
 	    margin-right: 0;
 	}
+	.ylw-location-grid-wrp ul li:nth-child(2n+2) .ylw-location-grid-inr .ylw-location-grid-img a {
+	    left: 50px;
+	}
 	.ylw-location-grid-dsc {
 	    padding: 25px 15px 25px 15px;
 	}
 	.ylw-location-grid-img a{
-		right: 50px;
+		right: auto;
+		left: 50px;
 	}
 	.ylw-location-grid-img{
 		height: 450px !important;
@@ -430,7 +452,11 @@ ylw-shop-list-address-sec-wrp
 
 @media(max-width: 479px){
 	.ylw-location-grid-img a{
-		right: 30px;
+		right: auto;
+		left: 30px;
+	}
+	.ylw-location-grid-wrp ul li:nth-child(2n+2) .ylw-location-grid-inr .ylw-location-grid-img a {
+	    left: 30px;
 	}
 	.ylw-location-grid-img{
 		height: 350px !important;
