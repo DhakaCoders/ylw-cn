@@ -151,12 +151,11 @@ if( $('#datepicker').length ){
 }
 /*$( "#datepicker" ).datepicker();*/
 
-/*End of Shoriful*/
 
 
 
 
-/*End of Milon*/
+
 
 var allPanels = $('.faq-accordion-des').hide();
 $('.faq-accordion-tab-row').removeClass('remove-border');
@@ -250,18 +249,6 @@ if( $('#sidebar').length ){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-/*End of Rannojit*/
 if( $('.hmNewAarrivalsSlider').length ){
     $('.hmNewAarrivalsSlider').slick({
       dots: true,
