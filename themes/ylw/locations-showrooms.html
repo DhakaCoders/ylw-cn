@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/jquery-ui.css">
   <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/font-awesome.css">
   
   <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
@@ -43,8 +44,61 @@
         <nav class="main-nav">
           <ul class="clearfix reset-list">
             <li><a href="#">newborn</a></li>
-            <li><a href="#">baby</a></li>
-            <li><a href="#">KID</a></li>
+            <li class="current-menu-item"><a href="#">baby</a></li>
+            <li class="menu-item-has-children">
+              <a href="#">KID</a>
+              <div class="mega-menu-cntlr">
+                <div class="mega-menu-inr">
+                  <div class="mega-menu-cols">
+                    <div class="mega-menu-col">
+                      <strong>GIRLS</strong>
+                      <ul>
+                        <li><a href="#">New in</a></li>
+                        <li><a href="#">Dresses</a></li>
+                        <li><a href="#">Coats</a></li>
+                        <li><a href="#">Tops</a></li>
+                        <li><a href="#">Gloves</a></li>
+                        <li><a href="#">Jackets</a></li>
+                        <li><a href="#">Jeans</a></li>
+                        <li><a href="#">Jogging Bottoms</a></li>
+                        <li><a href="#">Jumpers</a></li>
+                      </ul>
+                      <span><a href="#">Sales</a></span>
+                    </div>
+                    <div class="mega-menu-col">
+                      <strong>GIRLS</strong>
+                      <ul>
+                        <li><a href="#">New in</a></li>
+                        <li><a href="#">Dresses</a></li>
+                        <li><a href="#">Coats</a></li>
+                        <li><a href="#">Tops</a></li>
+                        <li><a href="#">Gloves</a></li>
+                        <li><a href="#">Jackets</a></li>
+                        <li><a href="#">Jeans</a></li>
+                        <li><a href="#">Jogging Bottoms</a></li>
+                        <li><a href="#">Jumpers</a></li>
+                      </ul>
+                      <span><a href="#">Sales</a></span>
+                    </div>
+                    <div class="mega-menu-col">
+                      <strong>Collections</strong>
+                      <ul>
+                        <li><a href="#">Cobalt Elixir</a></li>
+                        <li><a href="#">Cork Pulp</a></li>
+                        <li><a href="#">Covert Green</a></li>
+                        <li><a href="#">Foggy Day</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div class="mega-menu-fea-img" style="background: url(assets/images/mega-menu-fea-img.png);">
+                    <div>
+                      <strong>New <br>&nbsp;&nbsp; arrivals</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
             <li><a href="#">BOYS</a></li>
             <li><a href="#">GIRLS</a></li>
           </ul>
@@ -81,6 +135,27 @@
     </div>
   </div>
 </header>
+<section id="header-popups" class="header-popups">
+  <div class="hdrpopups-inr">
+    <div class="pop-up-nav clearfix">
+        <div class="popup-cross">
+          <span></span>
+          <span></span>
+        </div>
+    </div>  
+    <div class="header-popup-search clearfix">
+      <div class="search-form">
+          <form action="" class="form">
+            <div class="form-group">
+              <input id="search" class="form-input" type="text" />
+              <label class="form-label placeholder" for="search">Search for a product</span></label>
+              <input class="search-submit-btn" type="submit" value="">
+            </div>
+          </form>
+      </div>       
+    </div>  
+  </div>
+</section><!-- end of header-search -->
 
 <section class="ylw-location-sec-wrp ylw-location-show-sec">
   <div class="container-xlg">
