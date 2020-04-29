@@ -23,26 +23,19 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<!-- Preloader -->
-<!-- <div id="preloader">
-    <div id="status1">
-      <img src="<?php echo THEME_URI; ?>/assets/images/looding-img.png">
-    </div>
-</div> -->
-<header class="header has-banner home-hdr">
+<header class="header page-hdr">
   <div class="header-inr">
     <div class="header-cntlr clearfix">
       <div class="hdr-lft">
-        <!-- <div class="logo">
+        <div class="logo">
           <a class="no-bnr-logo" href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo-black.png"></a>
-          <a class="has-bnr-logo" href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo-white.png"></a>
-        </div> -->
+        </div>
       </div>
       <div class="hdr-mid">
         <nav class="main-nav">
           <ul class="clearfix reset-list">
             <li><a href="#">newborn</a></li>
-            <li><a href="#">baby</a></li>
+            <li class="current-menu-item"><a href="#">baby</a></li>
             <li class="menu-item-has-children">
               <a href="#">KID</a>
               <div class="mega-menu-cntlr">
@@ -105,11 +98,11 @@
       <div class="hdr-rgt">
         <div class="hdr-rgt-items">
           <div class="hdr-search-btn">
-            <i><img src="<?php echo THEME_URI; ?>/assets/images/search-icon-white.png"></i>
+            <i><img src="<?php echo THEME_URI; ?>/assets/images/search-icon-dark.png"></i>
           </div>
           <div class="hdr-mini-cart-btn">
             <a href="#">
-              <i><img src="<?php echo THEME_URI; ?>/assets/images/cart-icon-white.png"></i>
+              <i><img src="<?php echo THEME_URI; ?>/assets/images/cart-icon-dark.png"></i>
               <span>3</span>
             </a>
           </div>
@@ -118,7 +111,8 @@
             <ul class="reset-list clearfix">
               <li><a href="#">My Profile</a></li>
               <li>
-                <a href="#"><i class="fas fa-sign-out-alt"></i> <span>Log out</span></a>
+                <i class="fas fa-sign-out-alt"></i>
+                <a href="#">Log out</a>
               </li>
             </ul>
           </div>
@@ -146,7 +140,7 @@
             <div class="form-group">
               <input id="search" class="form-input" type="text" />
               <label class="form-label placeholder" for="search">Search for a product</span></label>
-              <span class="search-submit-btn-cnltr"><input class="search-submit-btn" type="submit" value=""></span>
+              <input class="search-submit-btn" type="submit" value="">
             </div>
           </form>
       </div>       

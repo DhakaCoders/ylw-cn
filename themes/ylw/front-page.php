@@ -1,26 +1,4 @@
 <?php get_header(); ?>
-<section id="header-popups" class="header-popups">
-  <div class="hdrpopups-inr">
-    <div class="pop-up-nav clearfix">
-        <div class="popup-cross">
-          <span></span>
-          <span></span>
-        </div>
-    </div>  
-    <div class="header-popup-search clearfix">
-      <div class="search-form">
-          <form action="" class="form">
-            <div class="form-group">
-              <input id="search" class="form-input" type="text" />
-              <label class="form-label placeholder" for="search">Search for a product</span></label>
-              <span class="search-submit-btn-cnltr"><input class="search-submit-btn" type="submit" value=""></span>
-            </div>
-          </form>
-      </div>       
-    </div>  
-  </div>
-</section><!-- end of header-search -->
-
 <section class="main-banner">
   <div class="main-bnr-logo">
     <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo-white-bnr.png"></a>
@@ -549,18 +527,6 @@
     </div>
   </div>    
 </section>
-
-
-<section class="main-content">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-
-      </div>
-    </div>
-  </div>    
-</section>
-
 
 <section class="footer-top-gallery-sec-wrp">
   <div class="container-fluid">

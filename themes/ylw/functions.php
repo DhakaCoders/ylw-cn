@@ -21,13 +21,9 @@ if( !function_exists('cbv_theme_setup') ){
 		if(function_exists('add_theme_support')) {
 			add_theme_support('category-thumbnails');
 		}
-        add_image_size( 'bloggrid', 130, 130, true );
-        add_image_size( 'pbloggrid', 264, 264, true );
-        add_image_size( 'contactimg', 468, 570, true );
-        add_image_size( 'overons1', 526, 650, true );
-        add_image_size( 'overons2', 918, 760, true );
-        add_image_size( 'homeslide', 904, 790, true );
-        add_image_size( 'verkoopintro2', 823, 725, true );
+        add_image_size( 'bloggrid', 400, 280, true );
+        add_image_size( 'contactimg', 930, 396, true );
+        add_image_size( 'aboutgrid', 588, 420, true );
 
 
 		
@@ -80,6 +76,7 @@ Includes->>
 include_once(THEME_DIR .'/inc/widgets-area.php');
 include_once(THEME_DIR .'/inc/breadcrumbs.php');
 include_once(THEME_DIR .'/inc/cbv-functions.php');
+include_once(THEME_DIR .'/inc/post-loadmore.php');
 /**
 ACF Option pages->>
 */

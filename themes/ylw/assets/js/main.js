@@ -147,7 +147,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 }
 /*---------------------------*/
 if( $('#datepicker').length ){
-  $('#datepicker').datepicker();
+  //$('#datepicker').datepicker();
 }
 /*$( "#datepicker" ).datepicker();*/
 
@@ -324,6 +324,73 @@ $('body').delay(350).css({'overflow':'visible'});
 $('.hdr-account span').on('click', function(){
   $('.hdr-account ul').slideToggle(300);
 });
+if($("#sorting").length){
+  var querySort = $("#sorting").data('sort');
+}
+function querySorting(){
+  var querySort = '';
+  if(querySort !='')
+    return querySort;
+  else
+    return false;
+}
+$('#keyword_form').click(function(event){  
+  event.preventDefault();   
+  console.log('asdfsd');          
+  var keyWord = $('#keyword').val();
+  window.location.href = mycampaigns_url+keyWord;
+});
+function postKeyWord(){
+  var key_word = '';
+  if(key_word != '' && typeof key_word != "undefined")
+    return key_word;
+  else
+    return false;
+}
+$("#loadMore").on('click', function(e) {
+    e.preventDefault();
+    var key_word = '';
+    var sortQuery = '';
+    if(postKeyWord() != '') key_word = postKeyWord();
 
+    if(querySorting() != '' ) sortQuery = querySorting();
+    //init
+    var that = $(this);
+    var page = $(this).data('page');
+    var newPage = page + 1;
+    var ajaxurl = that.data('url');
+    //ajax call
+    $.ajax({
+        url: ajaxurl,
+        type: 'post',
+        data: {
+            page: page,
+            key_word: key_word,
+            sorting: sortQuery,
+            el_li: 'not',
+            action: 'ajax_post_script_load_more'
+        },
+        beforeSend: function ( xhr ) {
+            $('#ajxaloader').show();
+             
+        },
+        
+        success: function(html ) {
+            //check
+            if (html  == 0) {
+                $('.ylw-blog-grid-load').prepend('<div class="clearfix"></div><div class="text-center"><p>Geen producten meer om te laden.</p></div>');
+                $('.ylw-blog-grid-load').hide();
+                $('#ajxaloader').hide();
+            } else {
+                $('#ajxaloader').hide();
+                that.data('page', newPage);
+                $('#ajax-content').append(html .substr(html .length-1, 1) === '0'? html.substr(0, html.length-1) : html);
 
+            }
+        },
+        error: function(html ) {
+            console.log('asdfsd');
+        },
+    });
+});
 })(jQuery);
