@@ -8,10 +8,14 @@ header.header.has-banner{
 header.header{
 	padding: 18px 15px 0;
 	color: #3E3935;
+
 }
 .header-inr{
 	padding: 0 20px 0 25px;
 	position: relative;
+	max-width: 1330px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .home-hdr .header-cntlr{
 	padding-left: 21%;

@@ -1,5 +1,5 @@
 <footer class="footer-wrp">
-  <div class="container-fluid">
+  <div class="container-xlg">
     <div class="row">
       <div class="col-12">
         <div class="ftr-col-main clearfix">
