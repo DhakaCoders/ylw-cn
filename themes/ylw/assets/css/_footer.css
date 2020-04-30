@@ -232,16 +232,7 @@
 -------------------
 */
 
-@media(min-width: 1367px){
-  .ftr-top-gallery-item {
-      height: 365px !important;
-  } 
-}
-@media(min-width: 1920px){
-  .ftr-top-gallery-item {
-      height: 465px !important;
-  } 
-}
+
 
 @media(max-width: 1199px){
   .ftr-col-main {
