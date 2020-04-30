@@ -306,6 +306,11 @@ if( $('.mainBnrSlider').length ){
     });
 }
 
+
+$('.hdr-humbergur-btn').on('click', function(){
+  $(this).toggleClass('menu-expend')
+});
+
 $('.hdr-search-btn').on('click', function(){
   $('#header-popups').addClass('opacity-1');
   $('body').css('overflow','hidden');
