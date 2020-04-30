@@ -109,8 +109,8 @@
 }
 .ylw-press-pagi-inr ul li a.page-numbers:hover{
 	color: #3E3935;
-	font-weight: 700;
 	font-size: 15px;
+	opacity: .7;
 }
 
 .ylw-press-select{
