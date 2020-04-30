@@ -27,15 +27,20 @@ if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/page-
         <div class="ylw-blog-grid-sec-inr">
           <div class="ylw-blog-select clearfix">
             <div class="blog-archive-date">
-              <input type="text" name id="datepicker" placeholder="Archive">
+              <form action="" method="get">
+              <input type="text" name="archive" id="datepicker" class="arvhieForm" autocomplete="off" placeholder="Archive">
               <img src="<?php echo THEME_URI; ?>/assets/images/ylw-blog-calender.png">
+              </form>
             </div>
             <div class="ylw-blog-select-right">
-              <select class="selectpicker">
-                <option>sort by</option>
-                <option>sort by 1</option>
-                <option>sort by 2</option>
+              <form  action="" method="get">
+              <select class="selectpicker" id="sortForm" name="sort">
+                <option value="">sort by</option>
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
               </select>
+              <input type="hidden" name="archive" value="4">
+              </form>
             </div>
           </div>
             <?php echo do_shortcode('[ajax_posts]'); ?>

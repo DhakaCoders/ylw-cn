@@ -147,7 +147,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 }
 /*---------------------------*/
 if( $('#datepicker').length ){
-  //$('#datepicker').datepicker();
+  $('#datepicker').datepicker();
 }
 /*$( "#datepicker" ).datepicker();*/
 
@@ -392,5 +392,12 @@ $("#loadMore").on('click', function(e) {
             console.log('asdfsd');
         },
     });
+});
+
+jQuery('#sortForm').change(function() {
+    this.form.submit();
+});
+jQuery('.arvhieForm').change(function() {
+    this.form.submit();
 });
 })(jQuery);

@@ -56,7 +56,7 @@ function cbv_theme_scripts(){
     include_once( THEME_DIR . '/enq-scripts/popper.php' );
     include_once( THEME_DIR . '/enq-scripts/bootstrap.php' );
     include_once( THEME_DIR . '/enq-scripts/fonts.php' );
-    //include_once( THEME_DIR . '/enq-scripts/jquery.ui.php' );
+    include_once( THEME_DIR . '/enq-scripts/jquery.ui.php' );
     include_once( THEME_DIR . '/enq-scripts/fancybox.php' );
     include_once( THEME_DIR . '/enq-scripts/slick.php' );
     include_once( THEME_DIR . '/enq-scripts/stick.sidebar.php' );
