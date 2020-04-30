@@ -286,7 +286,10 @@ nav.main-nav > ul > li.menu-item-has-children:hover .mega-menu-cntlr{
 	-webkit-transition: all .5s ease-in-out;
 	transition: all .5s ease-in-out;
 }
-
+.hdrpopups-inr{
+	width: 100%;
+	height: 100%;
+}
 .opacity-1{
 	opacity: 1;
 	z-index: 9999999999999;
@@ -294,6 +297,10 @@ nav.main-nav > ul > li.menu-item-has-children:hover .mega-menu-cntlr{
 
 .pop-up-nav{
 	padding-top: 25px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	left: 0;
 }
 
 .popup-cross{
