@@ -822,8 +822,16 @@ nav.main-nav > ul > li.menu-item-has-children:hover .mega-menu-cntlr{
 }
 
 @media(max-width: 575px){
-	
-
+	.header-inr{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.hdr-search-btn {
+	    margin-right: 14px;
+	}
+	.logo a{
+		max-width: 120px;
+	}
 }
 
 @media(max-width: 479px){
