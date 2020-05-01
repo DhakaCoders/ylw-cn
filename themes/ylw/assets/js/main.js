@@ -149,7 +149,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 if( $('#datepicker').length ){
   $('#datepicker').datepicker();
 }
-/*$( "#datepicker" ).datepicker();*/
+
 
 
 

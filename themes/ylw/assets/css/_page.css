@@ -258,3 +258,8 @@ Page looader
 .sitemap-cntlr ul li a:focus{
     text-decoration: underline;
 }
+
+
+#ui-datepicker-div{
+    z-index: 50!important;
+}
