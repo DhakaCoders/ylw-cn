@@ -329,9 +329,10 @@ if (windowWidth <= 991) {
   
   $('li.menu-item-has-children > a').on('click', function(e){
     e.preventDefault();
-    $('li.menu-item-has-children .sub-menu').slideUp(300);
+    //$('li.menu-item-has-children .sub-menu').slideUp(300);
+    //$(this).parent().find('.sub-menu').slideToggle(300);
     $(this).toggleClass('sub-menu-active');
-    $(this).next().slideDown(300);
+    $(this).next().slideToggle(300);
 
   });
 }
