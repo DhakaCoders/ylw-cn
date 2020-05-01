@@ -23,12 +23,12 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header class="header page-hdr">
+<header class="header has-banner">
   <div class="header-inr">
     <div class="header-cntlr clearfix">
       <div class="hdr-lft">
         <div class="logo">
-          <a class="no-bnr-logo" href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo-black.png"></a>
+          <a class="has-bnr-logo" href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo-white.png"></a>
         </div>
       </div>
       <div class="hdr-mid">
@@ -98,11 +98,11 @@
       <div class="hdr-rgt">
         <div class="hdr-rgt-items">
           <div class="hdr-search-btn">
-            <i><img src="<?php echo THEME_URI; ?>/assets/images/search-icon-dark.png"></i>
+            <i><img src="<?php echo THEME_URI; ?>/assets/images/search-icon-white.png"></i>
           </div>
           <div class="hdr-mini-cart-btn">
             <a href="#">
-              <i><img src="<?php echo THEME_URI; ?>/assets/images/cart-icon-dark.png"></i>
+              <i><img src="<?php echo THEME_URI; ?>/assets/images/cart-icon-white.png"></i>
               <span>3</span>
             </a>
           </div>
@@ -126,6 +126,7 @@
     </div>
   </div>
 </header>
+
 <section id="header-popups" class="header-popups">
   <div class="hdrpopups-inr">
     <div class="pop-up-nav clearfix">

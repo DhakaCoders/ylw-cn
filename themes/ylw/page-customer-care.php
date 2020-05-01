@@ -2,7 +2,7 @@
 /*
   Template Name: Customer Care
 */
-get_header('two'); 
+get_header(); 
 $thisID = get_the_ID();
 $intro = get_field('introsec', $thisID);
 $terms = $intro['terms'];

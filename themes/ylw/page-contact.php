@@ -2,7 +2,7 @@
 /*
   Template Name: Contact
 */
-get_header('two'); 
+get_header(); 
 $thisID = get_the_ID();
 $spacialArry = array( ".", "/", "+", " ", ")", "(" );$replaceArray = '';
 $emailspacialArry = array( "/" );
