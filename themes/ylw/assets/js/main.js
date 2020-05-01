@@ -147,7 +147,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 }
 /*---------------------------*/
 if( $('#datepicker').length ){
-  $('#datepicker').datepicker();
+  $('#datepicker').datepicker({
+    dateFormat: 'dd-mm-yy'
+})
 }
 
 
@@ -329,34 +331,31 @@ $('body').delay(350).css({'overflow':'visible'});
 $('.hdr-account span').on('click', function(){
   $('.hdr-account ul').slideToggle(300);
 });
+  var querySort = '';var archive = '';
 if($("#sorting").length){
   var querySort = $("#sorting").data('sort');
 }
+if($("#archive").length){
+  var archive = $("#archive").data('archive');
+}
 function querySorting(){
-  var querySort = '';
   if(querySort !='')
     return querySort;
   else
     return false;
 }
-$('#keyword_form').click(function(event){  
-  event.preventDefault();   
-  console.log('asdfsd');          
-  var keyWord = $('#keyword').val();
-  window.location.href = mycampaigns_url+keyWord;
-});
-function postKeyWord(){
-  var key_word = '';
-  if(key_word != '' && typeof key_word != "undefined")
-    return key_word;
+
+function postArchive(){
+  if(archive != '' && typeof archive != "undefined")
+    return archive;
   else
     return false;
 }
 $("#loadMore").on('click', function(e) {
     e.preventDefault();
-    var key_word = '';
+    var archive = '';
     var sortQuery = '';
-    if(postKeyWord() != '') key_word = postKeyWord();
+    if(postArchive() != '') archive = postArchive();
 
     if(querySorting() != '' ) sortQuery = querySorting();
     //init
@@ -370,7 +369,7 @@ $("#loadMore").on('click', function(e) {
         type: 'post',
         data: {
             page: page,
-            key_word: key_word,
+            archive: archive,
             sorting: sortQuery,
             el_li: 'not',
             action: 'ajax_post_script_load_more'

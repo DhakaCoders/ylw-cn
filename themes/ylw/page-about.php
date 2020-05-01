@@ -2,7 +2,7 @@
 /*
   Template Name: About
 */
-get_header(); 
+get_header('banner'); 
 $thisID = get_the_ID();
 $intro = get_field('introsec', $thisID);
 get_template_part('templates/page', 'banner');

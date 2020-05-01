@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('home'); ?>
 <section class="main-banner">
   <div class="main-bnr-logo">
     <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo-white-bnr.png"></a>

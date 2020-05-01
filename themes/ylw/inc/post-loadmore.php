@@ -4,12 +4,49 @@
  */
 
 function post_script_load_more($args = array()) {
-  $keyword = $sorting = '';
+  $archive = $sorting = ''; $date_arg = array();
 
-  if( isset($_GET['search']) && !empty($_GET['search'])) $keyword = $_GET['search'];
-  if( isset($_GET['sorting']) && !empty($_GET['sorting'])) $sorting = $_GET['sorting'];
+  if( isset($_GET['archive']) && !empty($_GET['archive'])) $archive = $_GET['archive'];
+  if( isset($_GET['sort']) && !empty($_GET['sort'])) $sorting = $_GET['sort'];
+    if(isset($archive) && !empty($archive)){
+      $exp_date = explode('-', $archive);
+      $date_arg = array(
+       'year'  => @$exp_date[2],
+       'month' => @$exp_date[1],
+       'day'   => @$exp_date[0],
+      );
+
+      $query = new WP_Query(array( 
+        'post_type'=> 'post',
+        'post_status' => 'publish',
+        'orderby' => 'date',
+        'order'=> $sorting,
+        'date_query' => array($date_arg),
+      ) 
+      );
+    } else{
+      $query = new WP_Query(array( 
+          'post_type'=> 'post',
+          'post_status' => 'publish',
+          'orderby' => 'date',
+          'order'=> $sorting
+        ) 
+      );
+    }
+
+    $query = new WP_Query(array( 
+        'post_type'=> 'post',
+        'post_status' => 'publish',
+        'orderby' => 'date',
+        'order'=> $sorting,
+        'date_query' => array($date_arg),
+      ) 
+    );
+    if($query->have_posts()){
+
+
   echo '<ul class="reset-list clearfix" id="ajax-content">';
-      ajax_post_script_load_more($args,$keyword, $sorting);
+      ajax_post_script_load_more($args, $archive, $sorting);
   echo '</ul>';
   echo '<div class="loadmorewrapp"><div class="ylw-blog-grid-load">
   <div class="ajaxloading" id="ajxaloader" style="display:none"><img src="'.THEME_URI.'/assets/images/loading.gif" alt="loader"></div>
@@ -17,6 +54,9 @@ function post_script_load_more($args = array()) {
    <img src="'.THEME_URI.'/assets/images/ylw-blog-grid-load-img.png">
    </a><span>LOAD MORE</span>';
    echo '</div></div>';
+   }else{
+    echo '<div class="postnot-found" style="text-align:center; padding:20px 0;">No results!</div>';
+   }
 
 }
 /*
@@ -28,7 +68,7 @@ add_shortcode('ajax_posts', 'post_script_load_more');
 /*
  * load more script call back
  */
-function ajax_post_script_load_more($args, $keyword = '', $sort = 'DESC') {
+function ajax_post_script_load_more($args, $archive = '', $sort = 'DESC') {
     //init ajax
     $ajax = false;
     //check ajax call or not
@@ -40,27 +80,46 @@ function ajax_post_script_load_more($args, $keyword = '', $sort = 'DESC') {
     $num = 3;
     //page number
     $paged = 1;
-
-    if(isset($_POST['key_word']) && !empty($_POST['key_word'])){
-        $keyword = $_POST['key_word'];
+    $date_arg = '';
+    if(isset($_POST['archive']) && !empty($_POST['archive'])){
+      $archive = $_POST['archive'];
     }
+
+    
     if(isset($_POST['sorting']) && !empty($_POST['sorting'])){
         $sort = $_POST['sorting'];
     }
     if(isset($_POST['page']) && !empty($_POST['page'])){
         $paged = $_POST['page'] + $paged;
     }
-
-    $query = new WP_Query(array( 
-        'post_type'=> 'post',
-        'post_status' => 'publish',
-        's' => $keyword,
-        'posts_per_page' =>$num,
-        'paged'=>$paged,
-        'orderby' => 'date',
-        'order'=> $sort,
-      ) 
-    );
+    if( isset($archive) && !empty($archive) ){
+      $exp_date = explode('-', $archive);
+      $date_arg = array(
+       'year'  => @$exp_date[2],
+       'month' => @$exp_date[1],
+       'day'   => @$exp_date[0],
+      );
+      $query = new WP_Query(array( 
+          'post_type'=> 'post',
+          'post_status' => 'publish',
+          'posts_per_page' =>$num,
+          'paged'=>$paged,
+          'orderby' => 'date',
+          'order'=> $sort,
+          'date_query' => array($date_arg)
+        ) 
+      );
+    } else{
+      $query = new WP_Query(array( 
+          'post_type'=> 'post',
+          'post_status' => 'publish',
+          'posts_per_page' =>$num,
+          'paged'=>$paged,
+          'orderby' => 'date',
+          'order'=> $sort
+        ) 
+      );
+    }
     if($query->have_posts()){
     while($query->have_posts()): $query->the_post();
       $attach_id = get_post_thumbnail_id(get_the_ID());
