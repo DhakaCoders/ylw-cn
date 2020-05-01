@@ -660,8 +660,8 @@ nav.main-nav > ul > li.menu-item-has-children:hover .mega-menu-cntlr{
 	}
 	.menu-closebtn {
 	    position: absolute;
-	    width: 20px;
-	    height: 20px;
+	    width: 25px;
+	    height: 25px;
 	    cursor: pointer;
 	    display: inline-block;
 	    vertical-align: top;
