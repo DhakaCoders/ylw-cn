@@ -679,7 +679,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover .mega-menu-cntlr{
 	    left: 0px;
 	    height: 4px;
 	    width: 100%;
-	    background: #FF278B;
+	    background: #000;
 	    top: 13px;
 	    display: block;
 	}
