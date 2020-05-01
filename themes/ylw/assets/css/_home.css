@@ -1,6 +1,10 @@
 .main-banner{
 	margin-top: 20px;
 	position: relative;
+	max-width: 1330px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .main-bnr-logo{
 	position: absolute;
@@ -403,6 +407,9 @@ a.transparent-btn{
 	background: url(../images/gift-ideas-sec-bg.jpg);
 	padding: 45px 0 0;
 	margin-bottom: 120px;
+	max-width: 1330px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .gift-ideas-sec-cntlr{
@@ -597,6 +604,10 @@ a.transparent-btn{
 .hm-press-sec{
 	margin-bottom: 20px;
 	position: relative;
+	max-width: 1360px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .logo-black-4{
 	position: absolute;
@@ -753,22 +764,7 @@ a.white-transparent-btn{
 
 
 
-@media(min-width: 1367px){
-	.hm-children-clothes-fea-box{
-		height: 440px;
-	}
-	.ftr-top-gallery-item {
-	    height: 365px !important;
-	}	
-}
-@media(min-width: 1920px){
-	.hm-children-clothes-fea-box{
-		height: 540px;
-	}	
-	.ftr-top-gallery-item {
-	    height: 465px !important;
-	}	
-}
+
 
 @media(max-width: 1499px){
 

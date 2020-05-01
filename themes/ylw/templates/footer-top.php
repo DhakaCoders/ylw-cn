@@ -1,5 +1,5 @@
 <section class="footer-top-gallery-sec-wrp">
-  <div class="container-fluid">
+  <div class="container-xlg">
     <div class="row">
       <div class="col-sm-12">
         <div class="footer-top-gallery-wrp">

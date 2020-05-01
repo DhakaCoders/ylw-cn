@@ -307,7 +307,9 @@ form .dropdown-menu li a{
 	width: 100%;
 }
 
-
+.bootstrap-select .dropdown-menu li{
+	font-size: 12px;
+}
 
 /*---*/
 

@@ -3,25 +3,19 @@
   <div class="main-bnr-logo">
     <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo-white-bnr.png"></a>
   </div>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="main-banner-cntlr mainBnrSlider">
-          <div class="mainBnrSlider" id="mainBnrSlider">
-            <div class="mainBnrSlideItem">
-              <img src="<?php echo THEME_URI; ?>/assets/images/main-bnr-slide-img-01.jpg">
-            </div>
-            <div class="mainBnrSlideItem">
-              <img src="<?php echo THEME_URI; ?>/assets/images/main-bnr-slide-img-01.jpg">
-            </div>
-            <div class="mainBnrSlideItem">
-              <img src="<?php echo THEME_URI; ?>/assets/images/main-bnr-slide-img-01.jpg">
-            </div>
-          </div>
-        </div>
+  <div class="main-banner-cntlr mainBnrSlider">
+    <div class="mainBnrSlider" id="mainBnrSlider">
+      <div class="mainBnrSlideItem">
+        <img src="<?php echo THEME_URI; ?>/assets/images/main-bnr-slide-img-01.jpg">
+      </div>
+      <div class="mainBnrSlideItem">
+        <img src="<?php echo THEME_URI; ?>/assets/images/main-bnr-slide-img-01.jpg">
+      </div>
+      <div class="mainBnrSlideItem">
+        <img src="<?php echo THEME_URI; ?>/assets/images/main-bnr-slide-img-01.jpg">
       </div>
     </div>
-  </div>    
+  </div>   
 </section>
 
 
@@ -36,7 +30,7 @@
         </div>
       </div>
   </div>
-  <div class="container-fluid">
+  <div class="container-xlg">
     <div class="row">
       <div class="col-md-12">
         <div class="hm-children-clothes-sec-grds">
@@ -106,7 +100,7 @@
 </section>
 
 <section class="hm-about-us-section">
-  <div class="container-fluid">
+  <div class="container-xlg">
     <div class="row">
       <div class="col-md-12">
         <div class="hm-about-us-sec-inr">
@@ -128,7 +122,7 @@
 </section>
 
 <section class="hm-new-arrivals-sec">
-  <div class="container-fluid">
+  <div class="container-xlg">
     <div class="row">
       <div class="col-md-12">
         <div class="hm-new-arrivals-sec-hdr">
@@ -141,7 +135,7 @@
       </div>
     </div>
   </div> 
-  <div class="container-fluid">
+  <div class="container-xlg">
     <div class="row">
       <div class="col-md-12">
         <div class="hm-new-arrivals-sec-cntlr hmNewAarrivalsSlider">
@@ -320,7 +314,7 @@
 </section>
 
 <section class="hm-happy-easter-sec">
-  <div class="container-fluid">
+  <div class="container-xlg">
     <div class="row">
       <div class="col-md-12">
         <div class="hm-happy-easter-sec-hdr bg-inline">
@@ -336,7 +330,7 @@
     </div>
   </div>  
   <div class="hm-happy-easter-products">
-    <div class="container-fluid">
+    <div class="container-xlg">
       <div class="row">
         <div class="col-md-12">
           <div class="hm-happy-easter-products-cntlr">
@@ -434,7 +428,7 @@
 
 
 <section class="hm-press-sec">
-  <div class="container-fluid">
+  <div class="container-xlg">
     <div class="row">
       <div class="col-md-12">
         <div class="hm-press-sec-cntlr clearfix">
@@ -460,7 +454,7 @@
 
 
 <section class="hm-our-journal-sec">
-  <div class="container-fluid">
+  <div class="container-xlg">
     <div class="row">
       <div class="col-md-12">
         <div class="hm-our-journal-sec-cntlr">
@@ -529,7 +523,7 @@
 </section>
 
 <section class="footer-top-gallery-sec-wrp">
-  <div class="container-fluid">
+  <div class="container-xlg">
     <div class="row">
       <div class="col-sm-12">
         <div class="footer-top-gallery-wrp">
