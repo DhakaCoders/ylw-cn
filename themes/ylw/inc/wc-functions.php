@@ -179,11 +179,40 @@ function wc_single_product_price(){
     echo $output;
 }
 
+
+add_action( 'woocommerce_custom_metafield', 'wc_single_product_metafields' );
+
+function wc_single_product_metafields(){
+    $output = '<div class="wc-accordion">';
+    $output .= '<div class="faq-accordion-tab-row">
+                  <h6 class="faq-accordion-title">Size & Fit</h6>
+                  <div class="faq-accordion-des">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>';
+    $output .= '<div class="faq-accordion-tab-row">
+                  <h6 class="faq-accordion-title">Details & Materials</h6>
+                  <div class="faq-accordion-des">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>';
+    $output .= '<div class="faq-accordion-tab-row">
+                  <h6 class="faq-accordion-title">Care</h6>
+                  <div class="faq-accordion-des">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>';
+    $output .= '<div class="wc-accordion">';
+
+    echo $output;
+}
+
 //custom action 'woocommerce_delivery_text' is used on add to cart button 
 
 add_action( 'woocommerce_delivery_text', 'wc_single_free_delivery_text' );
 
 function wc_single_free_delivery_text(){
+
     echo '<div class="free-text"><p>Free Delivery for over 50 <span>€</span></p</div>';
 }
 
