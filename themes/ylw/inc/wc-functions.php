@@ -113,7 +113,8 @@ add_action('woocommerce_shop_loop_item_title', 'add_shorttext_below_title_loop',
 if (!function_exists('add_shorttext_below_title_loop')) {
     function add_shorttext_below_title_loop() {
         global $product, $woocommerce, $post;
-		echo '<div class="fl-product-item">';
+        $sc = '[yith_quick_view product_id="'.$product->get_id().'" type="icon" label="QV"]';
+		echo '<div class="fl-product-item hello">';
         echo '<div class="fl-product-item-fea-img">';
         echo '<a href="'.get_permalink( $product->get_id() ).'">';
         echo wp_get_attachment_image( get_post_thumbnail_id($product->get_id()), 'pgrid' );
@@ -121,6 +122,7 @@ if (!function_exists('add_shorttext_below_title_loop')) {
         echo '<div class="product-overlay-icons">';
         echo '<a class="product-overlay-icon-heart" href="#"> <i class="far fa-heart"></i></a>';
         echo '<a class="product-overlay-icon-search" href="#"><i class="fas fa-search"></i></a>';
+        echo do_shortcode($sc);
         echo '</div>';
         echo '</div>';
         echo '<div class="fl-product-item-des mHc">';
