@@ -15,6 +15,7 @@ global $product;
 	<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 
 	<?php
+	do_action( 'woocommerce_delivery_text' );
 	do_action( 'woocommerce_before_add_to_cart_quantity' );
 
 	woocommerce_quantity_input(

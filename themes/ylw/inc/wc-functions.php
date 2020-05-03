@@ -179,7 +179,11 @@ function wc_single_product_price(){
     echo $output;
 }
 
-add_action( 'woocommerce_single_product_summary', 'wc_single_free_delivery_text', 29 );
+//custom action 'woocommerce_delivery_text' is used on add to cart button 
+
+add_action( 'woocommerce_delivery_text', 'wc_single_free_delivery_text' );
+
 function wc_single_free_delivery_text(){
     echo '<div class="free-text"><p>Free Delivery for over 50 <span>€</span></p</div>';
 }
+
