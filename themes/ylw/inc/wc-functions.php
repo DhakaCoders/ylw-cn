@@ -179,7 +179,7 @@ function wc_single_product_price(){
     echo $output;
 }
 
-add_action( 'woocommerce_single_product_summary', 'wc_single_free_delivery_text', 28 );
+add_action( 'woocommerce_single_product_summary', 'wc_single_free_delivery_text', 29 );
 function wc_single_free_delivery_text(){
     echo '<div class="free-text"><p>Free Delivery for over 50 <span>€</span></p</div>';
 }
