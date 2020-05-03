@@ -33,3 +33,18 @@ Stack trace:
 #6 C:\xampp\htdocs\2020\04\ylw\ylw-cn\themes\ylw\woocommerce\archive-product.php(70): wc_get_template_part('content', 'product')
 #7 C:\xampp\htdocs\2020\04\ylw\wp-includes\template-loader.php(106): include('C:\\xampp\\h in C:\xampp\htdocs\2020\04\ylw\ylw-cn\themes\ylw\inc\wc-functions.php on line 120
 
+2020-05-03T16:48:47+00:00 CRITICAL Cannot redeclare wc_single_product_under_title() (previously declared in C:\xampp\htdocs\2020\04\ylw\ylw-cn\themes\ylw\inc\wc-functions.php:167) in C:\xampp\htdocs\2020\04\ylw\ylw-cn\themes\ylw\inc\wc-functions.php on line 173
+
+2020-05-03T16:50:49+00:00 CRITICAL Cannot redeclare wc_single_product_under_title() (previously declared in C:\xampp\htdocs\2020\04\ylw\ylw-cn\themes\ylw\inc\wc-functions.php:167) in C:\xampp\htdocs\2020\04\ylw\ylw-cn\themes\ylw\inc\wc-functions.php on line 177
+
+2020-05-03T16:50:59+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on string in C:\xampp\htdocs\2020\04\ylw\ylw-cn\themes\ylw\inc\wc-functions.php:173
+Stack trace:
+#0 C:\xampp\htdocs\2020\04\ylw\wp-includes\class-wp-hook.php(287): wc_single_product_price('')
+#1 C:\xampp\htdocs\2020\04\ylw\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\2020\04\ylw\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\2020\04\ylw\ylw-cn\themes\ylw\woocommerce\content-single-product.php(78): do_action('woocommerce_sin...')
+#4 C:\xampp\htdocs\2020\04\ylw\wp-includes\template.php(725): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\2020\04\ylw\ylw-cn\plugins\woocommerce\includes\wc-core-functions.php(197): load_template('C:\\xampp\\htdocs...', false)
+#6 C:\xampp\htdocs\2020\04\ylw\ylw-cn\themes\ylw\woocommerce\single-product.php(36): wc_get_template_part('content', 'single-product')
+#7 C:\xampp\htdocs\2020\04\ylw\wp-includes\template-loader.php(106): include('C:\\xampp\\h in C:\xampp\htdocs\2020\04\ylw\ylw-cn\themes\ylw\inc\wc-functions.php on line 173
+

@@ -138,17 +138,46 @@ if (!function_exists('add_shorttext_below_title_loop')) {
 
 /*Remove Single page Woocommerce Hooks & Filters are below*/
 
-//remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_sharing', 50 );
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
-//remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+
 
 
 add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args', 20 );
 function jk_related_products_args( $args ) {
 $args['posts_per_page'] = 8; // 4 related products
 return $args;
+}
+
+// To change add to cart text on single product page
+add_filter( 'woocommerce_product_single_add_to_cart_text', 'woocommerce_custom_single_add_to_cart_text' ); 
+
+function woocommerce_custom_single_add_to_cart_text() {
+    return __( 'ADD TO BAG', 'woocommerce' ); 
+}
+
+
+
+add_action( 'woocommerce_single_product_summary', 'wc_single_product_under_title', 6 );
+function wc_single_product_under_title(){
+    echo '<p>Science Stuff Collection</p>';
+}
+
+add_action( 'woocommerce_single_product_summary', 'wc_single_product_price', 10 );
+function wc_single_product_price(){
+    global $product;
+    $output = '<div class="price-wrapp">';
+    $output .= $product->get_price_html();
+    $output .= '</div>';
+
+    echo $output;
+}
+
+add_action( 'woocommerce_single_product_summary', 'wc_single_free_delivery_text', 28 );
+function wc_single_free_delivery_text(){
+    echo '<div class="free-text"><p>Free Delivery for over 50 <span>€</span></p</div>';
 }
