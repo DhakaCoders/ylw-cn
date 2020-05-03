@@ -36,13 +36,7 @@ if ( post_password_required() ) {
   <div class="container-xlg">
     <div class="row">
       <div class="col-md-12">
-        <div class="fl-breadcrumbs">
-          <ul class="reset-list">
-            <li class="fl-home-icon"><a href="#">home</a></li>
-            <li><a href="#">shop</a></li>
-            <li class="active"><a href="#">kids fashion</a></li>
-          </ul>
-        </div>
+        <?php cbv_custom_both_breadcrump(); ?>
       </div>
     </div>
   </div>

@@ -28,15 +28,9 @@ function get_custom_wc_output_content_wrapper(){
     	<div class="container-xlg">
     	<div class="row">
     	<div class="col-lg-4">
-    		<div class="fl-sidebar-cntlr">
-	    	    <div class="fl-breadcrumbs">
-		            <ul class="reset-list">
-		              <li class="fl-home-icon"><a href="#">home</a></li>
-		              <li><a href="#">shop</a></li>
-		              <li class="active"><a href="#">kids fashion</a></li>
-		            </ul>
-	            </div>
-				<div class="fl-my-slection">
+    		<div class="fl-sidebar-cntlr">';
+	    	  cbv_custom_both_breadcrump();  
+			echo '<div class="fl-my-slection">
 		            <div class="fl-my-slection-hdr">
 		              <label>My Selection</label>
 		              <span class="delete-all-btn">Delete all</span>
@@ -216,3 +210,19 @@ function wc_single_free_delivery_text(){
     echo '<div class="free-text"><p>Free Delivery for over 50 <span>€</span></p</div>';
 }
 
+
+
+// change a number of the breadcrumb defaults.
+add_filter( 'woocommerce_breadcrumb_defaults', 'cbv_woocommerce_breadcrumbs' );
+if( !function_exists('cbv_woocommerce_breadcrumbs')):
+function cbv_woocommerce_breadcrumbs() {
+    return array(
+            'delimiter'   => '',
+            'wrap_before' => '<div class="fl-breadcrumbs"><ul class="reset-list">',
+            'wrap_after'  => '</ul></div>',
+            'before'      => '<li>',
+            'after'       => '</li>',
+            'home'        => _x( 'home', 'breadcrumb', 'woocommerce' ),
+        );
+}
+endif;
