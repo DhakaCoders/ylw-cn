@@ -18,6 +18,19 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+
 ?>
 <div class="fl-product-list-cntlr">
+<?php 
+if( is_product() ){
+?>
+<ul class="reset-list clearfix hm-new-arrivals-sec-cntlr hmNewAarrivalsSlider">
+<?php
+} else{
+?>
 <ul class="reset-list clearfix products columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?>">
+<?php
+}
+
+?>
+

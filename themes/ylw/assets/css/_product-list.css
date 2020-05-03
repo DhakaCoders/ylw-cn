@@ -378,7 +378,10 @@
 .product-list-page-con .offer .fl-product-regular-price{
 	color: #FF0045;
 }
-
+.fl-sidebar-cntlr ul li:before {
+    background: transparent;
+    position: relative !important;
+}
 
 
 @media(max-width: 1499px){

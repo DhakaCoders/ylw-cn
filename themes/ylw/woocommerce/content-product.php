@@ -23,8 +23,13 @@ global $product;
 if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
+if( is_product() ){
+	$relatedClass = 'hm-new-arrivals-item';
+} else{
+	$relatedClass = '';
+}
 ?>
-<li <?php wc_product_class( '', $product ); ?>>
+<li <?php wc_product_class( $relatedClass, $product ); ?>>
 	<?php
 	/**
 	 * Hook: woocommerce_before_shop_loop_item.
