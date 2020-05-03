@@ -55,7 +55,7 @@ if ( $related_products ) : ?>
     <div class="row">
       <div class="col-md-12">
         <div class="hm-new-arrivals-sec-hdr">
-          <h3 class="hnash-title">You may also like</h3>
+          <h3 class="hnash-title"><?php _e('You may also like', 'woocommerce'); ?></h3>
           <div class="fl-prv-nxt">
             <span class="fl-prev"></span>
             <span class="fl-next"></span>
@@ -68,32 +68,36 @@ if ( $related_products ) : ?>
     <div class="row">
       <div class="col-md-12">
         <div class="hm-new-arrivals-sec-cntlr hmNewAarrivalsSlider">
-
-		<?php
-		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Related products', 'woocommerce' ) );
-
-		if ( !$heading ) :
-			?>
-			<h2><?php echo esc_html( $heading ); ?></h2>
-		<?php endif; ?>
-		
-		<?php woocommerce_product_loop_start(); ?>
-
 			<?php foreach ( $related_products as $related_product ) : ?>
 
-					<?php
-					$post_object = get_post( $related_product->get_id() );
+			<?php
+			$post_object = get_post( $related_product->get_id() );
 
-					setup_postdata( $GLOBALS['post'] =& $post_object ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, Squiz.PHP.DisallowMultipleAssignments.Found
-
-					wc_get_template_part( 'content', 'product' );
-					?>
-
+			setup_postdata( $GLOBALS['post'] =& $post_object ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, Squiz.PHP.DisallowMultipleAssignments.Found
+			global $product, $woocommerce, $post;
+			echo '<div class="hm-new-arrivals-item">';
+			echo '<div class="fl-product-item">';
+	        echo '<div class="fl-product-item-fea-img">';
+	        echo '<a href="'.get_permalink( $product->get_id() ).'">';
+	        echo wp_get_attachment_image( get_post_thumbnail_id($product->get_id()), 'pgrid' );
+	        echo '</a>';
+	        echo '<div class="product-overlay-icons">';
+	        echo '<a class="product-overlay-icon-heart" href="#"> <i class="far fa-heart"></i></a>';
+	        echo '<a class="product-overlay-icon-search" href="#"><i class="fas fa-search"></i></a>';
+	        echo '</div>';
+	        echo '</div>';
+	        echo '<div class="fl-product-item-des mHc">';
+	        echo '<strong class="fl-product-variable-title">NEW</strong>';
+	        echo '<h6 class="fl-product-title"><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h6>';
+	        echo '<div class="fl-product-box-prices">';
+	        echo '<div class="fl-product-regular-price">'.$product->get_price_html().'</div>';
+	        echo '</div>';
+	        echo '</div>';
+	        echo '</div>';
+	        echo '</div>';
+			?>
+	          
 			<?php endforeach; ?>
-
-		<?php woocommerce_product_loop_end(); ?>
-
-
         </div>
       </div>
       <div class="col-md-12">
