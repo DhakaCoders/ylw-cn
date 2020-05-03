@@ -1,0 +1,35 @@
+2020-05-03T04:41:39+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in C:\xampp\htdocs\2020\04\ylw\ylw-cn\themes\ylw\inc\wc-functions.php on line 20
+
+2020-05-03T05:29:09+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\2020\04\ylw\wp-includes\Requests\Transport\cURL.php on line 463
+
+2020-05-03T05:36:38+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\2020\04\ylw\wp-includes\Requests\Transport\cURL.php on line 163
+
+2020-05-03T05:41:39+00:00 CRITICAL Uncaught Error: Call to undefined function cbv_excerpt() in C:\xampp\htdocs\2020\04\ylw\ylw-cn\themes\ylw\inc\wc-functions.php:112
+Stack trace:
+#0 C:\xampp\htdocs\2020\04\ylw\wp-includes\class-wp-hook.php(287): add_shorttext_below_title_loop('')
+#1 C:\xampp\htdocs\2020\04\ylw\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\2020\04\ylw\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\2020\04\ylw\ylw-cn\themes\ylw\woocommerce\content-product.php(49): do_action('woocommerce_sho...')
+#4 C:\xampp\htdocs\2020\04\ylw\wp-includes\template.php(725): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\2020\04\ylw\ylw-cn\plugins\woocommerce\includes\wc-core-functions.php(197): load_template('C:\\xampp\\htdocs...', false)
+#6 C:\xampp\htdocs\2020\04\ylw\ylw-cn\themes\ylw\woocommerce\archive-product.php(70): wc_get_template_part('content', 'product')
+#7 C:\xampp\htdocs\2020\04\ylw\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#8 C:\xam in C:\xampp\htdocs\2020\04\ylw\ylw-cn\themes\ylw\inc\wc-functions.php on line 112
+
+2020-05-03T05:44:59+00:00 CRITICAL syntax error, unexpected '<' in C:\xampp\htdocs\2020\04\ylw\ylw-cn\themes\ylw\inc\wc-functions.php on line 114
+
+2020-05-03T05:45:37+00:00 CRITICAL syntax error, unexpected '<' in C:\xampp\htdocs\2020\04\ylw\ylw-cn\themes\ylw\inc\wc-functions.php on line 114
+
+2020-05-03T05:45:53+00:00 CRITICAL syntax error, unexpected '<' in C:\xampp\htdocs\2020\04\ylw\ylw-cn\themes\ylw\inc\wc-functions.php on line 114
+
+2020-05-03T05:46:41+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_html_price() in C:\xampp\htdocs\2020\04\ylw\ylw-cn\themes\ylw\inc\wc-functions.php:120
+Stack trace:
+#0 C:\xampp\htdocs\2020\04\ylw\wp-includes\class-wp-hook.php(287): add_shorttext_below_title_loop('')
+#1 C:\xampp\htdocs\2020\04\ylw\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\2020\04\ylw\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\2020\04\ylw\ylw-cn\themes\ylw\woocommerce\content-product.php(49): do_action('woocommerce_sho...')
+#4 C:\xampp\htdocs\2020\04\ylw\wp-includes\template.php(725): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\2020\04\ylw\ylw-cn\plugins\woocommerce\includes\wc-core-functions.php(197): load_template('C:\\xampp\\htdocs...', false)
+#6 C:\xampp\htdocs\2020\04\ylw\ylw-cn\themes\ylw\woocommerce\archive-product.php(70): wc_get_template_part('content', 'product')
+#7 C:\xampp\htdocs\2020\04\ylw\wp-includes\template-loader.php(106): include('C:\\xampp\\h in C:\xampp\htdocs\2020\04\ylw\ylw-cn\themes\ylw\inc\wc-functions.php on line 120
+

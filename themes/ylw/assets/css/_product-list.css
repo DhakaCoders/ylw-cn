@@ -231,7 +231,10 @@
 	background-size: 100% auto;
 }
 
-
+.woocommerce .woocommerce-ordering, 
+.woocommerce-page .woocommerce-ordering {
+    float: none !important;
+}
 
 .filter-check-row{
 	position: relative;

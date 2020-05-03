@@ -17,6 +17,7 @@ if( !function_exists('cbv_theme_setup') ){
 	    
 	  load_theme_textdomain( 'renault', get_template_directory() . '/languages' );
 		add_theme_support( 'title-tag' );
+        add_theme_support( 'woocommerce' );
 		add_theme_support('post-thumbnails');
 		if(function_exists('add_theme_support')) {
 			add_theme_support('category-thumbnails');
@@ -42,6 +43,7 @@ if( !function_exists('cbv_theme_setup') ){
 		register_nav_menus( array(
           'cbv_main_menu' => __( 'Hoofdmenu', THEME_NAME ),
           'cbv_fta_menu' => __( 'Footer Menu', THEME_NAME ),
+          'cbv_sidebar_menu' => __( 'Sidebar Menu', THEME_NAME ),
           'cbv_copyright_menu' => __( 'Copyright Menu', THEME_NAME ),
 		) );
 
@@ -77,6 +79,7 @@ include_once(THEME_DIR .'/inc/widgets-area.php');
 include_once(THEME_DIR .'/inc/breadcrumbs.php');
 include_once(THEME_DIR .'/inc/cbv-functions.php');
 include_once(THEME_DIR .'/inc/post-loadmore.php');
+include_once(THEME_DIR .'/inc/wc-functions.php');
 /**
 ACF Option pages->>
 */
