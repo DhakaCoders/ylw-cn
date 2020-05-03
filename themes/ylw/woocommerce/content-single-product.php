@@ -32,6 +32,21 @@ if ( post_password_required() ) {
 }
 ?>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
+<section class="product-songle-breadcrumbs-sec">
+  <div class="container-xlg">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="fl-breadcrumbs">
+          <ul class="reset-list">
+            <li class="fl-home-icon"><a href="#">home</a></li>
+            <li><a href="#">shop</a></li>
+            <li class="active"><a href="#">kids fashion</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="product-single-con-wrap">
   <div class="container-md">
     <div class="row">
