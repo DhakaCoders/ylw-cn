@@ -258,7 +258,6 @@ if( $('.hmNewAarrivalsSlider').length ){
       speed: 300,
       slidesToShow: 4,
       slidesToScroll: 1,
-      centerMode: true,
       variableWidth: true,
       prevArrow: $('.hm-new-arrivals-sec .fl-prev'),
       nextArrow: $('.hm-new-arrivals-sec .fl-next'),
