@@ -13,7 +13,9 @@
             <div class="form-group">
               <input type="search" id="search" class="form-input" value="<?php echo get_search_query(); ?>" name="s" />
               <label class="form-label placeholder" for="search"><span>Search for a product</span></label>
+              <span class="search-submit-btn-cnltr">
               <input class="search-submit-btn" type="submit" value="">
+              </span>
               <input type="hidden" name="post_type" value="product" />
             </div>
           </form>
