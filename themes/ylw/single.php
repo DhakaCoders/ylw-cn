@@ -85,6 +85,23 @@ if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/page-
   </div>
 </section>
 <?php endwhile; ?>
+<?php 
+$query = new WP_Query(array( 
+    'post_type'=> 'post',
+    'post_status' => 'publish',
+    'posts_per_page' => 3,
+    'post__not_in' => array($thisID),
+    'orderby' => 'rand',
+    'order'=> 'desc',
+    'date_query' => array(
+        array(
+            'after' => '2 week ago'
+        )
+    )
+  ) 
+);
+if($query->have_posts()):
+?>
 <section class="ylw-blog-article-grid-sec">
   <div class="container-xlg">
     <div class="row">
@@ -92,60 +109,34 @@ if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/page-
         <div class="ylw-blog-article-grid-sec-inr">
           <h3 class="ylw-blog-article-grid-sec-title">Read also..</h3>
           <ul class="reset-list clearfix">
+            <?php 
+              while($query->have_posts()): $query->the_post();
+                $attach_id = get_post_thumbnail_id(get_the_ID());
+                $feaimg_src = '';
+                if( !empty($attach_id) ){
+                  $feaimg_src = cbv_get_image_src($attach_id, 'bloggrid');
+                }
+                else{
+                  $feaimg_src = THEME_URI.'/assets/images/ylw-blog-grid-item-img-3.png';
+                }
+            ?>
             <li>
               <div class="ylw-blog-grid-item">
                 <div class="ylw-blog-grid-item-img-ctlr">
-                  <a href="#" class="overlay-link"></a>
-                  <div class="ylw-blog-grid-item-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/ylw-blog-grid-item-img-1.png');">
-                    
-                    <!-- <img src="<?php echo THEME_URI; ?>/assets/images/ylw-blog-grid-item-img-1.png"> -->
+                  <a href="<?php the_permalink(); ?>" class="overlay-link"></a>
+                  <div class="ylw-blog-grid-item-img" style="background: url('<?php echo $feaimg_src; ?>');">
                   </div>
                 </div>
                 <div class="ylw-blog-grid-item-des mHc">
                   <div class="ylw-blog-grid-item-des-inr">
-                    <span>04 JAN 2019</span>
-                    <h5 class="ylw-blog-grid-item-des-title"><a href="#">The best materials for a kid’s bedroom lorem ipsum.</a></h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum erat et lacus fermentum pulvinar.</p>
+                    <span><?php echo get_the_date('d M Y'); ?></span>
+                    <h5 class="ylw-blog-grid-item-des-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+                    <?php the_excerpt(); ?>
                   </div>
                 </div>
               </div>
             </li>
-            <li>
-              <div class="ylw-blog-grid-item">
-                <div class="ylw-blog-grid-item-img-ctlr">
-                  <a href="#" class="overlay-link"></a>
-                  <div class="ylw-blog-grid-item-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/ylw-blog-grid-item-img-2.png');">
-                    
-                    <!-- <img src="<?php echo THEME_URI; ?>/assets/images/ylw-blog-grid-item-img-2.png"> -->
-                  </div>
-                </div>
-                <div class="ylw-blog-grid-item-des mHc">
-                  <div class="ylw-blog-grid-item-des-inr">
-                    <span>04 JAN 2019</span>
-                    <h5 class="ylw-blog-grid-item-des-title"><a href="#">The natural rubber for your baby is lorem ipsum door sit amen.</a></h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum erat et lacus fermentum pulvinar.</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="ylw-blog-grid-item">
-                <div class="ylw-blog-grid-item-img-ctlr">
-                  <a href="#" class="overlay-link"></a>
-                  <div class="ylw-blog-grid-item-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/ylw-blog-grid-item-img-3.png');">
-                    
-                    <!-- <img src="<?php echo THEME_URI; ?>/assets/images/ylw-blog-grid-item-img-3.png"> -->
-                  </div>
-                </div>
-                <div class="ylw-blog-grid-item-des mHc">
-                  <div class="ylw-blog-grid-item-des-inr">
-                    <span>04 JAN 2019</span>
-                    <h5 class="ylw-blog-grid-item-des-title"><a href="#">Yell-oh! team recommends organic cotton lorem ipsum.</a></h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum erat et lacus fermentum pulvinar.</p>
-                  </div>
-                </div>
-              </div>
-            </li>
+            <?php endwhile; ?>
           </ul>
           <div class="ylw-blog-article-grid-sec-link">
             <a href="<?php echo get_permalink( $thisID );?>">discover YEll-OH! JOURNAL</a>
@@ -155,5 +146,6 @@ if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/page-
     </div>
   </div>
 </section>
+<?php endif; wp_reset_postdata(); ?> 
 <?php get_template_part('templates/footer', 'top'); ?>
 <?php get_footer(); ?>
