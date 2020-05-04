@@ -158,18 +158,21 @@
       <?php echo $logo_tag; ?>
     </a>
   </div>
+  <?php 
+    $slides = get_field('gslides', HOMEID);
+    if($slides):
+  ?>
   <div class="main-banner-cntlr mainBnrSlider">
     <div class="mainBnrSlider" id="mainBnrSlider">
+    <?php foreach( $slides as $hslide ): ?>
       <div class="mainBnrSlideItem">
-        <img src="<?php echo THEME_URI; ?>/assets/images/main-bnr-slide-img-01.jpg">
+        <?php if( !empty($hslide['ID']) ): ?>
+        <?php echo cbv_get_image_tag($hslide['ID'], 'hmslide'); ?>
+        <?php endif; ?>
       </div>
-      <div class="mainBnrSlideItem">
-        <img src="<?php echo THEME_URI; ?>/assets/images/main-bnr-slide-img-01.jpg">
-      </div>
-      <div class="mainBnrSlideItem">
-        <img src="<?php echo THEME_URI; ?>/assets/images/main-bnr-slide-img-01.jpg">
-      </div>
+      <?php endforeach; ?>
     </div>
   </div>   
+  <?php endif; ?>
 </section>
 <?php get_template_part('templates/header', 'popups'); ?>

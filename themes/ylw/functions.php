@@ -25,6 +25,7 @@ if( !function_exists('cbv_theme_setup') ){
         add_image_size( 'bloggrid', 400, 280, true );
         add_image_size( 'contactimg', 930, 396, true );
         add_image_size( 'aboutgrid', 588, 420, true );
+        add_image_size( 'hmslide', 1330, 724, true );
 
 
 		

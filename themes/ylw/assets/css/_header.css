@@ -430,6 +430,25 @@ nav.main-nav > ul > li.menu-item-has-children:hover .mega-menu-cntlr{
 	color: #3E3935;
 }
  
+ .search-form input[type="search"]:focus + .placeholder {
+	top: -32px;
+	left: 0;
+	font-size: 20px;
+}
+
+.search-form form input[type="search"] {
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #3E3935;
+	outline: none;
+	padding: 0px 55px 10px 20px;
+	height: 40px;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	color: #3E3935;
+}
 
 
 .search-submit-btn-cnltr{
