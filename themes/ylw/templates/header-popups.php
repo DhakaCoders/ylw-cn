@@ -9,11 +9,12 @@
     </div>  
     <div class="header-popup-search clearfix">
       <div class="search-form">
-          <form action="" class="form">
+          <form role="search" method="get" class="woocommerce-product-search" action="<?php echo esc_url( home_url( '/' ) ); ?>">
             <div class="form-group">
-              <input id="search" class="form-input" type="text" />
+              <input type="search" id="search" class="form-input" value="<?php echo get_search_query(); ?>" name="s" />
               <label class="form-label placeholder" for="search"><span>Search for a product</span></label>
               <input class="search-submit-btn" type="submit" value="">
+              <input type="hidden" name="post_type" value="product" />
             </div>
           </form>
       </div>       
