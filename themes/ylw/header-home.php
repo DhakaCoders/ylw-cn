@@ -102,18 +102,36 @@
             <i><img src="<?php echo THEME_URI; ?>/assets/images/search-icon-white.png"></i>
           </div>
           <div class="hdr-mini-cart-btn">
-            <a href="#">
+            <a href="<?php echo wc_get_cart_url(); ?>">
               <i><img src="<?php echo THEME_URI; ?>/assets/images/cart-icon-white.png"></i>
-              <span>3</span>
+              <?php if(WC()->cart->get_cart_contents_count() > 0) {
+                echo sprintf ( '<span>%d</span>', WC()->cart->get_cart_contents_count() );
+              } else {
+                echo sprintf ( '<span>%d</span>', 0 );
+              }
+              ?>
             </a>
           </div>
           <div class="hdr-account">
-            <span>Account</span>
+            <span><?php _e('Account', THEME_NAME); ?></span>
             <ul class="reset-list clearfix">
-              <li><a href="#">My Profile</a></li>
+              <li><a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">My Profile</a></li>
+              <?php 
+              if( is_user_logged_in() ){
+                foreach ( wc_get_account_menu_items() as $endpoint => $label ) : 
+                  if($endpoint == 'customer-logout'):
+              ?>
               <li>
-                <a href="#"><i class="fas fa-sign-out-alt"></i> <span>Log out</span></a>
+                <a href="<?php echo esc_url( wc_get_account_endpoint_url( $endpoint ) ); ?>"><i class="fas fa-sign-out-alt"></i> <span>Log out</span></a>
               </li>
+              <?php endif; endforeach; 
+              } else {
+              ?>
+              <li>
+                <i class="fas fa-sign-out-alt"></i>
+                <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">Log In</a>
+              </li>
+            <?php } ?>
             </ul>
           </div>
           <div class="hdr-humbergur-btn">
@@ -126,24 +144,32 @@
     </div>
   </div>
 </header>
-<section id="header-popups" class="header-popups">
-  <div class="hdrpopups-inr">
-    <div class="pop-up-nav clearfix">
-        <div class="popup-cross">
-          <span></span>
-          <span></span>
-        </div>
-    </div>  
-    <div class="header-popup-search clearfix">
-      <div class="search-form">
-          <form action="" class="form">
-            <div class="form-group">
-              <input id="search" class="form-input" type="text" />
-              <label class="form-label placeholder" for="search">Search for a product</span></label>
-              <span class="search-submit-btn-cnltr"><input class="search-submit-btn" type="submit" value=""></span>
-            </div>
-          </form>
-      </div>       
-    </div>  
+<?php 
+  $logoObj = get_field('logo_header_homepage', 'options');
+  if( is_array($logoObj) ){
+    $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+  }else{
+    $logo_tag = '';
+  }
+?>
+<section class="main-banner">
+  <div class="main-bnr-logo">
+    <a href="<?php echo esc_url(home_url('/')); ?>">
+      <?php echo $logo_tag; ?>
+    </a>
   </div>
-</section><!-- end of header-search -->
+  <div class="main-banner-cntlr mainBnrSlider">
+    <div class="mainBnrSlider" id="mainBnrSlider">
+      <div class="mainBnrSlideItem">
+        <img src="<?php echo THEME_URI; ?>/assets/images/main-bnr-slide-img-01.jpg">
+      </div>
+      <div class="mainBnrSlideItem">
+        <img src="<?php echo THEME_URI; ?>/assets/images/main-bnr-slide-img-01.jpg">
+      </div>
+      <div class="mainBnrSlideItem">
+        <img src="<?php echo THEME_URI; ?>/assets/images/main-bnr-slide-img-01.jpg">
+      </div>
+    </div>
+  </div>   
+</section>
+<?php get_template_part('templates/header', 'popups'); ?>

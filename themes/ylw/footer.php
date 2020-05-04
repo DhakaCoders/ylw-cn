@@ -1,3 +1,19 @@
+<?php 
+  $spacialArry = array(".", "/", "+", " ");$replaceArray = '';
+  $contact = get_field('ftcontact', 'options');
+  $email = $contact['email_address'];
+  $show_telefoon = $contact['telephone'];
+  $plink = $contact['page_link'];
+  $telefoon = trim(str_replace($spacialArry, $replaceArray, $show_telefoon));
+
+  $logoObj = get_field('logo_footer', 'options');
+  if( is_array($logoObj) ){
+    $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+  }else{
+    $logo_tag = '';
+  }
+  $smedias = get_field('sociale_media', 'options');
+?>
 <footer class="footer-wrp">
   <div class="container-xlg">
     <div class="row">
@@ -5,45 +21,59 @@
         <div class="ftr-col-main clearfix">
           <div class="ftr-col ftr-col-1">
             <div class="ftr-logo">
-              <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/ftr-logo.png" alt=""></a>
+              <a href="<?php echo esc_url(home_url('/')); ?>">
+                <?php echo $logo_tag; ?>
+              </a>
             </div>
           </div>
           <div class="ftr-col ftr-col-2"> 
-            <h6><span>About Us</span></h6>
-            <ul class="ulc">
-              <li><a href="#">Who are we?</a></li>
-              <li><a href="#">Lookbook</a></li>
-              <li><a href="#">Terms and Conditions</a></li>
-              <li><a href="#">Our Stores</a></li>
-              <li><a href="#">Press Room</a></li>
-              <li><a href="#">Showrooms</a></li>
-            </ul>
+            <h6><span><?php _e( 'About Us', THEME_NAME ); ?></span></h6>
+            <?php 
+              $fmenuOptionsa = array( 
+                  'theme_location' => 'cbv_fta_menu', 
+                  'menu_class' => 'ulc',
+                  'container' => 'nav',
+                  'container_class' => 'nav'
+                );
+              wp_nav_menu( $fmenuOptionsa ); 
+            ?>
           </div>
-          <div class="ftr-col ftr-col-3">
-            <h6><span>Services</span></h6>
-            <ul class="ulc reset-list">
-              <li><a href="#">Customer Help</a></li>
-              <li><a href="#">Size Guide</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Shipping & Handling</a></li>
-              <li><a href="#">Online Returns</a></li>
-              <li><a href="#">My Account</a></li>
-            </ul>              
+          <div class="ftr-col ftr-col-3"> 
+            <h6><span><?php _e( 'Services', THEME_NAME ); ?></span></h6>
+            <?php 
+              $fmenuOptionsb = array( 
+                  'theme_location' => 'cbv_ftb_menu', 
+                  'menu_class' => 'ulc',
+                  'container' => 'nav',
+                  'container_class' => 'nav'
+                );
+              wp_nav_menu( $fmenuOptionsb ); 
+            ?>             
           </div>
           <div class="ftr-col ftr-col-4">
-            <h6><span>May We Help?</span></h6>
+            <h6><span><?php _e( 'May We Help?', THEME_NAME ); ?></span></h6>
             <ul class="ulc reset-list">
-              <li><a href="mailto:customerservice@yell-oh.com">customerservice@yell-oh.com</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="tel:+30 210 89 47 420">+30 210 89 47 420</a></li>
+              <?php if( !empty($email) ) printf('<li><a href="mailto:%s">%s</a></li>', $email, $email); ?>
+              <?php 
+                if( is_array( $plink ) &&  !empty( $plink['url'] ) ){
+                    printf('<li><a href="%s" target="%s">%s</a></li>', $plink['url'], $plink['target'], $plink['title']); 
+                }
+              ?>
+              <?php if( !empty($show_telefoon) ) printf('<li><a href="tel:%s">%s</a></li>', $telefoon, $show_telefoon); ?>
             </ul> 
             <div class="ftr-socail-icon">
-              <h6>FOLLOW</h6>
-              <ul class="ulc clearfix">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-              </ul>
+              <h6><?php _e( 'FOLLOW', THEME_NAME ); ?></h6>
+              <?php if(!empty($smedias)):  ?>
+                <ul class="ulc clearfix">
+                  <?php foreach($smedias as $smedia): ?>
+                    <li>
+                      <a target="_blank" href="<?php echo $smedia['url']; ?>">
+                        <?php echo $smedia['icon']; ?>
+                      </a>
+                    </li>
+                  <?php endforeach; ?>
+                </ul>
+              <?php endif; ?>
             </div>             
           </div>
           <div class="ftr-col ftr-col-5">

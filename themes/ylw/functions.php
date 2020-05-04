@@ -42,7 +42,8 @@ if( !function_exists('cbv_theme_setup') ){
 
 		register_nav_menus( array(
           'cbv_main_menu' => __( 'Hoofdmenu', THEME_NAME ),
-          'cbv_fta_menu' => __( 'Footer Menu', THEME_NAME ),
+          'cbv_fta_menu' => __( 'Footer Menu 1', THEME_NAME ),
+          'cbv_ftb_menu' => __( 'Footer Menu 2', THEME_NAME ),
           'cbv_sidebar_menu' => __( 'Sidebar Menu', THEME_NAME ),
           'cbv_copyright_menu' => __( 'Copyright Menu', THEME_NAME ),
 		) );

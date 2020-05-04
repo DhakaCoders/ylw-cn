@@ -1,25 +1,4 @@
 <?php get_header('home'); ?>
-<section class="main-banner">
-  <div class="main-bnr-logo">
-    <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo-white-bnr.png"></a>
-  </div>
-  <div class="main-banner-cntlr mainBnrSlider">
-    <div class="mainBnrSlider" id="mainBnrSlider">
-      <div class="mainBnrSlideItem">
-        <img src="<?php echo THEME_URI; ?>/assets/images/main-bnr-slide-img-01.jpg">
-      </div>
-      <div class="mainBnrSlideItem">
-        <img src="<?php echo THEME_URI; ?>/assets/images/main-bnr-slide-img-01.jpg">
-      </div>
-      <div class="mainBnrSlideItem">
-        <img src="<?php echo THEME_URI; ?>/assets/images/main-bnr-slide-img-01.jpg">
-      </div>
-    </div>
-  </div>   
-</section>
-
-
-
 <section class="hm-children-clothes-sec">
   <div class="container">
       <div class="row">
