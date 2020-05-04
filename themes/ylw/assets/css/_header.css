@@ -235,7 +235,6 @@ nav.main-nav > ul > li.menu-item-has-children:hover .mega-menu-cntlr{
 .hdr-account ul{
 	position: absolute;
     top: 100%;
-    left: 0;
     right: 0;
     background: #E9EAEF;
     border-radius: 5px;
@@ -244,6 +243,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover .mega-menu-cntlr{
     z-index: 15;
     display: none;
     width: 125px;
+    margin-top: 10px;
 }
 
 .hdr-account ul li {
