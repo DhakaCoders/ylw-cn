@@ -1,0 +1,15 @@
+2020-05-05T04:19:34+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\2020\04\ylw\wp-includes\Requests\Transport\cURL.php on line 163
+
+2020-05-05T08:30:10+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\2020\04\ylw\wp-includes\Requests\Transport\cURL.php on line 163
+
+2020-05-05T10:29:45+00:00 CRITICAL Uncaught Error: Class 'obj' not found in C:\xampp\htdocs\2020\04\ylw\ylw-cn\themes\ylw\woocommerce\single-product\related.php:86
+Stack trace:
+#0 C:\xampp\htdocs\2020\04\ylw\ylw-cn\plugins\woocommerce\includes\wc-core-functions.php(251): include()
+#1 C:\xampp\htdocs\2020\04\ylw\ylw-cn\plugins\woocommerce\includes\wc-template-functions.php(1930): wc_get_template('single-product/...', Array)
+#2 C:\xampp\htdocs\2020\04\ylw\ylw-cn\plugins\woocommerce\includes\wc-template-functions.php(1893): woocommerce_related_products(Array)
+#3 C:\xampp\htdocs\2020\04\ylw\wp-includes\class-wp-hook.php(287): woocommerce_output_related_products('')
+#4 C:\xampp\htdocs\2020\04\ylw\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\2020\04\ylw\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\2020\04\ylw\ylw-cn\themes\ylw\woocommerce\content-single-product.php(87): do_action('woocommerce_aft...')
+#7 C:\xampp\htdocs\2020\04\ylw\wp-includes\template.php(725): require('C:\\ in C:\xampp\htdocs\2020\04\ylw\ylw-cn\themes\ylw\woocommerce\single-product\related.php on line 86
+

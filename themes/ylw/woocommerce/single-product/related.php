@@ -68,8 +68,9 @@ if ( $related_products ) : ?>
     <div class="row">
       <div class="col-md-12">
         <div class="hm-new-arrivals-sec-cntlr hmNewAarrivalsSlider">
-			<?php foreach ( $related_products as $related_product ) : ?>
-
+			<?php
+      $obj = new Alg_WC_Wish_List_Toggle_Btn();
+       foreach ( $related_products as $related_product ) : ?>
 			<?php
 			$post_object = get_post( $related_product->get_id() );
 
@@ -82,8 +83,10 @@ if ( $related_products ) : ?>
 	        echo wp_get_attachment_image( get_post_thumbnail_id($product->get_id()), 'pgrid' );
 	        echo '</a>';
 	        echo '<div class="product-overlay-icons">';
-	        echo '<a class="product-overlay-icon-heart" href="#"> <i class="far fa-heart"></i></a>';
-	        echo '<a class="product-overlay-icon-search" href="#"><i class="fas fa-search"></i></a>';
+	        echo '<a class="product-overlay-icon-heart">';
+          $obj::show_thumb_btn();
+          echo '</a>';
+	        echo '<a href="#" class="product-overlay-icon-search yith-wcqv-button" data-product_id="'.$product->get_id().'"><i class="fas fa-search"></i></a>';
 	        echo '</div>';
 	        echo '</div>';
 	        echo '<div class="fl-product-item-des mHc">';

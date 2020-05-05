@@ -106,6 +106,7 @@ remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_ad
 add_action('woocommerce_shop_loop_item_title', 'add_shorttext_below_title_loop', 5);
 if (!function_exists('add_shorttext_below_title_loop')) {
     function add_shorttext_below_title_loop() {
+        $obj = new Alg_WC_Wish_List_Toggle_Btn();
         global $product, $woocommerce, $post;
         $sc = '[yith_quick_view product_id="'.$product->get_id().'" type="icon" label="QV"]';
 		echo '<div class="fl-product-item hello">';
@@ -114,8 +115,10 @@ if (!function_exists('add_shorttext_below_title_loop')) {
         echo wp_get_attachment_image( get_post_thumbnail_id($product->get_id()), 'pgrid' );
         echo '</a>';
         echo '<div class="product-overlay-icons">';
-        echo '<a class="product-overlay-icon-heart" href="#"> <i class="far fa-heart"></i></a>';
-        echo '<a class="product-overlay-icon-search" href="#"><i class="fas fa-search"></i></a>';
+        echo '<a class="product-overlay-icon-heart">';
+          $obj::show_thumb_btn();
+        echo '</a>';
+        echo '<a href="#" class="product-overlay-icon-search yith-wcqv-button" data-product_id="'.$product->get_id().'"><i class="fas fa-search"></i></a>';
         echo do_shortcode($sc);
         echo '</div>';
         echo '</div>';

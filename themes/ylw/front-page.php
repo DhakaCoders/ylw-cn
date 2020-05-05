@@ -160,8 +160,10 @@
               echo wp_get_attachment_image( get_post_thumbnail_id($product->get_id()), 'pgrid' );
               echo '</a>';
               echo '<div class="product-overlay-icons">';
-              echo '<a class="product-overlay-icon-heart" href="#"> <i class="far fa-heart"></i></a>';
-              echo '<a class="product-overlay-icon-search" href="#"><i class="fas fa-search"></i></a>';
+              echo '<a class="product-overlay-icon-heart">';
+                $obj::show_thumb_btn();
+              echo '</a>';
+              echo '<a href="#" class="product-overlay-icon-search yith-wcqv-button" data-product_id="'.$product->get_id().'"><i class="fas fa-search"></i></a>';
               echo '</div>';
               echo '</div>';
               echo '<div class="fl-product-item-des mHc">';
@@ -330,7 +332,7 @@
                   echo '</a>';
                   echo '<div class="product-overlay-icons">';
                   echo '<a class="product-overlay-icon-heart" href="#"> <i class="far fa-heart"></i></a>';
-                  echo '<a class="product-overlay-icon-search" href="#"><i class="fas fa-search"></i></a>';
+                  echo '<a href="#" class="product-overlay-icon-search yith-wcqv-button" data-product_id="'.$product->get_id().'"><i class="fas fa-search"></i></a>';
                   echo '</div>';
                   echo '</div>';
                   echo '<div class="fl-product-item-des mHc">';

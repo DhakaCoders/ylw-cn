@@ -326,7 +326,8 @@ a.transparent-btn{
 	bottom: 10px;
 	opacity: 1;
 }
-.product-overlay-icons a{
+.product-overlay-icons a,
+.product-overlay-icons .product-overlay-icon-heart{
 	width: 40px;
 	height: 40px;
 	background: #FFC627;
@@ -937,7 +938,8 @@ a.white-transparent-btn{
 	.gift-ideas-sec-lft{
 		padding-top: 75px;
 	}
-	.product-overlay-icons a{
+	.product-overlay-icons a,
+	.product-overlay-icons .product-overlay-icon-heart{
 		font-size: 17px;
 		width: 35px;
 		height: 35px;
