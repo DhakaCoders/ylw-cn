@@ -384,24 +384,24 @@ $('.product-gallery-img').slick({
 */
 
 
-if( $('.product-gallery-img').length ){
-    $('.product-gallery-img').slick({
+if( $('.bigViewSlider').length ){
+    $('.bigViewSlider').slick({
       dots: false,
       infinite: false,
       arrows: false,
       speed: 300,
       slidesToShow: 1,
       slidesToScroll: 1,
-       asNavFor: '.thumbnail-items'
+       asNavFor: '.thumbSlider'
     });
 }
 
-if( $('.thumbnail-items').length ){
-   $('.thumbnail-items').slick({
+if( $('.thumbSlider').length ){
+   $('.thumbSlider').slick({
      slidesToShow: 5,
      slidesToScroll: 1,
      arrows: true,
-     asNavFor: '.product-gallery-img',
+     asNavFor: '.bigViewSlider',
      dots: false,
      focusOnSelect: true
    });

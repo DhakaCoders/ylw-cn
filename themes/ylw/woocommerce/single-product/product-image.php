@@ -35,61 +35,61 @@ if ( $attachment_ids && $product->get_image_id() ) {
 $attachId = get_post_thumbnail_id(get_the_ID());
 ?>
 <div class="single-pro-lft-con clearfix">
-<div class="product-slider-wrp clearfix">
-  <div class="bigViewSlider-wrp">
-    <div class="bigViewSlider">
-    	<?php if( !empty($attachId) ): ?>
-    		<div class="bigViewSlider-item">
-	        	<?php echo cbv_get_image_tag($attachId, 'full'); ?>
-	      	</div>
-    	<?php endif; ?>
-      	<?php 
-		if ( $attachment_ids && $product->get_image_id() ) {
-			foreach ( $attachment_ids as $attachment_id ) {
-			?>
-			<div class="bigViewSlider-item">
-	        	<?php echo cbv_get_image_tag($attachment_id, 'full'); ?>
-	      	</div>
-			<?php
-			}
-		}
-      	?>
-    </div>
-  </div>
-  <?php if ( $attachment_ids && $product->get_image_id() ) { ?>
-  <div class="thumbSlider-wrp">
-    <div class="thumbSlider-wrp-innr-con">
-      <div class="thumbSlider-arrows">
-        <span class="leftArrow">
-          <i class="fas fa-angle-up"></i>
-        </span>
-        <span class="rightArrow">
-          <i class="fas fa-angle-down"></i>
-        </span>
-      </div>
-      <div class="thumbSlider">
+  <div class="product-slider-wrp clearfix">
+    <div class="bigViewSlider-wrp">
+      <div class="bigViewSlider">
       	<?php if( !empty($attachId) ): ?>
-    	<div class="thumbSlider-item">
-          	<div class="thumbSlider-item-img">
-	        	<?php echo cbv_get_image_tag($attachId, 'thumbnail'); ?>
-	      	</div>
-        </div>
-    	<?php endif; ?>
-      	<?php 
-		foreach ( $attachment_ids as $attachment_id ) {
-
-		?>
-        <div class="thumbSlider-item">
-          <div class="thumbSlider-item-img">
-            <i><?php echo cbv_get_image_tag($attachment_id, 'thumbnail'); ?></i>
-          </div>
-        </div>
-        <?php
-		}
-      	?>
+      		<div class="bigViewSlider-item">
+  	        	<?php echo cbv_get_image_tag($attachId, 'full'); ?>
+  	      	</div>
+      	<?php endif; ?>
+        	<?php 
+  		if ( $attachment_ids && $product->get_image_id() ) {
+  			foreach ( $attachment_ids as $attachment_id ) {
+  			?>
+  			<div class="bigViewSlider-item">
+  	        	<?php echo cbv_get_image_tag($attachment_id, 'full'); ?>
+  	      	</div>
+  			<?php
+  			}
+  		}
+        	?>
       </div>
-    </div>  
-  </div>
-  <?php } ?>
-</div>            
+    </div>
+    <?php if ( $attachment_ids && $product->get_image_id() ) { ?>
+    <div class="thumbSlider-wrp">
+      <div class="thumbSlider-wrp-innr-con">
+        <div class="thumbSlider-arrows">
+          <span class="leftArrow">
+            <i class="fas fa-angle-up"></i>
+          </span>
+          <span class="rightArrow">
+            <i class="fas fa-angle-down"></i>
+          </span>
+        </div>
+        <div class="thumbSlider">
+        	<?php if( !empty($attachId) ): ?>
+      	<div class="thumbSlider-item">
+            	<div class="thumbSlider-item-img">
+  	        	<?php echo cbv_get_image_tag($attachId, 'thumbnail'); ?>
+  	      	</div>
+          </div>
+      	<?php endif; ?>
+        	<?php 
+  		foreach ( $attachment_ids as $attachment_id ) {
+
+  		?>
+          <div class="thumbSlider-item">
+            <div class="thumbSlider-item-img">
+              <i><?php echo cbv_get_image_tag($attachment_id, 'thumbnail'); ?></i>
+            </div>
+          </div>
+          <?php
+  		}
+        	?>
+        </div>
+      </div>  
+    </div>
+    <?php } ?>
+  </div>            
 </div>
