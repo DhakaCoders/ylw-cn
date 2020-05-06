@@ -117,6 +117,10 @@
 	text-align: right;
 	padding-bottom: 22px;
 }
+.ylw-press-select form{
+	max-width: 127px;
+	margin-left: auto;
+}
 .bootstrap-select>.dropdown-toggle {
     border: 1px solid #E0E0E0;
     text-transform: uppercase;
@@ -128,7 +132,7 @@
     border-radius: 0;
 }
 .ylw-press-grid-sec .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
-    width: 125px;
+    width: 100%;
 }
 .dropdown-toggle {
     min-height: 30px;
