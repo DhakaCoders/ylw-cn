@@ -45,6 +45,7 @@ if ( post_password_required() ) {
   <div class="container-md">
     <div class="row">
       <div class="col-md-12">
+      	<div class="product-single-con-inr clearfix">
 	<?php
 	/**
 	 * Hook: woocommerce_before_single_product_summary.
@@ -71,6 +72,7 @@ if ( post_password_required() ) {
 		 */
 		do_action( 'woocommerce_single_product_summary' );
 		?>
+		</div>
 	</div>
       </div>
     </div>
