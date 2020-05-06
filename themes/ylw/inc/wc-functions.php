@@ -196,26 +196,25 @@ function wc_single_product_price(){
 add_action( 'woocommerce_custom_metafield', 'wc_single_product_metafields' );
 
 function wc_single_product_metafields(){
-    $output = '<div class="wc-accordion">';
-    $output .= '<div class="faq-accordion-tab-row">
-                  <h6 class="faq-accordion-title">Size & Fit</h6>
-                  <div class="faq-accordion-des">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </div>
-                </div>';
-    $output .= '<div class="faq-accordion-tab-row">
-                  <h6 class="faq-accordion-title">Details & Materials</h6>
-                  <div class="faq-accordion-des">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </div>
-                </div>';
-    $output .= '<div class="faq-accordion-tab-row">
-                  <h6 class="faq-accordion-title">Care</h6>
-                  <div class="faq-accordion-des">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </div>
-                </div>';
+    global $product;
+    $output = '';
+    $spacifics = get_field('spacifications', $product->get_id());
+    if( $spacifics ):
+    $output .= '<div class="wc-accordion">';
+    foreach( $spacifics as $spacific ):
+    $output .= '<div class="faq-accordion-tab-row">';
+                if( !empty($spacific['label']) ): 
+    $output .= '<h6 class="faq-accordion-title">'.$spacific['label'].'</h6>';
+                endif;
+                if( !empty($spacific['details']) ): 
+    $output .= '<div class="faq-accordion-des">';
+    $output .= '<p>'.$spacific['details'].'</p>';
     $output .= '</div>';
+                endif;
+    $output .= '</div>';
+    endforeach;
+    $output .= '</div>';
+    endif;
 
     echo $output;
 }

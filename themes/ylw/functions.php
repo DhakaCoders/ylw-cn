@@ -140,6 +140,7 @@ function my_wp_nav_menu_objects( $items, $args ) {
 }
 
 function custom_body_classes($classes){
+    global $post;
     // the list of WordPress global browser checks
     // https://codex.wordpress.org/Global_Variables#Browser_Detection_Booleans
     $browsers = ['is_iphone', 'is_chrome', 'is_safari', 'is_NS4', 'is_opera', 'is_macIE', 'is_winIE', 'is_gecko', 'is_lynx', 'is_IE', 'is_edge'];
@@ -149,6 +150,10 @@ function custom_body_classes($classes){
     }));
     if( is_front_page() ){
       $classes[] = 'home';  
+    }
+
+    if ( is_page() && isset( $post ) ) {
+        $classes[] = $post->post_name;
     }
     return $classes;
 }
