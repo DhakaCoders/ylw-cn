@@ -48,66 +48,15 @@
       </div>
       <div class="hdr-mid">
         <nav class="main-nav">
-          <ul class="clearfix reset-list">
-            <li><a href="#">newborn</a></li>
-            <li class="current-menu-item"><a href="#">baby</a></li>
-            <li class="menu-item-has-children">
-              <a href="#">KID</a>
-              <div class="mega-menu-cntlr">
-                <div class="mega-menu-inr">
-                  <div class="mega-menu-cols">
-                    <div class="mega-menu-col">
-                      <strong>GIRLS</strong>
-                      <ul>
-                        <li><a href="#">New in</a></li>
-                        <li><a href="#">Dresses</a></li>
-                        <li><a href="#">Coats</a></li>
-                        <li><a href="#">Tops</a></li>
-                        <li><a href="#">Gloves</a></li>
-                        <li><a href="#">Jackets</a></li>
-                        <li><a href="#">Jeans</a></li>
-                        <li><a href="#">Jogging Bottoms</a></li>
-                        <li><a href="#">Jumpers</a></li>
-                      </ul>
-                      <span><a href="#">Sales</a></span>
-                    </div>
-                    <div class="mega-menu-col">
-                      <strong>GIRLS</strong>
-                      <ul>
-                        <li><a href="#">New in</a></li>
-                        <li><a href="#">Dresses</a></li>
-                        <li><a href="#">Coats</a></li>
-                        <li><a href="#">Tops</a></li>
-                        <li><a href="#">Gloves</a></li>
-                        <li><a href="#">Jackets</a></li>
-                        <li><a href="#">Jeans</a></li>
-                        <li><a href="#">Jogging Bottoms</a></li>
-                        <li><a href="#">Jumpers</a></li>
-                      </ul>
-                      <span><a href="#">Sales</a></span>
-                    </div>
-                    <div class="mega-menu-col">
-                      <strong>Collections</strong>
-                      <ul>
-                        <li><a href="#">Cobalt Elixir</a></li>
-                        <li><a href="#">Cork Pulp</a></li>
-                        <li><a href="#">Covert Green</a></li>
-                        <li><a href="#">Foggy Day</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  
-                  <div class="mega-menu-fea-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/mega-menu-fea-img.png);">
-                    <div>
-                      <strong>New <br>&nbsp;&nbsp; arrivals</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li><a href="#">BOYS</a></li>
-            <li><a href="#">GIRLS</a></li>
-          </ul>
+          <?php 
+            $menuOptionsb = array( 
+                'theme_location' => 'cbv_main_menu', 
+                'menu_class' => 'clearfix reset-list',
+                'container' => '',
+                'container_class' => ''
+              );
+            wp_nav_menu( $menuOptionsb ); 
+          ?>  
         </nav>
       </div>
       <div class="hdr-rgt">
@@ -158,54 +107,15 @@
           <span></span>
         </div>
         <div class="xs-main-nav">
-          <ul class="clearfix reset-list">
-            <li><a href="#">newborn</a></li>
-            <li class="current-menu-item"><a href="#">baby</a></li>
-            <li class="menu-item-has-children">
-              <a href="#">kid</a>
-              <ul class="sub-menu">
-                <li class="menu-item-has-children">
-                  <a href="#">girls</a>
-                  <ul class="sub-menu">
-                    <li><a href="#">New in</a></li>
-                    <li><a href="#">Dresses</a></li>
-                    <li><a href="#">Coats</a></li>
-                    <li><a href="#">Tops</a></li>
-                    <li><a href="#">Gloves</a></li>
-                    <li><a href="#">Jackets</a></li>
-                    <li><a href="#">Jeans</a></li>
-                    <li><a href="#">Jogging Bottoms</a></li>
-                    <li><a href="#">Jumpers</a></li>
-                  </ul>
-                </li>
-                <li class="menu-item-has-children">
-                  <a href="#">boys</a>
-                  <ul class="sub-menu">
-                    <li><a href="#">New in</a></li>
-                    <li><a href="#">Dresses</a></li>
-                    <li><a href="#">Coats</a></li>
-                    <li><a href="#">Tops</a></li>
-                    <li><a href="#">Gloves</a></li>
-                    <li><a href="#">Jackets</a></li>
-                    <li><a href="#">Jeans</a></li>
-                    <li><a href="#">Jogging Bottoms</a></li>
-                    <li><a href="#">Jumpers</a></li>
-                  </ul>
-                </li>
-                <li class="menu-item-has-children">
-                  <a href="#">Collections</a>
-                  <ul class="sub-menu">
-                    <li><a href="#">Cobalt Elixir</a></li>
-                    <li><a href="#">Cork Pulp</a></li>
-                    <li><a href="#">Covert Green</a></li>
-                    <li><a href="#">Foggy Day</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="#">boys</a></li>
-            <li><a href="#">girls</a></li>
-          </ul>
+          <?php 
+            $xmenuOptionsb = array( 
+                'theme_location' => 'cbv_mobilemain_menu', 
+                'menu_class' => 'clearfix reset-list',
+                'container' => '',
+                'container_class' => ''
+              );
+            wp_nav_menu( $xmenuOptionsb ); 
+          ?>  
         </div>
         <div class="xs-other-nav">
           <ul class="reset-list">

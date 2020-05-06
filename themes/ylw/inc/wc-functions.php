@@ -33,13 +33,12 @@ function get_custom_wc_output_content_wrapper(){
 			echo '<div class="fl-my-slection">
 		            <div class="fl-my-slection-hdr">
 		              <label>My Selection</label>
-		              <span class="delete-all-btn">Delete all</span>
+		              <a href="'.get_permalink(get_option( 'woocommerce_shop_page_id' )).'" class="delete-all-btn">Delete all</a>
 		            </div>
 		            <div class="fl-my-slect-items">
-		              <ul class="reset-list">
-		                <li><label>Jackets</label> <span><img src="'.THEME_URI.'/assets/images/close-sm-icon.png"></span></li>
-		                <li><label>Boy</label> <span><img src="'.THEME_URI.'/assets/images/close-sm-icon.png"></span></li>
-		              </ul>
+		              <ul class="reset-list">';
+                        remove_checked_parameters();
+		              echo '</ul>
 		            </div>
 	          	</div>';
 	          	echo do_shortcode( '[searchandfilter id="product_filter"]' );
@@ -59,7 +58,69 @@ function get_custom_wc_output_content_wrapper_end(){
 
 }
 
+function remove_checked_parameters(){
+    if( isset( $_GET['wpf_category'] ) && !empty($_GET['wpf_category']) ){
+        $catarrays = get_array( $_GET['wpf_category'] );
+        if( $catarrays && !empty($catarrays) ){
+            foreach( $catarrays as $cat ){
+                echo '<li><label>'.$cat.'</label> <span><img src="'.THEME_URI.'/assets/images/close-sm-icon.png"></span></li>';
+            }
+        }
+    }
 
+    if( isset( $_GET['sex'] ) && !empty($_GET['sex']) ){
+        $sexarrays = get_array( $_GET['sex'] );
+        if( $sexarrays && !empty($sexarrays) ){
+            foreach( $sexarrays as $sex ){
+                echo '<li><label>'.$sex.'</label> <span onclick="removeParam('.$sex.'); return false;"><img src="'.THEME_URI.'/assets/images/close-sm-icon.png"></span></li>';
+            }
+        }
+    }
+
+    if( isset( $_GET['size'] ) && !empty($_GET['size']) ){
+        $sizearrays = get_array( $_GET['size'] );
+        if( $sizearrays && !empty($sizearrays) ){
+            foreach( $sizearrays as $size ){
+                echo '<li><label>'.$size.'</label> <span><img src="'.THEME_URI.'/assets/images/close-sm-icon.png"></span></li>';
+            }
+        }
+    }
+
+    if( isset( $_GET['color'] ) && !empty($_GET['color']) ){
+        $colorarrays = get_array( $_GET['color'] );
+        if( $colorarrays && !empty($colorarrays) ){
+            foreach( $colorarrays as $color ){
+                echo '<li><label>'.$color.'</label> <span><img src="'.THEME_URI.'/assets/images/close-sm-icon.png"></span></li>';
+            }
+        }
+    }
+
+    if( isset( $_GET['material'] ) && !empty($_GET['material']) ){
+        $materialarrays = get_array( $_GET['material'] );
+        if( $materialarrays && !empty($materialarrays) ){
+            foreach( $materialarrays as $material ){
+                echo '<li><label>'.$material.'</label> <span><img src="'.THEME_URI.'/assets/images/close-sm-icon.png"></span></li>';
+            }
+        }
+    }
+
+    if( isset( $_GET['collection'] ) && !empty($_GET['collection']) ){
+        $collectionarrays = get_array( $_GET['collection'] );
+        if( $collectionarrays && !empty($collectionarrays) ){
+            foreach( $collectionarrays as $collection ){
+                echo '<li><label>'.$collection.'</label> <span><img src="'.THEME_URI.'/assets/images/close-sm-icon.png"></span></li>';
+            }
+        }
+    }
+}
+
+function get_array( $string ){
+    if( !empty( $string ) ){ 
+        $str_arr = preg_split ("/\,/", $string);   
+        return $str_arr;
+    }
+    return false;
+}
 
 add_filter('woocommerce_catalog_orderby', 'wc_customize_product_sorting');
 

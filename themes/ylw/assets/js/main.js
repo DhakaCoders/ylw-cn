@@ -525,3 +525,10 @@ jQuery('.arvhieForm').change(function() {
     this.form.submit();
 });
 })(jQuery);
+
+
+function removeParam(val)
+{
+  console.log(val);
+    
+}
