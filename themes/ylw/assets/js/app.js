@@ -136,3 +136,11 @@ $(window).resize(function(){
 });
 
 })(jQuery);
+
+function removeParam(val)
+{
+  console.log(val);
+    jQuery(".wpf_item wpf_item_pa_sex input[type='checkbox']:checked").filter(function() {
+        return this.value == val;
+    }).prop('checked', false).trigger('change');
+}

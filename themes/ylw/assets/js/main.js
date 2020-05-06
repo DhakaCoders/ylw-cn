@@ -538,12 +538,3 @@ jQuery('.arvhieForm').change(function() {
     this.form.submit();
 });
 })(jQuery);
-
-
-function removeParam(val)
-{
-  console.log(val);
-    jQuery("#wpf_product_filter_29").on('change', function() {
-        return this.value == val;
-    }).prop("checked", "false");
-}
