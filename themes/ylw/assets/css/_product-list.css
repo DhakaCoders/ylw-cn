@@ -108,7 +108,8 @@ a.yith-wcqv-button.qvicon {
 
 
 .fl-pagi-pagi-ctlr ul,
-.woocommerce .fl-pagi-ctlr ul.page-numbers{
+.woocommerce .fl-pagi-ctlr ul.page-numbers,
+.fl-pagi-ctlr ul.page-numbers{
 	text-align: center;
 	padding-top: 120px;
 	display: flex;
@@ -116,7 +117,8 @@ a.yith-wcqv-button.qvicon {
 	align-items: center;
 }
 .fl-pagi-pagi-ctlr ul li,
-.woocommerce .fl-pagi-ctlr ul.page-numbers li{
+.woocommerce .fl-pagi-ctlr ul.page-numbers li,
+.fl-pagi-ctlr ul.page-numbers li{
 	display: inline-block;
 }
 /*.fl-pagi-pagi-ctlr ul.page-numbers li a,
@@ -125,11 +127,13 @@ a.yith-wcqv-button.qvicon {
 	vertical-align: baseline;
 }*/
 .fl-pagi-pagi-ctlr ul.page-numbers li a:hover,
-.woocommerce .fl-pagi-ctlr ul.page-numbers li a:hover{
+.woocommerce .fl-pagi-ctlr ul.page-numbers li a:hover,
+.fl-pagi-ctlr ul.page-numbers li a:hover{
 	color: #FFC627;
 }
 .fl-pagi-pagi-ctlr ul.page-numbers li,
-.woocommerce .fl-pagi-ctlr ul.page-numbers li{
+.woocommerce .fl-pagi-ctlr ul.page-numbers li,
+.fl-pagi-ctlr ul.page-numbers li{
 	padding: 0 10px;
 	font-size: 15px;
 	line-height: 1;
@@ -137,12 +141,15 @@ a.yith-wcqv-button.qvicon {
 .fl-pagi-pagi-ctlr ul.page-numbers li a,
 .fl-pagi-pagi-ctlr ul.page-numbers li span,
 .woocommerce .fl-pagi-ctlr ul.page-numbers li span,
-.woocommerce .fl-pagi-ctlr ul.page-numbers li a{
+.woocommerce .fl-pagi-ctlr ul.page-numbers li a,
+.fl-pagi-ctlr ul.page-numbers li a,
+.fl-pagi-ctlr ul.page-numbers li span{
 	color: #3E3935;
 }
 
 .fl-pagi-pagi-ctlr ul.page-numbers li .current,
-.woocommerce .fl-pagi-ctlr ul.page-numbers .current{
+.woocommerce .fl-pagi-ctlr ul.page-numbers .current,
+.fl-pagi-ctlr ul.page-numbers .current{
 	font-weight: 700;
 	background: transparent;
 	color: #3E3935;
@@ -150,24 +157,29 @@ a.yith-wcqv-button.qvicon {
 .fl-pagi-pagi-ctlr ul.page-numbers li a.prev,
 .fl-pagi-pagi-ctlr ul.page-numbers li a.next,
 .woocommerce .fl-pagi-ctlr ul.page-numbers li a.prev,
-.woocommerce .fl-pagi-ctlr ul.page-numbers li a.next{
+.woocommerce .fl-pagi-ctlr ul.page-numbers li a.next,
+.fl-pagi-ctlr ul.page-numbers li a.next,
+.fl-pagi-ctlr ul.page-numbers li a.prev{
 	width: 42px;
 	height: 9px;
 	text-indent: -9999px;
 }
 .fl-pagi-pagi-ctlr ul.page-numbers li a.prev,
-.woocommerce .fl-pagi-ctlr ul.page-numbers li a.prev{
+.woocommerce .fl-pagi-ctlr ul.page-numbers li a.prev,
+.fl-pagi-ctlr ul.page-numbers li a.prev{
 	background: url(../images/fl-pagi-prev.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 .fl-pagi-pagi-ctlr ul.page-numbers li a.next,
-.woocommerce .fl-pagi-ctlr ul.page-numbers li a.next{
+.woocommerce .fl-pagi-ctlr ul.page-numbers li a.next,
+.fl-pagi-ctlr ul.page-numbers li a.next{
 	background: url(../images/fl-pagi-next.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 }
-.woocommerce nav.woocommerce-pagination ul{
+.woocommerce nav.woocommerce-pagination ul,
+nav.woocommerce-pagination ul{
 	border: none;
 }
 
