@@ -150,6 +150,90 @@
         </div>
       </div>
     </div>
+
+    <div class="xs-nav-cntlr">
+      <div class="xs-nav-inr">
+        <div class="menu-closebtn">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="xs-main-nav">
+          <ul class="clearfix reset-list">
+            <li><a href="#">newborn</a></li>
+            <li class="current-menu-item"><a href="#">baby</a></li>
+            <li class="menu-item-has-children">
+              <a href="#">kid</a>
+              <ul class="sub-menu">
+                <li class="menu-item-has-children">
+                  <a href="#">girls</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">New in</a></li>
+                    <li><a href="#">Dresses</a></li>
+                    <li><a href="#">Coats</a></li>
+                    <li><a href="#">Tops</a></li>
+                    <li><a href="#">Gloves</a></li>
+                    <li><a href="#">Jackets</a></li>
+                    <li><a href="#">Jeans</a></li>
+                    <li><a href="#">Jogging Bottoms</a></li>
+                    <li><a href="#">Jumpers</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#">boys</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">New in</a></li>
+                    <li><a href="#">Dresses</a></li>
+                    <li><a href="#">Coats</a></li>
+                    <li><a href="#">Tops</a></li>
+                    <li><a href="#">Gloves</a></li>
+                    <li><a href="#">Jackets</a></li>
+                    <li><a href="#">Jeans</a></li>
+                    <li><a href="#">Jogging Bottoms</a></li>
+                    <li><a href="#">Jumpers</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#">Collections</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Cobalt Elixir</a></li>
+                    <li><a href="#">Cork Pulp</a></li>
+                    <li><a href="#">Covert Green</a></li>
+                    <li><a href="#">Foggy Day</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">boys</a></li>
+            <li><a href="#">girls</a></li>
+          </ul>
+        </div>
+        <div class="xs-other-nav">
+          <ul class="reset-list">
+            <li class="menu-item-has-children">
+              <a href="#">My account</a>
+              <ul class="sub-menu">
+              <li><a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">My Profile</a></li>
+              <?php 
+              if( is_user_logged_in() ){
+                foreach ( wc_get_account_menu_items() as $endpoint => $label ) : 
+                  if($endpoint == 'customer-logout'):
+              ?>
+              <li class="xs-logout">
+                <a href="<?php echo esc_url( wc_get_account_endpoint_url( $endpoint ) ); ?>">Log out</a>
+              </li>
+              <?php endif; endforeach; 
+              } else {
+              ?>
+              <li class="xs-logout">
+                <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">Log In</a>
+              </li>
+            <?php } ?>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
 <?php get_template_part('templates/header', 'popups'); ?>
