@@ -110,8 +110,8 @@ Page looader
 -------------------
 */
 .modal-open .modal{
-    padding-left: 5px!important;
-    padding-right: 5px!important;
+    padding-left: 15px!important;
+    padding-right: 15px!important;
 }
 .modal-content {
     border-radius: 0;

@@ -781,6 +781,11 @@ input.select2-search__field{
 	justify-content: flex-end;
 	display: flex;
 }*/
+
+/*Extra*/
+
+
+
 @media(max-width: 991px){
 	.woocommerce #customer_details .col-1,
 	.woocommerce #customer_details .col-2 {
