@@ -402,6 +402,8 @@ a.yith-wcqv-button.qvicon {
 
 
 /*extra */
+
+
 .fl-sidebar-cntlr .wpf_item_count{
 	float: right;
 	background: transparent;
@@ -432,11 +434,46 @@ a.yith-wcqv-button.qvicon {
 	content: ")";
 	right: 0;
 }
-.fl-sidebar-cntlr .wpf_item input[type="checkbox"]{
-	width: 14px;
-	height: 14px;
+
+.fl-sidebar-cntlr .wpf_item input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #808080;
+    margin-right: 0;
+    display: inline-block;
+    vertical-align: baseline;
+    position: relative;
+    top: 3px;
+}
+.fl-sidebar-cntlr .wpf_item label{
+	display: inline-block;
+    vertical-align: middle;
+    padding-left: 12px;
+    font-weight: normal;
+    cursor: pointer;
+    margin: 0;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 600;
+    color: #3E3935;
+}
+.fl-sidebar-cntlr .wpf_items_wrapper ul.wpf_column_vertical li{
+	padding-left: 5px;
+	margin-bottom: 10px;
 }
 
+.fl-sidebar-cntlr .wpf_hide_text li>input:checked+label>i:after, 
+.fl-sidebar-cntlr .wpf_item input[type="checkbox"]:checked:before{
+	content: ""!important;
+	left: -1px;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    position: absolute;
+    border: solid #000;
+    border: 4px solid #ffc627;
+    z-index: 2;
+}
 @media(max-width: 1499px){
 
 }
