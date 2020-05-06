@@ -224,6 +224,14 @@
 	width: 100%!important;
 	display: block;
 }
+.single-pro-lft-con{
+	float: left;
+	width: 70%;
+}
+.woocommerce div.product div.summary{
+	float: right;
+	width: 30%;
+}
 @media(max-width: 1499px){
 
 }
