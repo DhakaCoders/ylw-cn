@@ -377,7 +377,7 @@ if( $('.thumbnail-items').length ){
     });
 }*/
 
-
+/*
 $('.product-gallery-img').slick({
    slidesToShow: 1,
    slidesToScroll: 1,
@@ -392,7 +392,16 @@ $('.product-gallery-img').slick({
    dots: true,
    focusOnSelect: true
  });
+*/
 
+var allPanels = $('.wpf_form_product_filter .wpf_column_vertical').hide();
+$('.wpf_form_product_filter .wpf_item_name').click(function() {
+      allPanels.slideUp();
+      $('.wpf_form_product_filter .wpf_item_name').removeClass('hh-accordion-active');
+      $(this).next().slideDown();
+      $(this).addClass('hh-accordion-active');
+      return false;
+});
 
 
 /**
