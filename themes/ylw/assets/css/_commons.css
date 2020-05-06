@@ -107,34 +107,7 @@ Containers
 }
 
 
-.ulc{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
 
-ul.reset-list,
-ol.reset-list,
-ul.slick-dots,
-.fl-pagi-pagi-ctlr ul{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-.reset-list li,
-ul.slick-dots li,
-.fl-pagi-pagi-ctlr ul li{
-	padding: 0;
-	margin: 0;
-	list-style: none;
-	margin: 0;
-}
-.reset-list li:before,
-ul.slick-dots li:before,
-.fl-pagi-pagi-ctlr ul li:before{
-	content: none!important;
-}
 
 
 .first:first-child{
@@ -313,7 +286,6 @@ form .dropdown-menu li a{
 
 /*---*/
 
-.default-page-con ul,
 ul{
 	list-style: none;
 	margin: 0;
@@ -321,14 +293,13 @@ ul{
 	padding-left: 25px;
 	padding-bottom: 10px;
 }
-.default-page-con ul li,
 ul li {
 	padding: 5px 0 14px 42px;
 	position: relative;
 	line-height: 24px;
 }
 
-.default-page-con ul li::before,
+
 ul li::before {
 	content: "";
 	position: absolute;
@@ -343,21 +314,20 @@ ul li::before {
 ul li.refGridItem:before{
 	display: none;
 }
-.default-page-con ol, ol {
+ol {
 	padding: 0 0 0 25px;
 	list-style: none;
 	counter-reset: my-awesome-counter;
 	-ms-counter-reset: my-awesome-counter;
 	-webkit-counter-reset: my-awesome-counter;
 }
-.default-page-con ol li ,ol li {
+ol li {
 	counter-increment: my-awesome-counter;
 	-ms-counter-increment: my-awesome-counter;
 	-webkit-counter-increment: my-awesome-counter;
 	padding-bottom: 15px;
 	line-height: 24px;
 }
-.default-page-con ol li::before,
 ol li::before {
 	content: counter(my-awesome-counter) ".";
 	color: #FFC627;
@@ -393,6 +363,40 @@ ul.slick-dots li button{
 }
 ul.slick-dots li button:before{
 	content: none;
+}
+
+
+
+.ulc{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul.reset-list,
+ol.reset-list,
+ul.slick-dots,
+.fl-pagi-pagi-ctlr ul,
+.fl-pagi-ctlr ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.reset-list li,
+ul.slick-dots li,
+.fl-pagi-pagi-ctlr ul li,
+.fl-pagi-ctlr ul li{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	margin: 0;
+}
+.reset-list li:before,
+ul.slick-dots li:before,
+.fl-pagi-pagi-ctlr ul li:before,
+.fl-pagi-ctlr ul:before{
+	content: none!important;
 }
 
 
