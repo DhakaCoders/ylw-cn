@@ -35,6 +35,11 @@
   <div class="header-inr">
     <div class="header-cntlr clearfix">
       <div class="hdr-lft">
+        <div class="hdr-humbergur-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <div class="logo">
           <a class="has-bnr-logo" href="<?php echo esc_url(home_url('/')); ?>">
             <?php echo $logo_tag; ?>
@@ -142,11 +147,6 @@
             <?php } ?>
             </ul>
           </div>
-          <div class="hdr-humbergur-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
         </div>
       </div>
     </div>
@@ -234,6 +234,7 @@
         </div>
       </div>
     </div>
+    
   </div>
 </header>
 <?php get_template_part('templates/header', 'popups'); ?>

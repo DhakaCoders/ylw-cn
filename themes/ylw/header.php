@@ -31,10 +31,17 @@
     $logo_tag = '';
   }
 ?>
+
+<div class="bdoverlay"></div>
 <header class="header page-hdr">
   <div class="header-inr">
     <div class="header-cntlr clearfix">
       <div class="hdr-lft">
+        <div class="hdr-humbergur-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <div class="logo">
           <a class="no-bnr-logo" href="<?php echo esc_url(home_url('/')); ?>">
             <?php echo $logo_tag; ?>
@@ -147,15 +154,9 @@
               
             </ul>
           </div>
-          <div class="hdr-humbergur-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
         </div>
       </div>
     </div>
-
     <div class="xs-nav-cntlr">
       <div class="xs-nav-inr">
         <div class="menu-closebtn">
