@@ -604,6 +604,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover .mega-menu-cntlr{
 	opacity: 0;
 	z-index: -9999;
 	position: absolute;
+	width: 0;
 }
 @media(max-width: 1499px){
 
@@ -774,6 +775,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover .mega-menu-cntlr{
 	    left: 0;
 	    opacity: 1;
 	    z-index: 9999999;
+
 	}
 	.xs-nav-inr{
 		position: relative;

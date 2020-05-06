@@ -14,7 +14,7 @@
     display: none;
 }
 .viewpage {
-    clear: both;;
+    clear: both;
 }
 .product-songle-breadcrumbs-sec{
 	padding: 40px 0 35px 30px;
@@ -141,7 +141,7 @@
 .single-product .quantity label{
 	margin-bottom: 0;
 }
-button.single_add_to_cart_button.button.alt{
+.woocommerce .summary.entry-summary button.single_add_to_cart_button.button.alt{
 	background: #FFC627!important;
 	color: #3E3935!important;
 	max-width: 215px;
@@ -153,11 +153,16 @@ button.single_add_to_cart_button.button.alt{
 	line-height: 1;
 	text-transform: uppercase;
 	font-weight: 700;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
 }
-button.single_add_to_cart_button.button.alt:hover{
+.woocommerce  button.single_add_to_cart_button.button.alt:hover{
 	color: #FFC627!important;
 }
-button.alg-wc-wl-btn.button.remove.alg-wc-wl-toggle-btn{
+.woocommerce button.alg-wc-wl-btn.remove.alg-wc-wl-toggle-btn,
+.woocommerce .summary.entry-summary button.button{
 	background: transparent!important;
 	color: #3E3935!important;
 	font-weight: 400!important;
@@ -168,7 +173,8 @@ button.alg-wc-wl-btn.button.remove.alg-wc-wl-toggle-btn{
 	border: none!important;
 	padding: 0!important;
 }
-button.alg-wc-wl-btn.button.remove.alg-wc-wl-toggle-btn i{
+.woocommerce button.alg-wc-wl-btn.remove.alg-wc-wl-toggle-btn i,
+.woocommerce .summary.entry-summary button.button i{
 	width: 40px;
 	height: 40px;
 	background: #CCCCCC;
@@ -177,6 +183,10 @@ button.alg-wc-wl-btn.button.remove.alg-wc-wl-toggle-btn i{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+.woocommerce .summary.entry-summary .alg-wc-wl-btn.add .alg-wc-wl-view-state-add{
+	display: flex!important;
+	align-items: center!important;
 }
 
 .summary.entry-summary .sharewith{
@@ -196,6 +206,23 @@ button.alg-wc-wl-btn.button.remove.alg-wc-wl-toggle-btn i{
 	content: "";
 	display: table;
 	clear: both;
+}
+.summary.entry-summary .sharewith{
+	float: right;
+	margin-top: 52px;
+}
+.summary.entry-summary .alg-wc-wl-btn.remove .alg-wc-wl-view-state-remove {
+    display: flex;
+    align-items: center;
+}
+.summary.entry-summary .price-wrapp{
+	border-bottom: 1px solid #D2D2D2;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+}
+.summary.entry-summary table.variations tbody tr td{
+	width: 100%!important;
+	display: block;
 }
 @media(max-width: 1499px){
 
