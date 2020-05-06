@@ -13,6 +13,9 @@
 .outofstock .price-wrapp {
     display: none;
 }
+.viewpage {
+    clear: both;;
+}
 .product-songle-breadcrumbs-sec{
 	padding: 40px 0 35px 30px;
 }
