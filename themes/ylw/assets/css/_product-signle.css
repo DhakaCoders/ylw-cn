@@ -89,6 +89,22 @@
 	max-width: 512px;
 }
 
+.woocommerce div.product .product_title{
+	font-size: 29px;
+	line-height: 1;
+}
+.summary.entry-summary > p{
+	font-size: 12px;
+	line-height: 1;
+}
+.single-product .faq-accordion-title{
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 1;
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
 
 
 @media(max-width: 1499px){
