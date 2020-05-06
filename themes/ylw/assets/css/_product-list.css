@@ -2,6 +2,9 @@ a.button.yith-wcqv-button,
 a.yith-wcqv-button.qvicon {
     display: none !important;
 }
+.fl-my-slect-items ul li span {
+    cursor: pointer;
+}
 .product-list-page-con{
 	padding: 40px 0 130px;
 }

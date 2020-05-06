@@ -546,11 +546,6 @@ function removeCatParam(val)
     jQuery(".wpf_item.wpf_item_wpf_cat ul li input[type='checkbox']:checked").filter(function() {
         return this.value == val;
     }).prop('checked', false).trigger('change');
-    jQuery("#cat_"+val).fadeOut("slow", function() { 
-      setTimeout(function() {
-          document.location.reload();
-      }, 2200);
-    });
 }
 
 
@@ -559,12 +554,7 @@ function removeSexParam(val)
   console.log(val);
     jQuery(".wpf_item.wpf_item_pa_sex ul li input[type='checkbox']:checked").filter(function() {
         return this.value == val;
-    }).prop('checked', false).trigger('change');
-    jQuery("#sex_"+val).fadeOut("slow", function() { 
-      setTimeout(function() {
-          document.location.reload();
-      }, 2200);
-    }); 
+    }).prop('checked', false).trigger('change'); 
 }
 
 function removeSizeParam(val)
@@ -572,12 +562,7 @@ function removeSizeParam(val)
   console.log(val);
     jQuery(".wpf_item.wpf_item_pa_size ul li input[type='checkbox']:checked").filter(function() {
         return this.value == val;
-    }).prop('checked', false).trigger('change');
-    jQuery("#size_"+val).fadeOut("slow", function() { 
-      setTimeout(function() {
-          document.location.reload();
-      }, 2200);
-    }); 
+    }).prop('checked', false).trigger('change'); 
 }
 
 function removeColorParam(val)
@@ -586,11 +571,6 @@ function removeColorParam(val)
     jQuery(".wpf_item.wpf_item_pa_color ul li input[type='checkbox']:checked").filter(function() {
         return this.value == val;
     }).prop('checked', false).trigger('change');
-    jQuery("#color_"+val).fadeOut("slow", function() { 
-      setTimeout(function() {
-          document.location.reload();
-      }, 2200);
-    });
 }
 
 function removeMaterialParam(val)
@@ -599,11 +579,6 @@ function removeMaterialParam(val)
     jQuery(".wpf_item.wpf_item_pa_material ul li input[type='checkbox']:checked").filter(function() {
         return this.value == val;
     }).prop('checked', false).trigger('change');
-    jQuery("#mat_"+val).fadeOut("slow", function() { 
-      setTimeout(function() {
-          document.location.reload();
-      }, 2200);
-    });
 }
 
 function removeCollectionParam(val)
@@ -611,9 +586,4 @@ function removeCollectionParam(val)
     jQuery(".wpf_item.wpf_item_pa_collection ul li input[type='checkbox']:checked").filter(function() {
         return this.value == val;
     }).prop('checked', false).trigger('change');
-    jQuery("#coll_"+val).fadeOut("slow", function() { 
-        setTimeout(function() {
-          document.location.reload();
-        }, 2200);
-    });
 }

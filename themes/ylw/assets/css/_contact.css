@@ -248,7 +248,9 @@ contact-form-sec-wrp
   color: #262321;
   opacity: 1;
 }
-
+span.wpcf7-not-valid-tip {
+    margin-top: 10px;
+}
 /*
 -------------------
  Responsive Css
