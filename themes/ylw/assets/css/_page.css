@@ -263,3 +263,17 @@ Page looader
 #ui-datepicker-div{
     z-index: 50!important;
 }
+
+@media(max-width: 767px){
+    .page-banner-title{
+        font-size: 45px;
+    }
+}
+@media(max-width: 575px){
+    .page-banner-title{
+        font-size: 35px;
+    }
+    .page-banner-controller {
+        height: 405px;
+    }
+}

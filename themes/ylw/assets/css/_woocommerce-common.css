@@ -336,6 +336,36 @@ span.wpcf7-not-valid-tip{
 .product-name a:hover{
 	color: #FFC627;
 }
+.woocommerce-checkout .policy-inner,
+.woocommerce-cart .policy-inner,
+.woocommerce-account .policy-inner{
+	padding-left: 0;
+	padding-right: 0;
+}
+.woocommerce-checkout #order_review{
+	padding-left: 15px;
+}
+.woocommerce-billing-fields > h3{
+	margin-left: -15px;
+}
+.woocommerce-LostPassword.lost_password a,
+a.woocommerce-privacy-policy-link,
+.woocommerce-MyAccount-content a,
+.woocommerce-MyAccount-navigation ul li a:hover{
+	color: #FFC627!important;
+}
+.woocommerce-account .container{
+	max-width: 1170px;
+}
+.td.product-name a,
+.product-name a{
+	font-size: 14px;
+	color: #000!important;
+}
+.td.product-name a:hover,
+.product-name a:hover{
+	color: #FFC627!important;
+}
 @media(max-width: 1199px){
 	body.woocommerce-order-received .woocommerce ul.order_details{
 		padding-left: 15px;
@@ -353,6 +383,12 @@ span.wpcf7-not-valid-tip{
 	}
 	.backbtn{
 		padding-left: 100px;
+	}
+	.woocommerce-account .woocommerce-MyAccount-navigation {
+	    width: 25%;
+	}
+	.woocommerce-account .woocommerce-MyAccount-content {
+	    width: 72%;
 	}
 } 
 
@@ -387,6 +423,16 @@ span.wpcf7-not-valid-tip{
 	}
 	.policy-inner{
 		
+	}
+	.woocommerce-billing-fields > h3{
+		margin-left: 0;
+	}
+	.woocommerce-checkout #order_review{
+		padding-left: 0;
+	}
+	.woocommerce-account .woocommerce-MyAccount-navigation,
+	.woocommerce-account .woocommerce-MyAccount-content{
+		width: 100%;
 	}
 }
 @media(max-width: 768px){
@@ -471,6 +517,7 @@ span.wpcf7-not-valid-tip{
 	.login-title{
 		font-size: 35px!important;
 	}
+
 }
 
 

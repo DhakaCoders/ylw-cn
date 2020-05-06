@@ -349,7 +349,7 @@ ul.slick-dots li{
 	width: 12px;
 	height: 12px;
 	padding: 0;
-	margin: 0 5px;
+	margin: 0 5px!important;
 	background: #D8D8D8;
 	border-radius: 100% 100%;
 }
@@ -378,7 +378,8 @@ ol.reset-list,
 ul.slick-dots,
 .fl-pagi-pagi-ctlr ul,
 .fl-pagi-ctlr ul,
-.woocommerce-pagination .fl-pagi-ctlr ul{
+.woocommerce-pagination .fl-pagi-ctlr ul,
+.pp_gallery ul{
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -388,7 +389,8 @@ ul.slick-dots,
 ul.slick-dots li,
 .fl-pagi-pagi-ctlr ul li,
 .fl-pagi-ctlr ul li,
-.woocommerce-pagination .fl-pagi-ctlr ul li{
+.woocommerce-pagination .fl-pagi-ctlr ul li,
+.pp_gallery ul li{
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -398,7 +400,8 @@ ul.slick-dots li,
 ul.slick-dots li:before,
 .fl-pagi-pagi-ctlr ul li:before,
 .fl-pagi-ctlr ul:before,
-.woocommerce-pagination .fl-pagi-ctlr ul li:before{
+.woocommerce-pagination .fl-pagi-ctlr ul li:before,
+.pp_gallery ul li:before{
 	content: none!important;
 }
 

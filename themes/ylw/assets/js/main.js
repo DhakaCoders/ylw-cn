@@ -377,22 +377,23 @@ if( $('.thumbnail-items').length ){
     });
 }*/
 
-/*
-$('.product-gallery-img').slick({
+
+/*$('.product-gallery-img').slick({
    slidesToShow: 1,
    slidesToScroll: 1,
    arrows: false,
    fade: true,
    asNavFor: '.thumbnail-items'
- });
+ });*/
  $('.thumbnail-items').slick({
-   slidesToShow: 3,
+   slidesToShow: 5,
    slidesToScroll: 1,
-   asNavFor: '.product-gallery-img',
-   dots: true,
-   focusOnSelect: true
+   arrows: true,
+   //asNavFor: '.product-gallery-img',
+   dots: false,
+   //focusOnSelect: true
  });
-*/
+
 
 var allPanels = $('.wpf_form_product_filter .wpf_column_vertical').hide();
 $('.wpf_form_product_filter .wpf_item_name').click(function() {

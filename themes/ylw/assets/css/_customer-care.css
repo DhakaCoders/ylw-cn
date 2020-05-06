@@ -194,6 +194,9 @@
 	    padding-right: 0 !important;
 	    padding-top: 30px !important;
 	}
+	.ylw-customer-faq-sec-wrp {
+	    padding-bottom: 70px !important;
+	}
 }
 
 @media(max-width: 479px){

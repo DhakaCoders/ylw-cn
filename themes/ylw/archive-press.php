@@ -90,7 +90,7 @@ if($query->have_posts()):
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <div class="ylw-press-pagi-inr">
+        <div class="fl-pagi-ctlr">
           <?php
             if( $query->max_num_pages > 1 ):
             $big = 999999999; // need an unlikely integer
