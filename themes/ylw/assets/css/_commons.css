@@ -377,7 +377,8 @@ ul.reset-list,
 ol.reset-list,
 ul.slick-dots,
 .fl-pagi-pagi-ctlr ul,
-.fl-pagi-ctlr ul{
+.fl-pagi-ctlr ul,
+.woocommerce-pagination .fl-pagi-ctlr ul{
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -386,7 +387,8 @@ ul.slick-dots,
 .reset-list li,
 ul.slick-dots li,
 .fl-pagi-pagi-ctlr ul li,
-.fl-pagi-ctlr ul li{
+.fl-pagi-ctlr ul li,
+.woocommerce-pagination .fl-pagi-ctlr ul li{
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -395,7 +397,8 @@ ul.slick-dots li,
 .reset-list li:before,
 ul.slick-dots li:before,
 .fl-pagi-pagi-ctlr ul li:before,
-.fl-pagi-ctlr ul:before{
+.fl-pagi-ctlr ul:before,
+.woocommerce-pagination .fl-pagi-ctlr ul li:before{
 	content: none!important;
 }
 
