@@ -167,14 +167,14 @@ function woocommerce_custom_single_add_to_cart_text() {
 
 
 
-add_action( 'woocommerce_single_product_summary', 'wc_single_product_under_title', 6 );
+add_action( 'wc_subtitle', 'wc_single_product_under_title', 6 );
 function wc_single_product_under_title(){
     echo '<p>Science Stuff Collection</p>';
 }
 
-//add_action( 'woocommerce_single_product_summary', 'wc_single_product_delivery_message', 30 );
-function wc_single_product_delivery_message(){
-    echo '<p>Free Delivery for over 50€ </p>';
+add_action( 'wc_view_page', 'wc_single_quickview_view_page' );
+function wc_single_quickview_view_page(){
+    echo '<div class="viewpage clearfix"><a href="#">VIEW PRODUCT PAGE</a></div>';
 }
 
 add_action( 'woocommerce_single_product_summary', 'wc_single_product_under_cartbutton', 31 );
@@ -215,7 +215,7 @@ function wc_single_product_metafields(){
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                   </div>
                 </div>';
-    $output .= '<div class="wc-accordion">';
+    $output .= '</div>';
 
     echo $output;
 }

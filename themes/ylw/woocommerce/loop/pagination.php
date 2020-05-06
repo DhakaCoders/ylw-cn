@@ -29,6 +29,7 @@ if ( $total <= 1 ) {
 }
 ?>
 <nav class="woocommerce-pagination">
+	<div class="fl-pagi-ctlr">
 	<?php
 	echo paginate_links(
 		apply_filters(
@@ -48,4 +49,5 @@ if ( $total <= 1 ) {
 		)
 	);
 	?>
+	</div>
 </nav>
