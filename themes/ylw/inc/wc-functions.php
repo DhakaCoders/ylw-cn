@@ -172,6 +172,11 @@ function wc_single_product_under_title(){
     echo '<p>Science Stuff Collection</p>';
 }
 
+//add_action( 'woocommerce_single_product_summary', 'wc_single_product_delivery_message', 30 );
+function wc_single_product_delivery_message(){
+    echo '<p>Free Delivery for over 50€ </p>';
+}
+
 add_action( 'woocommerce_single_product_summary', 'wc_single_product_under_cartbutton', 31 );
 function wc_single_product_under_cartbutton(){
     echo '<div class="sharewith">SHARE WITH LOVE +</div>';
