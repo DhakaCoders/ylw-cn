@@ -63,7 +63,9 @@ function remove_checked_parameters(){
         $catarrays = get_array( $_GET['wpf_category'] );
         if( $catarrays && !empty($catarrays) ){
             foreach( $catarrays as $cat ){
-                echo '<li><label>'.$cat.'</label> <span><img src="'.THEME_URI.'/assets/images/close-sm-icon.png"></span></li>';
+                echo '<li id="cat_'.$cat.'"><label>'.$cat.'</label>';
+                echo "<span onclick=\"removeCatParam('".$cat."')\">";
+                echo '<img src="'.THEME_URI.'/assets/images/close-sm-icon.png"></span></li>';
             }
         }
     }
@@ -72,10 +74,8 @@ function remove_checked_parameters(){
         $sexarrays = get_array( $_GET['sex'] );
         if( $sexarrays && !empty($sexarrays) ){
             foreach( $sexarrays as $sex ){
-                echo '<li><label>'.$sex.'</label>';
-                ?>
-                <span onclick="removeParam('<?php echo $sex; ?>')">
-                <?php
+                echo '<li id="sex_'.$sex.'"><label>'.$sex.'</label>';
+                echo "<span onclick=\"removeSexParam('".$sex."')\">";
                 echo '<img src="'.THEME_URI.'/assets/images/close-sm-icon.png"></span></li>';
             }
         }
@@ -85,7 +85,9 @@ function remove_checked_parameters(){
         $sizearrays = get_array( $_GET['size'] );
         if( $sizearrays && !empty($sizearrays) ){
             foreach( $sizearrays as $size ){
-                echo '<li><label>'.$size.'</label> <span><img src="'.THEME_URI.'/assets/images/close-sm-icon.png"></span></li>';
+                echo '<li id="size_'.$size.'"><label>'.$size.'</label>';
+                echo "<span onclick=\"removeSizeParam('".$size."')\">";
+                echo '<img src="'.THEME_URI.'/assets/images/close-sm-icon.png"></span></li>';
             }
         }
     }
@@ -94,7 +96,9 @@ function remove_checked_parameters(){
         $colorarrays = get_array( $_GET['color'] );
         if( $colorarrays && !empty($colorarrays) ){
             foreach( $colorarrays as $color ){
-                echo '<li><label>'.$color.'</label> <span><img src="'.THEME_URI.'/assets/images/close-sm-icon.png"></span></li>';
+                echo '<li id="color_'.$color.'"><label>'.$color.'</label>';
+                echo "<span onclick=\"removeColorParam('".$color."')\">";
+                echo '<img src="'.THEME_URI.'/assets/images/close-sm-icon.png"></span></li>';
             }
         }
     }
@@ -103,7 +107,9 @@ function remove_checked_parameters(){
         $materialarrays = get_array( $_GET['material'] );
         if( $materialarrays && !empty($materialarrays) ){
             foreach( $materialarrays as $material ){
-                echo '<li><label>'.$material.'</label> <span><img src="'.THEME_URI.'/assets/images/close-sm-icon.png"></span></li>';
+                echo '<li id="mat_'.$material.'"><label>'.$material.'</label>';
+                echo "<span onclick=\"removeMaterialParam('".$material."')\">";
+                echo '<img src="'.THEME_URI.'/assets/images/close-sm-icon.png"></span></li>';
             }
         }
     }
@@ -112,7 +118,9 @@ function remove_checked_parameters(){
         $collectionarrays = get_array( $_GET['collection'] );
         if( $collectionarrays && !empty($collectionarrays) ){
             foreach( $collectionarrays as $collection ){
-                echo '<li><label>'.$collection.'</label> <span><img src="'.THEME_URI.'/assets/images/close-sm-icon.png"></span></li>';
+                echo '<li id="coll_'.$collection.'"><label>'.$collection.'</label>';
+                echo "<span onclick=\"removeCollectionParam('".$collection."')\">";
+                echo '<img src="'.THEME_URI.'/assets/images/close-sm-icon.png"></span></li>';
             }
         }
     }
