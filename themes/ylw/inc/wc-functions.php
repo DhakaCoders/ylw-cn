@@ -106,7 +106,6 @@ remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_ad
 add_action('woocommerce_shop_loop_item_title', 'add_shorttext_below_title_loop', 5);
 if (!function_exists('add_shorttext_below_title_loop')) {
     function add_shorttext_below_title_loop() {
-        $obj = new Alg_WC_Wish_List_Toggle_Btn();
         global $product, $woocommerce, $post;
         $sc = '[yith_quick_view product_id="'.$product->get_id().'" type="icon" label="QV"]';
 		echo '<div class="fl-product-item hello">';
@@ -115,9 +114,7 @@ if (!function_exists('add_shorttext_below_title_loop')) {
         echo wp_get_attachment_image( get_post_thumbnail_id($product->get_id()), 'pgrid' );
         echo '</a>';
         echo '<div class="product-overlay-icons">';
-        echo '<a class="product-overlay-icon-heart">';
-          $obj::show_thumb_btn();
-        echo '</a>';
+        get_wish_thumb();
         echo '<a href="#" class="product-overlay-icon-search yith-wcqv-button" data-product_id="'.$product->get_id().'"><i class="fas fa-search"></i></a>';
         echo do_shortcode($sc);
         echo '</div>';
@@ -134,6 +131,15 @@ if (!function_exists('add_shorttext_below_title_loop')) {
     }
 }
 
+function get_wish_thumb(){
+    if (class_exists('Alg_WC_Wish_List_Toggle_Btn')) {
+        $obj = new Alg_WC_Wish_List_Toggle_Btn();
+        echo '<a class="product-overlay-icon-heart">';
+          $obj::show_thumb_btn();
+        echo '</a>';
+   }
+
+}
 
 /*Remove Single page Woocommerce Hooks & Filters are below*/
 
@@ -164,6 +170,11 @@ function woocommerce_custom_single_add_to_cart_text() {
 add_action( 'woocommerce_single_product_summary', 'wc_single_product_under_title', 6 );
 function wc_single_product_under_title(){
     echo '<p>Science Stuff Collection</p>';
+}
+
+add_action( 'woocommerce_single_product_summary', 'wc_single_product_under_cartbutton', 31 );
+function wc_single_product_under_cartbutton(){
+    echo '<div class="sharewith">SHARE WITH LOVE +</div>';
 }
 
 add_action( 'woocommerce_single_product_summary', 'wc_single_product_price', 10 );

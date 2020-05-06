@@ -1,3 +1,18 @@
+.alg-wc-wl-btn-wrapper {
+    clear: both;
+    margin-top: 30px;
+    display: inline-block;
+    float: left;
+}
+.sharewith {
+    float: left;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.outofstock .price-wrapp {
+    display: none;
+}
 .product-songle-breadcrumbs-sec{
 	padding: 40px 0 35px 30px;
 }
