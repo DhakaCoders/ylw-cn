@@ -72,7 +72,11 @@ function remove_checked_parameters(){
         $sexarrays = get_array( $_GET['sex'] );
         if( $sexarrays && !empty($sexarrays) ){
             foreach( $sexarrays as $sex ){
-                echo '<li><label>'.$sex.'</label> <span onclick="removeParam('.$sex.'); return false;"><img src="'.THEME_URI.'/assets/images/close-sm-icon.png"></span></li>';
+                echo '<li><label>'.$sex.'</label>';
+                ?>
+                <span onclick="removeParam('<?php echo $sex; ?>')">
+                <?php
+                echo '<img src="'.THEME_URI.'/assets/images/close-sm-icon.png"></span></li>';
             }
         }
     }
