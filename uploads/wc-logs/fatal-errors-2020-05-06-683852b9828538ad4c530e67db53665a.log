@@ -1,0 +1,16 @@
+2020-05-06T04:56:59+00:00 CRITICAL Uncaught Error: Class name must be a valid object or a string in D:\xampp\htdocs\projects\2020\ylw\ylw-cn\themes\ylw\front-page.php:164
+Stack trace:
+#0 D:\xampp\htdocs\projects\2020\ylw\wp-includes\template-loader.php(78): include()
+#1 D:\xampp\htdocs\projects\2020\ylw\wp-blog-header.php(19): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\projects\2020\ylw\index.php(17): require('D:\\xampp\\htdocs...')
+#3 {main}
+  thrown in D:\xampp\htdocs\projects\2020\ylw\ylw-cn\themes\ylw\front-page.php on line 164
+
+2020-05-06T04:57:44+00:00 CRITICAL Uncaught Error: Class name must be a valid object or a string in D:\xampp\htdocs\projects\2020\ylw\ylw-cn\themes\ylw\front-page.php:164
+Stack trace:
+#0 D:\xampp\htdocs\projects\2020\ylw\wp-includes\template-loader.php(78): include()
+#1 D:\xampp\htdocs\projects\2020\ylw\wp-blog-header.php(19): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\projects\2020\ylw\index.php(17): require('D:\\xampp\\htdocs...')
+#3 {main}
+  thrown in D:\xampp\htdocs\projects\2020\ylw\ylw-cn\themes\ylw\front-page.php on line 164
+
