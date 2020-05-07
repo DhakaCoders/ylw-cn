@@ -154,7 +154,7 @@ if( $('#datepicker').length ){
 
 
 
-
+/*
 $('.yith-wcqv-button').on('click',function(){
 
   var allPanels4 = $('.faq-accordion-des').hide();
@@ -173,7 +173,7 @@ $('.yith-wcqv-button').on('click',function(){
   });
 
 
-});
+});*/
 
 
 var allPanels2 = $('.faq-accordion-des').hide();

@@ -408,7 +408,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover .mega-menu-cntlr{
 }
 
 .search-form .form-label span{
-	font-family: 'Roboto-Bold';
+	
 }
 .search-form .focused .form-label {
   transform: translateY(-125%);
