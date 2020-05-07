@@ -61,10 +61,7 @@ $attachId = get_post_thumbnail_id(get_the_ID());
       <div class="thumbSlider-wrp-innr-con">
         <div class="thumbSlider-arrows">
           <span class="leftArrow">
-            <i class="fas fa-angle-up"></i>
-          </span>
-          <span class="rightArrow">
-            <i class="fas fa-angle-down"></i>
+            <img src="<?php echo THEME_URI; ?>/assets/images/polygon-up-black.png">
           </span>
         </div>
         <div class="thumbSlider">
@@ -88,6 +85,12 @@ $attachId = get_post_thumbnail_id(get_the_ID());
   		}
         	?>
         </div>
+        <div class="thumbSlider-arrows">
+          <span class="rightArrow">
+            <img src="<?php echo THEME_URI; ?>/assets/images/polygon-down-black.png">
+          </span>
+        </div>
+
       </div>  
     </div>
     <?php } ?>

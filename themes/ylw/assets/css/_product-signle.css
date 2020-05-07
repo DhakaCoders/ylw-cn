@@ -209,7 +209,7 @@
 }
 .summary.entry-summary .sharewith{
 	float: right;
-	margin-top: 52px;
+	margin-top: 46px;
 }
 .summary.entry-summary .alg-wc-wl-btn.remove .alg-wc-wl-view-state-remove {
     display: flex;
@@ -226,12 +226,57 @@
 }
 .single-pro-lft-con{
 	float: left;
-	width: 70%;
+	width: 65%;
+	padding-right: 70px;
 }
 .woocommerce div.product div.summary{
 	float: right;
-	width: 30%;
+	width: 35%;
 }
+.product-slider-wrp{
+	position: relative;
+	padding-left: 100px;
+}
+.thumbSlider-wrp{
+	position: absolute;
+	top: 50px;
+	bottom: 50px;
+	left: 0;
+	max-width: 70px;
+	width: 100%;
+}
+.bigViewSlider-item img{
+	width: 100%;
+}
+.thumbSlider-wrp-innr-con,{
+	width: 100%;
+	height: 100%;
+}
+/*.thumbSlider{
+	height: 100%;
+}*/
+
+.thumbSlider-arrows .leftArrow{
+	margin-bottom: 20px;
+	text-align: center;
+	display: block;
+	cursor: pointer;
+}
+.thumbSlider-arrows .rightArrow{
+	margin-top: 15px;
+	text-align: center;
+	display: block;
+	cursor: pointer;
+}
+.thumbSlider-item-img i{
+	display: block;
+	position: relative;
+}
+
+.thumbSlider .slick-current .thumbSlider-item img{
+	border: 3px solid #ffc627;
+}
+
 @media(max-width: 1499px){
 
 }

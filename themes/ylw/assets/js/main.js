@@ -398,12 +398,44 @@ if( $('.bigViewSlider').length ){
 
 if( $('.thumbSlider').length ){
    $('.thumbSlider').slick({
-     slidesToShow: 5,
-     slidesToScroll: 1,
-     arrows: true,
-     asNavFor: '.bigViewSlider',
-     dots: false,
-     focusOnSelect: true
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: false,
+    arrows:true,
+    asNavFor: '.bigViewSlider',
+    focusOnSelect: true,
+    vertical: true,
+    verticalScrolling: true,
+     //verticalSwiping: true,
+    prevArrow: $('.thumbSlider-arrows .leftArrow'),
+    nextArrow: $('.thumbSlider-arrows .rightArrow'),
+     //centerMode: true,
+     responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 4,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 5,
+          }
+        },
+        {
+          breakpoint: 640,
+          settings: {
+            slidesToShow: 4,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 3,
+          }
+        }
+      ]
    });
 }
 
