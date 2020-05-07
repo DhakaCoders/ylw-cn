@@ -357,6 +357,15 @@ if( $('.thumbSlider').length ){
    });
 }
 
+
+
+
+
+
+
+
+
+
 var allPanels3 = $('.wpf_form_product_filter .wpf_column_vertical').hide();
 $('.wpf_form_product_filter .wpf_item_name').click(function() {
       allPanels3.slideUp();
