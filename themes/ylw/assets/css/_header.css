@@ -332,8 +332,8 @@ nav.main-nav > ul > li.menu-item-has-children:hover .mega-menu-cntlr{
 }
 .popup-cross span {
 	width: 30px;
-	height: 3px;
-	background: #fff;
+	height: 2px;
+	background: #3E3935;
 	display: block;
 	position: absolute;
 	top: 0;
