@@ -265,7 +265,8 @@ function wc_single_product_under_title(){
 
 add_action( 'wc_view_page', 'wc_single_quickview_view_page' );
 function wc_single_quickview_view_page(){
-    echo '<div class="viewpage clearfix"><a href="#">VIEW PRODUCT PAGE</a></div>';
+    global $product;
+    echo '<div class="viewpage clearfix"><a href="'.get_permalink( $product->get_id() ).'">VIEW PRODUCT PAGE</a></div>';
 }
 
 add_action( 'woocommerce_single_product_summary', 'wc_single_product_under_cartbutton', 31 );
