@@ -216,9 +216,34 @@
 	text-transform: uppercase;
 	color: #3E3935;
 }
-.single-product .summary.entry-summary .viewpage{
+body.single.single-product .summary.entry-summary .viewpage{
 	display: none!important;
 }
+.yith-quick-view.yith-modal.slide-in  .yith-wcqv-view-details.button,
+.yith-quick-view.yith-modal.slide-in .product_meta{
+	display: none!important;
+}
+.viewpage{
+	text-align: center;
+}
+.viewpage a{
+	font-size: 11px;
+	line-height: 1;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding-bottom: 5px;
+	border-bottom: 6px solid #FFC627!important;
+	display: inline-block;
+	vertical-align: baseline;
+	color: #3E3935!important;
+}
+.viewpage a:hover{
+	border-color: #3E3935!important;
+}
+.yith-quick-view-content.woocommerce div.summary .price del{
+	font-weight: 400!important;
+}
+
 .free-text:after,
 .free-text:before{
 	content: "";
@@ -431,7 +456,7 @@
 .yith-quick-view-content.woocommerce div.summary .price del{
 	font-size: 15px!important;
 	line-height: 1!important;
-	font-weight: 700!important;
+	font-weight: 400!important;
 	text-decoration: line-through!important;
 	color: #3E3935!important;
 	opacity: 1!important;
