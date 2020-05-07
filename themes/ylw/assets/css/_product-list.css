@@ -1,5 +1,6 @@
 a.button.yith-wcqv-button,
-a.yith-wcqv-button.qvicon {
+a.yith-wcqv-button.qvicon,
+.alg-wc-wl-thumb-btn-loop {
     display: none !important;
 }
 .fl-my-slect-items ul li span {
@@ -620,6 +621,24 @@ nav.woocommerce-pagination ul{
 
 
 
+.fl-product-item span.out-of-stock {
+    position: absolute;
+    z-index: 7;
+    background: rgba(0, 0, 0, 0.08);
+    padding: 3px 6px;
+    top: 3px;
+    left: 3px;
+    color: #ff0000;
+}
+.fl-product-item .backorders{
+    position: absolute;
+    z-index: 7;
+    background: rgba(0, 0, 0, 0.08);
+    padding: 3px 6px;
+    top: 3px;
+    left: 3px;
+    color: green;
+}
 @media(max-width: 1499px){
 
 }

@@ -77,6 +77,7 @@ if ( $related_products ) : ?>
 			global $product, $woocommerce, $post;
 			echo '<div class="hm-new-arrivals-item">';
 			echo '<div class="fl-product-item">';
+          wc_stock_manage();
 	        echo '<div class="fl-product-item-fea-img">';
 	        echo '<a href="'.get_permalink( $product->get_id() ).'">';
 	        echo wp_get_attachment_image( get_post_thumbnail_id($product->get_id()), 'pgrid' );
