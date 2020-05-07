@@ -173,6 +173,10 @@
 	.ylw-customer-faq-sec-wrp {
 	    padding-bottom: 100px !important;
 	}
+	#sidebar .nav{
+		display: block;
+		text-align: center;
+	}
 }
 
 @media(max-width: 575px){

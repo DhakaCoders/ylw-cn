@@ -57,6 +57,7 @@
 	width: 65%;
 	float: left;
 	color: #fff;
+	padding-right: 15px;
 }
 .psmsd-title-1{
 	display: block;
@@ -422,14 +423,7 @@ body.single.single-product .summary.entry-summary .viewpage{
     padding-left: 90px;
 	position: relative;
 }
-@media (min-width: 481px){
-	.yith-quick-view.yith-modal .yith-quick-view-content div.images{
-		width: initial!important;
-	}
-}
-.yith-quick-view-content .product.type-product{
-	
-}
+
 .yith-quick-view.yith-modal .yith-quick-view-content div.images{
 	width: 65%!important;
 }
@@ -513,12 +507,14 @@ body.single.single-product .summary.entry-summary .viewpage{
 }
 
 @media(max-width: 1299px){
-
+	.monsters-img-02{
+		max-width: 280px;
+	}
 }
 
 @media(max-width: 1199px){
 	.monsters-img-02 {
-	    max-width: 200px;
+	    max-width: 190px;
 	}
 	.single-pro-lft-con {
 	    width: 60%;
@@ -598,9 +594,30 @@ body.single.single-product .summary.entry-summary .viewpage{
 	.yith-quick-view.yith-modal .yith-quick-view-content div.images{
 		width: 100%!important;
 	}
+	.yith-quick-view-content .product_title.entry-title{
+		font-size: 27px!important;
+	}
+	.monsters-img-02 {
+	    max-width: 82px;
+	}
 
 }
 
+@media(max-width: 639px){
+	.pro-single-monsters-sec-cntlr {
+	    padding-bottom: 120px;
+	}
+	.monsters-img-02 {
+	    max-width: 100px;
+	}
+	.product-slider-wrp {
+	    padding-left: 85px;
+	}
+	.pro-single-monsters-sec-des p{
+		margin-bottom: 35px;
+	}
+
+}
 @media(max-width: 575px){
 	.woocommerce div.product .product_title {
 	    font-size: 25px;
@@ -626,18 +643,26 @@ body.single.single-product .summary.entry-summary .viewpage{
 	.summary.entry-summary .sharewith{
 		margin-top: 0;
 	}
+	.yith-quick-view-content .product_title.entry-title{
+		font-size: 25px!important;
+	}
+	.yith-quick-view-content .images{
+		padding-left: 75px;
+	}
+	.psmsd-title-1{
+		font-size: 28px;
+	}
+	.pro-single-monsters-sec-des p{
+		font-size: 15px;
+	}
 }
 
 @media(max-width: 479px){
-	.pro-single-monsters-sec-cntlr {
-	    padding-bottom: 120px;
+	.pro-single-monsters-sec-fea-img {
+	    width: 31%;
+	    padding-right: 10px;
 	}
-	.monsters-img-02 {
-	    max-width: 100px;
-	}
-	.product-slider-wrp {
-	    padding-left: 85px;
-	}
+
 
 }
 

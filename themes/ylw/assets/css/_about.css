@@ -285,7 +285,9 @@ ylw-about-dsc-sec-wrp
 	.ylw-about-brand-grid-img {
 	    height: 350px !important;
 	}
-
+	.ylw-about-brand-grid-title{
+		font-size: 25px;
+	}
 }
 
 @media(max-width: 479px){

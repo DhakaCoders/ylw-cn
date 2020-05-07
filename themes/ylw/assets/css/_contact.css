@@ -251,6 +251,10 @@ contact-form-sec-wrp
 span.wpcf7-not-valid-tip {
     margin-top: 10px;
 }
+span.wpcf7-not-valid-tip {
+    font-size: 13px!important;
+    line-height: 1;
+}
 /*
 -------------------
  Responsive Css
