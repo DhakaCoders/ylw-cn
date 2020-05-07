@@ -764,7 +764,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover .mega-menu-cntlr{
 	    font-size: 18px;
 	    line-height: 20px;
 	    max-width: 350px;
-	    width: 100%;
+	    width: 0;
 	    z-index: -1;
 	    opacity: 0;
 	    -ms-transition: all 0.3s;
@@ -775,7 +775,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover .mega-menu-cntlr{
 	    left: 0;
 	    opacity: 1;
 	    z-index: 9999999;
-
+	    width: 100%;
 	}
 	.xs-nav-inr{
 		position: relative;

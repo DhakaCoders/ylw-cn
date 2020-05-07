@@ -295,6 +295,13 @@
 	.ylw-blog-grid-sec {
 	    padding-bottom: 70px;
 	}
+	.ylw-blog-grid-load a{
+		width: 55px;
+		height: 55px;
+	}
+	.ylw-blog-grid-load a img{
+		max-width: 22px;
+	}
 
 }
 
