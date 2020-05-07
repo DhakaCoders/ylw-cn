@@ -264,6 +264,9 @@ Page looader
     z-index: 50!important;
 }
 
+.page-404.text-center {
+    padding: 120px 0;
+}
 @media(max-width: 767px){
     .page-banner-title{
         font-size: 45px;

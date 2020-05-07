@@ -182,6 +182,7 @@ if (!function_exists('add_shorttext_below_title_loop')) {
         global $product, $woocommerce, $post;
         $sc = '[yith_quick_view product_id="'.$product->get_id().'" type="icon" label="QV"]';
 		echo '<div class="fl-product-item hello">';
+        wc_stock_manage();
         echo '<div class="fl-product-item-fea-img">';
         echo '<a href="'.get_permalink( $product->get_id() ).'">';
         echo wp_get_attachment_image( get_post_thumbnail_id($product->get_id()), 'pgrid' );
@@ -212,6 +213,23 @@ function get_wish_thumb(){
         echo '</a>';
    }
 
+}
+
+function wc_stock_manage(){
+    global $product;
+    $StockQ = $product->get_stock_quantity();
+    if ( ! $product->managing_stock() && ! $product->is_in_stock() ){
+        echo '<span class="out-of-stock">Out of Stock</span>';
+        
+    } elseif( $StockQ < 1 ) {
+        if ($product->backorders_allowed()){
+            echo '<span class="backorders">Available on Backorder</span>';
+        } elseif ( !$product->backorders_allowed() && $StockQ == 0 && ! $product->is_in_stock()){
+            echo '<span class="out-of-stock">Out of Stock</span>';
+        } elseif ( $product->is_on_backorder() ){
+            echo '<span class="backorders">Available on Backorder</span>';
+        }
+    } 
 }
 
 /*Remove Single page Woocommerce Hooks & Filters are below*/
