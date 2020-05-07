@@ -48,6 +48,9 @@ a.yith-wcqv-button.qvicon,
 .fl-breadcrumbs ul li a:hover{
 	color: #FFC627;
 }
+.fl-breadcrumbs ul li:last-child{
+	font-weight: 700;
+}
 .fl-breadcrumbs ul{
 	font-size: 12px;
 	line-height: 1;
@@ -606,6 +609,17 @@ nav.woocommerce-pagination ul{
 	max-height: 100%;
 	width: 100%;
 }
+.delete-all-btn{
+	color: #3E3935;
+	font-size: 11px;
+	line-height: 1;
+
+}
+.delete-all-btn:hover{
+	color: #FFC627;
+}
+
+
 
 .fl-product-item span.out-of-stock {
     position: absolute;
@@ -695,7 +709,11 @@ nav.woocommerce-pagination ul{
 	    padding-top: 10px;
 	}
 	.fl-breadcrumbs ul li.fl-home-icon {
-	    padding-left: 0;
+	    padding-left: 35px;
+	}
+	.fl-breadcrumbs ul li.fl-home-icon:before{
+		width: 30px;
+		background-position: left center;
 	}
 
 }
