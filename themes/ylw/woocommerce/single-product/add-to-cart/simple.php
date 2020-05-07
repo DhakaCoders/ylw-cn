@@ -23,7 +23,7 @@ if ( ! $product->is_purchasable() ) {
 	return;
 }
 
-echo wc_get_stock_html( $product ); // WPCS: XSS ok.
+wc_stock_manage();
 do_action( 'woocommerce_custom_metafield' ); 
 do_action( 'woocommerce_delivery_text' );
 if ( $product->is_in_stock() ) : ?>

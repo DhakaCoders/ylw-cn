@@ -110,6 +110,18 @@
     padding-top: 15px;
     padding-bottom: 15px;
 }
+.summary.entry-summary span.backorders {
+    color: green;
+    margin-bottom: 25px;
+    display: block;
+}
+
+
+.summary.entry-summary .out-of-stock {
+    display: block;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
 .free-text > p{
 	margin-bottom: 30px;
 }
