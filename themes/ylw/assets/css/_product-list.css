@@ -64,13 +64,13 @@ a.yith-wcqv-button.qvicon,
 }
 .fl-breadcrumbs ul li.fl-home-icon:before{
 	content: ""!important;
-	position: absolute;
+	position: absolute!important;
 	top: 50%;
 	transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	left: 0;
-	background: url(../images/back-icon.png);
+	background: url(../images/back-icon.png)!important;
 	width: 42px;
 	height: 9px;
 	background-size: 100% auto;
