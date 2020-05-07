@@ -132,7 +132,9 @@
 .faq-accordion-des{
 	display: none;
 }
-
+.summary.entry-summary i.loading.fas.fa-sync-alt.fa-spin.fa-fw {
+    display: none;
+}
 .single-product .quantity{
 	width: 96px;
 	height: 55px;

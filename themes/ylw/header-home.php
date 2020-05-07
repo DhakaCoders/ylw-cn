@@ -19,11 +19,11 @@
 <body <?php body_class(); ?>>
 
 <!-- Preloader -->
-<!-- <div id="preloader">
+<div id="preloader">
     <div id="status1">
       <img src="<?php echo THEME_URI; ?>/assets/images/looding-img.png">
     </div>
-</div> -->
+</div>
 <header class="header has-banner home-hdr">
   <div class="header-inr">
     <div class="header-cntlr clearfix">

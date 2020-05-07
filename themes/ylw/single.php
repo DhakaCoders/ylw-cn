@@ -1,7 +1,4 @@
 <?php
-/*
-  Template Name: About
-*/
 get_header('banner'); 
 $thisID = get_option( 'page_for_posts' );
 $intro = get_field('introsec', $thisID);
@@ -74,10 +71,10 @@ if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/page-
         <div class="ylw-blog-article-social-media-sec-inr">
           <span>Share this Article</span>
           <ul class="reset-list">
-            <li><a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/ylw-blog-article-facebook.png"></a></li>
+            <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>"><img src="<?php echo THEME_URI; ?>/assets/images/ylw-blog-article-facebook.png"></a></li>
             <li><a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/ylw-blog-article-instagram.png"></a></li>
-            <li><a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/ylw-blog-article-twiter.png"></a></li>
-            <li><a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/ylw-blog-article-envolve.png"></a></li>
+            <li><a href="https://twitter.com/home?status=<?php the_permalink(); ?>"><img src="<?php echo THEME_URI; ?>/assets/images/ylw-blog-article-twiter.png"></a></li>
+            <li><a href="mailto:customerservice@yell-oh.com?&subject=Check%20this%20article%20out!&body=<?php the_permalink(); ?>"><img src="<?php echo THEME_URI; ?>/assets/images/ylw-blog-article-envolve.png"></a></li>
           </ul>
         </div>
       </div>
