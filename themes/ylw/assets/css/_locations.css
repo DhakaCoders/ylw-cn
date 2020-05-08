@@ -75,6 +75,7 @@ ylw-location-grid-wrp
 }
 .ylw-location-grid-img span img{
 	height: 100%;
+	width: 100%;
 }
 .ylw-location-grid-img a{
 	display: inline-block;
