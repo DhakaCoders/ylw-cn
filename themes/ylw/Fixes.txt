@@ -1,0 +1,17 @@
+--Home--
+1. Home page ar option a sob product gulo category onujayi filter korte parbe. Onek product thakle khuje pete tahole plm hobe na
+2. Section 3 te left button onujayi right ar slide item filter hobe tahole...
+- Kon title ar jonno kon slide item ata make sure korte hobe
+- Slider add korar somoy Title dibe then slide add korte 2/3 ta
+- Abar Title dibe slide add korbe 2/3 ta
+- Front end a only ai Title gulo left show hobe ar sob slide gulo right a
+
+
+Overall:
+1. Modal accordion and responsvie
+2. Single product page slider
+3. Sob accourdion gulote akbar ber hole next click ar hide hoy na. Hide hobe amon korte hobe
+4. Faq page ar left
+5. Our showrooms gallery/map fixing
+6. Mega menu
+7. Options check/updates

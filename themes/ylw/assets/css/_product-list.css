@@ -618,26 +618,25 @@ nav.woocommerce-pagination ul{
 .delete-all-btn:hover{
 	color: #FFC627;
 }
-
-
-
 .fl-product-item span.out-of-stock {
     position: absolute;
     z-index: 7;
-    background: rgba(0, 0, 0, 0.08);
+    background: #FFC627;
     padding: 3px 6px;
     top: 3px;
     left: 3px;
     color: #ff0000;
+    font-weight: 500;
 }
 .fl-product-item .backorders{
     position: absolute;
     z-index: 7;
-    background: rgba(0, 0, 0, 0.08);
+    background: #FFC627;
     padding: 3px 6px;
     top: 3px;
     left: 3px;
-    color: green;
+    color: #fff;
+    font-weight: 500;
 }
 @media(max-width: 1499px){
 

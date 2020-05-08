@@ -67,7 +67,8 @@
 	text-decoration: none;
 	color:#000;
 }
-.ylw-customer-menu ul li a:hover{
+.ylw-customer-menu ul li a:hover,
+.ylw-customer-menu ul li.current_page_item a{
 	color:#ffc627;
 }
 .ylw-customer-menu ul li.active a,
