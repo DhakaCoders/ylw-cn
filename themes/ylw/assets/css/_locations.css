@@ -453,6 +453,13 @@ ylw-shop-list-address-sec-wrp
 	.ylw-shop-list-address-wrp ul li:nth-child(2n+1){
 		clear: left;
 	}
+	.ylw-location-grid-img a{
+		padding: 13px 14px!important;
+		left: 50%!important;
+		transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+	}
 
 }
 
