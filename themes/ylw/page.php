@@ -2,6 +2,7 @@
 get_header(); 
 while( have_posts() ): the_post();
 $thisID = get_the_ID();
+$page_cont = get_field('content', $thisID);
 ?>
 <section class="ylw-customer-faq-sec-wrp page-wrapp">  
 <div class="container">
@@ -12,7 +13,13 @@ $thisID = get_the_ID();
           <h1 class="ylw-customer-title"><?php the_title(); ?></h1>
         </div>
         <div class="policy-inner page-inner clearfix">
-			<?php the_content(); ?>
+          <?php 
+          if( !empty($page_cont) && !is_cart() && !is_shop() && !is_checkout()): 
+            echo wpautop( $page_cont );
+          else:
+            the_content();
+          endif;
+          ?>
      	</div>
     </div>
    </div>
