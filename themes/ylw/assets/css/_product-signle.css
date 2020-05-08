@@ -15,6 +15,10 @@
 }
 .viewpage {
     clear: both;
+    padding-top: 20px;
+}
+.yith-quick-view.yith-modal .woocommerce-variation-add-to-cart .free-text{
+	padding-bottom: 20px;
 }
 .product-songle-breadcrumbs-sec{
 	padding: 40px 0 35px 30px;
