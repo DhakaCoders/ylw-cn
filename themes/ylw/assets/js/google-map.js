@@ -144,10 +144,10 @@ if( $('#googlemap4').length ){
 }
 
 if( $('#googlemap5').length ){
-    var latitude5 = $('#googlemap5').data('latitude');
-    var longitude5 = $('#googlemap5').data('longitude');
+    var latitude4 = $('#googlemap5').data('latitude');
+    var longitude4 = $('#googlemap5').data('longitude');
 
-    var myCenter= new google.maps.LatLng(latitude5,  longitude5);
+    var myCenter= new google.maps.LatLng(latitude4,  longitude4);
     var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
     function initialize(){
         var mapProp = {
