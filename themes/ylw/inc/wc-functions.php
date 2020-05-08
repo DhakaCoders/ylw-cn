@@ -139,11 +139,11 @@ add_filter('woocommerce_catalog_orderby', 'wc_customize_product_sorting');
 function wc_customize_product_sorting($sorting_options){
     $sorting_options = array(
         'menu_order' => __( 'sort by', 'woocommerce' ),
-        'popularity' => __( 'sort by popularity', 'woocommerce' ),
-        'rating'     => __( 'sort by average rating', 'woocommerce' ),
-        'date'       => __( 'sort by newness', 'woocommerce' ),
-        'price'      => __( 'sort by low price', 'woocommerce' ),
-        'price-desc' => __( 'sort by high price', 'woocommerce' ),
+        'popularity' => __( 'popularity', 'woocommerce' ),
+        'rating'     => __( 'average rating', 'woocommerce' ),
+        'date'       => __( 'newness', 'woocommerce' ),
+        'price'      => __( 'low price', 'woocommerce' ),
+        'price-desc' => __( 'high price', 'woocommerce' ),
     );
 
     return $sorting_options;
