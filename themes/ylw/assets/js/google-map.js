@@ -13,10 +13,10 @@ if( $('#maplocation').length ){
   var markerSrc = $('#maplocation').data('homeurl');
 }
 if( $('#googlemap1').length ){
-    var latitude = $('#googlemap1').data('latitude');
-    var longitude = $('#googlemap1').data('longitude');
+    var latitude1 = $('#googlemap1').data('latitude');
+    var longitude1 = $('#googlemap1').data('longitude');
 
-    var myCenter= new google.maps.LatLng(latitude,  longitude);
+    var myCenter= new google.maps.LatLng(latitude1,  longitude1);
     var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
     function initialize(){
         var mapProp = {
@@ -46,10 +46,10 @@ if( $('#googlemap1').length ){
 }
 
 if( $('#googlemap2').length ){
-    var latitude = $('#googlemap2').data('latitude');
-    var longitude = $('#googlemap2').data('longitude');
+    var latitude2 = $('#googlemap2').data('latitude');
+    var longitude2 = $('#googlemap2').data('longitude');
 
-    var myCenter= new google.maps.LatLng(latitude,  longitude);
+    var myCenter= new google.maps.LatLng(latitude2,  longitude2);
     var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
     function initialize(){
         var mapProp = {
@@ -74,15 +74,14 @@ if( $('#googlemap2').length ){
         });
       marker.setMap(map);
     }
-
     google.maps.event.addDomListener(window, 'load', initialize);
 }
 
 if( $('#googlemap3').length ){
-    var latitude = $('#googlemap3').data('latitude');
-    var longitude = $('#googlemap3').data('longitude');
+    var latitude3 = $('#googlemap3').data('latitude');
+    var longitude3 = $('#googlemap3').data('longitude');
 
-    var myCenter= new google.maps.LatLng(latitude,  longitude);
+    var myCenter= new google.maps.LatLng(latitude3,  longitude3);
     var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
     function initialize(){
         var mapProp = {
@@ -112,10 +111,10 @@ if( $('#googlemap3').length ){
 }
 
 if( $('#googlemap4').length ){
-    var latitude = $('#googlemap4').data('latitude');
-    var longitude = $('#googlemap4').data('longitude');
+    var latitude4 = $('#googlemap4').data('latitude');
+    var longitude4 = $('#googlemap4').data('longitude');
 
-    var myCenter= new google.maps.LatLng(latitude,  longitude);
+    var myCenter= new google.maps.LatLng(latitude4,  longitude4);
     var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
     function initialize(){
         var mapProp = {
@@ -133,6 +132,72 @@ if( $('#googlemap4').length ){
           styles : CustomMapStyles
       };
       var map= new google.maps.Map(document.getElementById('googlemap4'),mapProp);
+
+      var marker= new google.maps.Marker({
+        position:myCenter,
+        icon: markerSrc+'/assets/images/map-marker.png'
+        });
+      marker.setMap(map);
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+}
+
+if( $('#googlemap5').length ){
+    var latitude5 = $('#googlemap5').data('latitude');
+    var longitude5 = $('#googlemap5').data('longitude');
+
+    var myCenter= new google.maps.LatLng(latitude5,  longitude5);
+    var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+    function initialize(){
+        var mapProp = {
+          center:myCenter,
+
+          mapTypeControl:false,
+          scrollwheel: false,
+
+          zoomControl: false,
+          disableDefaultUI: true,
+          zoom:17,
+          streetViewControl: false,
+          rotateControl: false,
+          mapTypeId:google.maps.MapTypeId.ROADMAP,
+          styles : CustomMapStyles
+      };
+      var map= new google.maps.Map(document.getElementById('googlemap5'),mapProp);
+
+      var marker= new google.maps.Marker({
+        position:myCenter,
+        icon: markerSrc+'/assets/images/map-marker.png'
+        });
+      marker.setMap(map);
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+}
+
+if( $('#googlemap6').length ){
+    var latitude6 = $('#googlemap6').data('latitude');
+    var longitude6 = $('#googlemap6').data('longitude');
+
+    var myCenter= new google.maps.LatLng(latitude6,  longitude6);
+    var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+    function initialize(){
+        var mapProp = {
+          center:myCenter,
+
+          mapTypeControl:false,
+          scrollwheel: false,
+
+          zoomControl: false,
+          disableDefaultUI: true,
+          zoom:17,
+          streetViewControl: false,
+          rotateControl: false,
+          mapTypeId:google.maps.MapTypeId.ROADMAP,
+          styles : CustomMapStyles
+      };
+      var map= new google.maps.Map(document.getElementById('googlemap6'),mapProp);
 
       var marker= new google.maps.Marker({
         position:myCenter,
