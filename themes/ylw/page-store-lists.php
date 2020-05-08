@@ -53,7 +53,7 @@ $intro2 = get_field('introsec2', $thisID);
                       <?php echo cbv_get_image_tag($showsec['image'],'bloggrid'); ?>
                     </span>
                     <?php endif; ?>
-                    <a href="#">MORE PHOTOS</a>
+                    <a data-fancybox="BigImages" href="<?php echo cbv_get_image_src($showsec['image'],'bloggrid'); ?>">MORE PHOTOS</a>
                   </div>
                 </div>
                 <div class="ylw-location-grid-rgt">

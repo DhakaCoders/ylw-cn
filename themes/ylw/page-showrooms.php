@@ -52,7 +52,7 @@ $intro = get_field('introsec', $thisID);
                       <?php echo cbv_get_image_tag($showsec['image'],'bloggrid'); ?>
                     </span>
                     <?php endif; ?>
-                    <a href="#">MORE PHOTOS</a>
+                    <a data-fancybox="BigImages" href="<?php echo cbv_get_image_src($showsec['image'],'bloggrid'); ?>">MORE PHOTOS</a>
                   </div>
                 </div>
                 <div class="ylw-location-grid-rgt">
@@ -63,7 +63,9 @@ $intro = get_field('introsec', $thisID);
                     if(!empty($telefoon)) printf('<a href="tel:%s"><i class="fas fa-phone"></i>%s</a>', $telefoon, $show_telefoon);
                     ?>
                   </div>
-                  <?php if( !empty($showsec['google_map']) ): $google_map = $showsec['google_map']; ?>
+                  <?php 
+                    if( !empty($showsec['google_map']) ): $google_map = $showsec['google_map'];
+                  ?>
                   <div class="ylw-location-grid-map">
                     <div id="googlemap<?php echo $i; ?>" data-latitude="<?php echo $google_map['lat']; ?>" data-longitude="<?php echo $google_map['lng']; ?>"></div>
                   </div>
