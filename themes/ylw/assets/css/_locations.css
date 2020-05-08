@@ -72,6 +72,9 @@ ylw-location-grid-wrp
 	top: 0;
 	bottom: 0;
 	right: 0;
+	background-size: cover!important;
+	background-repeat: no-repeat!important;
+	background-position: center center!important; 
 }
 .ylw-location-grid-img span img{
 	height: 100%;

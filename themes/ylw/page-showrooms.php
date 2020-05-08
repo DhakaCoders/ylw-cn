@@ -47,9 +47,11 @@ $intro = get_field('introsec', $thisID);
               <div class="ylw-location-grid-inr clearfix">
                 <div class="ylw-location-grid-lft">
                   <div class="ylw-location-grid-img">
-                    <?php if( !empty($showsec['image']) ): ?>
-                    <span data-fancybox="images" href="<?php echo cbv_get_image_src($showsec['image'],'bloggrid'); ?>">
-                      <?php echo cbv_get_image_tag($showsec['image'],'bloggrid'); ?>
+                    <?php if( !empty($showsec['image']) ): 
+                      $img_src = cbv_get_image_src($showsec['image'],'bloggrid');
+                    ?>
+
+                    <span data-fancybox="images" style="background: url(<?php echo $img_src;?>);"  href="<?php echo cbv_get_image_src($showsec['image'],'bloggrid'); ?>">
                     </span>
                     <?php endif; ?>
                     <a data-fancybox="BigImages" href="<?php echo cbv_get_image_src($showsec['image'],'bloggrid'); ?>">MORE PHOTOS</a>
