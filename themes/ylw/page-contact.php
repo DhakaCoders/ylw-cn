@@ -59,8 +59,7 @@ $intro = get_field('introsec', $thisID);
             </div>
             <?php endif; ?>
             <?php 
-              $formcode = get_field('formshortcode', $thisID);
-              
+              $formcode = get_field('formshortcode', $thisID); 
             ?>
             <div class="ylw-contact-form-rgt">
               <div class="ylw-contact-form-wrp">
