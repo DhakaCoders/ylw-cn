@@ -208,8 +208,8 @@
         <div class="clearfix gift-ideas-sec-cntlr">
            <div class="gift-ideas-sec-rgt">
             <?php if( !empty($tabs) ): ?>
-            <?php foreach( $tabs as $tab ): ?>
-            <div class="ylw-slide-tabs">
+            <?php $i = 1; foreach( $tabs as $tab ): ?>
+            <div id="tab-<?php echo $i; ?>">
             <?php if( $tab['slides'] ): ?>
             <div class="gift-ideas-sec-fea-img-bx giftIdeasSecFeaImgSlider">
               <?php foreach( $tab['slides'] as $cslide ): ?>
@@ -226,7 +226,7 @@
             </div>
             <?php endif; ?>
             </div>
-            <?php endforeach; ?>
+            <?php $i++; endforeach; ?>
             <?php endif; ?>
           </div>
           <div class="gift-ideas-sec-lft clearfix">
