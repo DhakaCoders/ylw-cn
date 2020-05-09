@@ -209,7 +209,7 @@
            <div class="gift-ideas-sec-rgt">
             <?php if( !empty($tabs) ): ?>
             <?php $i = 1; foreach( $tabs as $tab ): ?>
-            <div class="ylw-slide-tab-con" id="tab-<?php echo $i; ?>">
+            <div class="ylw-slide-tab-con<?php echo ( $i == 1 )? ' current': '';?>" id="tab-<?php echo $i; ?>">
             <?php if( $tab['slides'] ): ?>
             <div class="gift-ideas-sec-fea-img-bx giftIdeasSecFeaImgSlider">
               <?php foreach( $tab['slides'] as $cslide ): ?>
@@ -248,8 +248,9 @@
               <ul class="reset-list ylw-slide-tabs-menu">
                 <?php $i = 1; foreach( $tabs as $tab ): ?>
                 <?php 
-                  if( !empty($tab['title']) ){
-                    printf('<li class="fl-tab-item"><a data-tab="tab-%s" href="#">%s</a></li>', $i, $tab['title']);
+                  if( !empty($tab['title']) ){?>
+                  <li class="fl-tab-item"><a data-tab="tab-<?php echo $i; ?>" href="#" class="<?php echo ( $i == 1 )? 'current': '';?>"><?php echo $tab['title']; ?></a></li>
+                    <?php
                   }
                 ?>
                 <?php $i++; endforeach; ?>
