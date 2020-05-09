@@ -211,6 +211,15 @@ $('.ylw-lb-tabs-menu li').on('click',function(){
   $('.ylw-tabs').eq(index).show();
 });
 
+$('.ylw-slide-tabs-menu li').on('click',function(){
+  index2 = $(this).index();
+  $('.ylw-slide-tabs-menu li').removeClass('active');
+  $(this).addClass('active');
+  $('.ylw-slide-tabs').hide();
+  $('.ylw-slide-tabs').eq(index2).show();
+});
+
+
 
 $('.ylw-about-counter').each(function () {
     $(this).prop('Counter',0).animate({
