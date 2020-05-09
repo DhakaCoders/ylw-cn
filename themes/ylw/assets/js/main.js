@@ -199,31 +199,10 @@ $( '.faq-accordion-title').each(function() {
  Tabs Js
 ----------------------
 */
-
-/*$('.ylw-tabs:first').show();
-$('.tabs-menu li:first').addClass('active');
-
-$('.ylw-lb-tabs-menu li').on('click',function(){
-  index = $(this).index();
-  $('.ylw-lb-tabs-menu li').removeClass('active');
-  $(this).addClass('active');
-  $('.ylw-tabs').hide();
-  $('.ylw-tabs').eq(index).show();
-});
-
-$('.ylw-slide-tabs-menu li').on('click',function(){
-  index2 = $(this).index();
-  $('.ylw-slide-tabs-menu li').removeClass('active');
-  $(this).addClass('active');
-  $('.ylw-slide-tabs').hide();
-  $('.ylw-slide-tabs').eq(index2).show();
-});
-*/
-
 $('.ylw-slide-tabs-menu li > a').click(function(e){
     e.preventDefault();
+    $('.giftIdeasSecFeaImgSlider').slick('refresh');
     var tab_id = $(this).attr('data-tab');
-
     $('li.fl-tab-item > a').removeClass('current');
     $('.ylw-slide-tab-con').removeClass('current');
 

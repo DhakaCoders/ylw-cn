@@ -13,10 +13,3 @@ Text Domain: yelloh
 
 @import url('assets/css/main.css');
 
-
-.ylw-slide-tab-con{
-	display: none;
-}
-.ylw-slide-tab-con.current{
-	display: block;
-}

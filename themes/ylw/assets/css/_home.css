@@ -489,6 +489,13 @@ li.fl-tab-item a{
 	cursor: pointer;
 }
 
+.ylw-slide-tab-con{
+	display: none;
+}
+.ylw-slide-tab-con.current{
+	display: block;
+}
+
 .gift-ideas-sec-rgt{
 	position: absolute;
 	top: 0;
