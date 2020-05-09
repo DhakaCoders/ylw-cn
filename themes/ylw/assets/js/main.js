@@ -199,6 +199,7 @@ $( '.faq-accordion-title').each(function() {
  Tabs Js
 ----------------------
 */
+
 $('.ylw-slide-tabs-menu li > a').click(function(e){
     e.preventDefault();
     $('.giftIdeasSecFeaImgSlider').slick('refresh');
