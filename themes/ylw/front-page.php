@@ -166,7 +166,7 @@
               echo '</div>';
               echo '</div>';
               echo '<div class="fl-product-item-des mHc">';
-              echo '<strong class="fl-product-variable-title">NEW</strong>';
+              get_loop_condition();
               echo '<h6 class="fl-product-title"><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h6>';
               echo '<div class="fl-product-box-prices">';
               echo '<div class="fl-product-regular-price">'.$product->get_price_html().'</div>';
@@ -340,7 +340,7 @@
                   echo '</div>';
                   echo '</div>';
                   echo '<div class="fl-product-item-des mHc">';
-                  echo '<strong class="fl-product-variable-title">NEW</strong>';
+                  get_loop_condition();
                   echo '<h6 class="fl-product-title"><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h6>';
                   echo '<div class="fl-product-box-prices">';
                   echo '<div class="fl-product-regular-price">'.$product->get_price_html().'</div>';

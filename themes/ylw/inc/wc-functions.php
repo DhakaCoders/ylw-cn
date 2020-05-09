@@ -194,7 +194,7 @@ if (!function_exists('add_shorttext_below_title_loop')) {
         echo '</div>';
         echo '</div>';
         echo '<div class="fl-product-item-des mHc">';
-
+        get_loop_condition();
         echo '<h6 class="fl-product-title"><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h6>';
         echo '<div class="fl-product-box-prices">';
         echo '<div class="fl-product-regular-price">'.$product->get_price_html().'</div>';
@@ -217,8 +217,10 @@ function get_wish_thumb(){
 
 function get_loop_condition(){
     global $product;
-    //$condition = get_field('', $product->get_id());
-    echo '<strong class="fl-product-variable-title">NEW</strong>';
+    $condition = get_field('condition', $product->get_id);
+    if( !empty($condition) ):
+        printf('<strong class="fl-product-variable-title">%s</strong>', $condition);
+    endif;
 }
 
 function wc_stock_manage(){
