@@ -246,13 +246,13 @@
             ?>
             <div class="ift-ideas-sec-lft-btns">
               <ul class="reset-list ylw-slide-tabs-menu">
-                <?php foreach( $tabs as $tab ): ?>
+                <?php $i = 1; foreach( $tabs as $tab ): ?>
                 <?php 
                   if( !empty($tab['title']) ){
-                    printf('<li class="fl-tab-item"><a href="#">%s</a></li>', $tab['title']);
+                    printf('<li class="fl-tab-item"><a href="#tab-%s">%s</a></li>', $i, $tab['title']);
                   }
                 ?>
-                <?php endforeach; ?>
+                <?php $i++; endforeach; ?>
               </ul>
             </div>
           <?php endif; ?>

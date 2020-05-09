@@ -217,7 +217,7 @@ function get_wish_thumb(){
 
 function get_loop_condition(){
     global $product;
-    $condition = get_field('condition', $product->get_id);
+    $condition = get_field('condition', $product->get_id());
     if( !empty($condition) ):
         printf('<strong class="fl-product-variable-title">%s</strong>', $condition);
     endif;
