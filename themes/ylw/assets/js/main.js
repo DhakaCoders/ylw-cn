@@ -200,7 +200,7 @@ $( '.faq-accordion-title').each(function() {
 ----------------------
 */
 
-$('.ylw-tabs:first').show();
+/*$('.ylw-tabs:first').show();
 $('.tabs-menu li:first').addClass('active');
 
 $('.ylw-lb-tabs-menu li').on('click',function(){
@@ -217,6 +217,18 @@ $('.ylw-slide-tabs-menu li').on('click',function(){
   $(this).addClass('active');
   $('.ylw-slide-tabs').hide();
   $('.ylw-slide-tabs').eq(index2).show();
+});
+*/
+
+$('.ylw-slide-tabs-menu li > a').click(function(e){
+    //e.preventDefault();
+    var tab_id = $(this).attr('data-tab');
+
+    $('li.fl-tab-item > a').removeClass('current');
+    $('.ylw-slide-tabs').removeClass('current');
+
+    $(this).addClass('current');
+    $("#"+tab_id).addClass('current');
 });
 
 

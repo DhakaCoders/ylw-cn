@@ -12,3 +12,11 @@ Text Domain: yelloh
 */
 
 @import url('assets/css/main.css');
+
+
+.ylw-slide-tabs{
+	display: none;
+}
+.ylw-slide-tabs.current{
+	display: block;
+}
