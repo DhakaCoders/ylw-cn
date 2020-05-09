@@ -221,11 +221,11 @@ $('.ylw-slide-tabs-menu li').on('click',function(){
 */
 
 $('.ylw-slide-tabs-menu li > a').click(function(e){
-    //e.preventDefault();
+    e.preventDefault();
     var tab_id = $(this).attr('data-tab');
 
     $('li.fl-tab-item > a').removeClass('current');
-    $('.ylw-slide-tabs').removeClass('current');
+    $('.ylw-slide-tab-con').removeClass('current');
 
     $(this).addClass('current');
     $("#"+tab_id).addClass('current');
