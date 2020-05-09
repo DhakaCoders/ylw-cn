@@ -249,7 +249,7 @@
                 <?php foreach( $tabs as $tab ): ?>
                 <?php 
                   if( !empty($tab['title']) ){
-                    printf('<li><a href="#">%s</a></li>', $tab['title']);
+                    printf('<li class="fl-tab-item"><a>%s</a></li>', $tab['title']);
                   }
                 ?>
                 <?php endforeach; ?>
