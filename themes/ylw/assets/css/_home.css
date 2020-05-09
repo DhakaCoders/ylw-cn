@@ -480,9 +480,13 @@ a.transparent-btn{
 	color: #3E3935;
 }
 .ift-ideas-sec-lft-btns ul li a:hover,
-.gray-transparent-btn a:hover{
+.gray-transparent-btn a:hover,
+li.fl-tab-item a.current{
 	background: #FFC627;
 	border-color: #FFC627;
+}
+li.fl-tab-item a{
+	cursor: pointer;
 }
 
 .gift-ideas-sec-rgt{
