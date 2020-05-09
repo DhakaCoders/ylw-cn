@@ -199,7 +199,7 @@
   if( $showhidintro3 ):
     $sec3 = get_field('sec3', HOMEID);
     $colleft = $sec3['colleft'];
-    $cslides = $sec3['colright']['slides'];
+    $tabs = $sec3['colright'];
 ?>
 <section class="gift-ideas-sec bg-inline">
   <div class="container-md">
@@ -207,9 +207,12 @@
       <div class="col-md-12">
         <div class="clearfix gift-ideas-sec-cntlr">
            <div class="gift-ideas-sec-rgt">
-            <?php if( !empty($cslides) ): ?>
+            <?php if( !empty($tabs) ): ?>
+            <?php foreach( $tabs as $tab ): ?>
+            <div class="ylw-slide-tabs">
+            <?php if( $tab['slides'] ): ?>
             <div class="gift-ideas-sec-fea-img-bx giftIdeasSecFeaImgSlider">
-              <?php foreach( $cslides as $cslide ): ?>
+              <?php foreach( $tab['slides'] as $cslide ): ?>
               <div class="gift-ideas-sec-fea-img-bx-item">
                 <?php if(!empty($cslide['link'])): ?>
                 <a href="<?php echo $cslide['link']; ?>" class="overlay-link"></a>
@@ -219,8 +222,11 @@
                 <?php endif; ?>
               <?php if( !empty($cslide['title']) ) printf('<strong>%s</strong>', $cslide['title']); ?>
               </div>
-              <?php endforeach; ?>
+            <?php endforeach; ?>
             </div>
+            <?php endif; ?>
+            </div>
+            <?php endforeach; ?>
             <?php endif; ?>
           </div>
           <div class="gift-ideas-sec-lft clearfix">
@@ -236,16 +242,14 @@
               </div>
             </div>
             <?php 
-              $links = $colleft['links'];
-              if( $links ):
+              if( $tabs ):
             ?>
             <div class="ift-ideas-sec-lft-btns">
-              <ul class="reset-list">
-                <?php foreach( $links as $llink ): ?>
+              <ul class="reset-list ylw-slide-tabs-menu">
+                <?php foreach( $tabs as $tab ): ?>
                 <?php 
-                  $left_link = $llink['link'];
-                  if( is_array( $left_link ) &&  !empty( $left_link['url'] ) ){
-                    printf('<li><a href="%s" target="%s">%s</a></li>', $left_link['url'], $left_link['target'], $left_link['title']); 
+                  if( !empty($tab['title']) ){
+                    printf('<li><a href="#">%s</a></li>', $tab['title']);
                   }
                 ?>
                 <?php endforeach; ?>
