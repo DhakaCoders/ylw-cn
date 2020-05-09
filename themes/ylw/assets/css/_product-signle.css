@@ -567,11 +567,12 @@ body.single.single-product .summary.entry-summary .viewpage{
 		padding-right: 20px!important;
 	}
 	.woocommerce .product-single-con-inr span.onsale {
-	    left: 50%;
-	    transform: translateX(-50%);
-	    -ms-transform: translateX(-50%);
-	    -webkit-transform: translateX(-50%);
+	    left: 100px;
 	    top: -20px;
+	    width: 45px;
+	    height: 45px;
+	    line-height: 40px;
+	    font-size: 12px;
 	}
 
 	.woocommerce .yith-quick-view-content div.product form.cart div.quantity{
