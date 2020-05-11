@@ -403,13 +403,21 @@ body.single.single-product .summary.entry-summary .viewpage{
 	display: block;
 	cursor: pointer;
 }
+.thumbSlider-arrows .rightArrow.slick-hidden{
+	display: none;
+}
+.thumbSlider-arrows .leftArrow.slick-hidden{
+	display: none;
+}
 .thumbSlider-item-img i{
 	display: block;
 	position: relative;
 }
-
+.thumbSlider .thumbSlider-item img{
+	border: 3px solid transparent;
+}
 .thumbSlider .slick-current .thumbSlider-item img{
-	border: 3px solid #ffc627;
+	border-color: #ffc627;
 }
 
 .woocommerce div.product form.cart div.quantity{

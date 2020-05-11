@@ -175,23 +175,17 @@ $('.yith-wcqv-button').on('click',function(){
 
 });*/
 
-
-var allPanels2 = $('.faq-accordion-des').hide();
-$('.faq-accordion-tab-row').removeClass('remove-border');
-$( '.faq-accordion-title').each(function() {
-    $(this).on('click', function(){
-          allPanels2.slideUp();
-          $('.faq-accordion-title').removeClass('faq-accordion-active');
-          $('.faq-accordion-tab-row').removeClass('remove-border');
-          $(this).next().slideDown();
-          $(this).addClass('faq-accordion-active');
-          $(this).parent().next().addClass('remove-border');
-          return false;
-  });
-
+$('body').on('click', '.faq-accordion-title', function(){
+      if( $(this).next().is(':visible') ){
+        $(this).next().slideUp();
+        $(this).removeClass('faq-accordion-active');
+        $('.faq-accordion-tab-row').removeClass('remove-border');
+      }else{
+        $(this).next().slideDown();
+        $(this).addClass('faq-accordion-active');
+        $(this).parent().next().addClass('remove-border');        
+      }
 });
-
-
 
 
 /*
@@ -344,16 +338,22 @@ if( $('.bigViewSlider').length ){
     });
 }
 
+var stoshow = 4;
+var thcount = $('.thumbSlider .thumbSlider-item').length;
+if( thcount < 4 ){
+  var stoshow = thcount
+}
+
 if( $('.thumbSlider').length ){
    $('.thumbSlider').slick({
-    slidesToShow: 5,
+    slidesToShow: stoshow,
     slidesToScroll: 1,
     dots: false,
     arrows:true,
     asNavFor: '.bigViewSlider',
     focusOnSelect: true,
     vertical: true,
-    verticalScrolling: true,
+    //verticalScrolling: true,
      //verticalSwiping: true,
     prevArrow: $('.thumbSlider-arrows .leftArrow'),
     nextArrow: $('.thumbSlider-arrows .rightArrow'),

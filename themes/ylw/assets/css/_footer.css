@@ -188,7 +188,7 @@
    justify-content: center;
    align-items: center;
 }
-.ftr-top-gallery-item:hover .ftr-tp-gallery-dsc-hover{
+.visual .ftr-top-gallery-item .ftr-tp-gallery-dsc-hover{
   opacity: 1;
   transform: scale3d(1,1,1);
   -ms-transform: scale3d(1,1,1);

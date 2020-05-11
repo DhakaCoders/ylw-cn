@@ -32,7 +32,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="visual">
               <div class="ftr-top-gallery-item">
                 <div class="ftr-tp-gallery-img" style="background:url(<?php echo THEME_URI; ?>/assets/images/ftr-tp-gallery-item-img-1.png);">
                   <a class="overlay-link" href="#"></a>
